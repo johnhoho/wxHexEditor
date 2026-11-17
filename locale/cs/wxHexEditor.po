@@ -8,18 +8,7 @@
 # fri, 2013
 # fri, 2014-2015
 msgid ""
-msgstr ""
-"Project-Id-Version: wxHexEditor\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-21 02:13+0300\n"
-"PO-Revision-Date: 2017-12-21 03:04+0000\n"
-"Last-Translator: Erdem U. Altinyurt <spamjunkeater@gmail.com>\n"
-"Language-Team: Czech (http://www.transifex.com/eua/wxhexeditor/language/cs/)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Language: cs\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+msgstr "Project-Id-Version: wxHexEditor\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2017-12-21 02:13+0300\nPO-Revision-Date: 2017-12-21 03:04+0000\nLast-Translator: Erdem U. Altinyurt <spamjunkeater@gmail.com>\nLanguage-Team: Czech \nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nLanguage: cs \nPlural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
 #: src/HexDialogs.h:70 src/HexEditorGui.h:300 src/HexEditorFrame.cpp:299
 #: src/HexEditorGui.cpp:134 src/HexEditorGui.cpp:938
@@ -88,7 +77,7 @@ msgstr "Chyba při kopírování do schránky"
 
 #: src/FAL.cpp:175
 msgid "Device is not mounted"
-msgstr ""
+msgstr "Zařízení není připojeno"
 
 #: src/FAL.cpp:175 src/FAL.cpp:221 src/FAL.cpp:240 src/FAL.cpp:252
 #: src/FAL.cpp:272 src/FAL.cpp:286 src/FAL.cpp:310 src/FAL.cpp:321
@@ -106,10 +95,8 @@ msgid "File is not readable by permissions."
 msgstr "Chybí přístupová práva pro čtení souboru."
 
 #: src/FAL.cpp:221
-msgid ""
-"Please change file permissons or run this program with Windows UAC "
-"privileges."
-msgstr ""
+msgid "Please change file permissons or run this program with Windows UAC privileges."
+msgstr "Změňte oprávnění souboru nebo spusťte program s oprávněními Windows UAC."
 
 #: src/FAL.cpp:240 src/FAL.cpp:310
 msgid "Process cannot open."
@@ -120,13 +107,11 @@ msgid "File does not exists at path:"
 msgstr "Soubor neexistuje v souborové cestě:"
 
 #: src/FAL.cpp:259
-msgid ""
-"Please change file permissons or run this program with root privileges."
+msgid "Please change file permissons or run this program with root privileges."
 msgstr "Změňte, prosím, práva k souboru, nebo tento program spusťte s odpovídajícími přístupovými právy."
 
 #: src/FAL.cpp:260
-msgid ""
-"You can also try to own the file temporarily (requires root's password.)"
+msgid "You can also try to own the file temporarily (requires root's password.)"
 msgstr "Také můžete zkusit soubor vlastnit dočasně (vyžaduje heslo superuživatele - správce systému; root)"
 
 #: src/FAL.cpp:261
@@ -143,7 +128,7 @@ msgstr "Neznámá chyba při sdělení vlastnosti %U"
 
 #: src/FAL.cpp:286
 msgid "For using this function, please install \"gnomesu\" or \"gksu\" tools first."
-msgstr ""
+msgstr "Pro použití této funkce nejprve nainstalujte nástroje \"gnomesu\" nebo \"gksu\"."
 
 #: src/FAL.cpp:321
 msgid "Please change file permissons or run this program with root privileges"
@@ -154,9 +139,7 @@ msgid "File cannot open."
 msgstr "Soubor nelze otevřít."
 
 #: src/FAL.cpp:430
-msgid ""
-"File load error!.\n"
-"File closed but not opened while access change. For avoid corruption close the program"
+msgid "File load error!.\nFile closed but not opened while access change. For avoid corruption close the program"
 msgstr "Chyba při nahrávání souboru!.\nSoubor zavřen ale při změně přístupových práv neotevřen. Zavřete, prosím, program, abyste se vyhnuli poškození"
 
 #: src/FAL.cpp:438
@@ -246,9 +229,7 @@ msgid "Find All Done!"
 msgstr "Hledání skončeno!"
 
 #: src/HexDialogs.cpp:1653 src/HexDialogs.cpp:1678
-msgid ""
-"Search and Replace sizes are not equal!\n"
-"Replacing with different size are not supported yet."
+msgid "Search and Replace sizes are not equal!\nReplacing with different size are not supported yet."
 msgstr "Délky hledání a nahrazení nejsou stejné.\nHledání/Nahrazování s rozdílnými délkami ještě není podporováno."
 
 #: src/HexDialogs.cpp:1653 src/HexDialogs.cpp:1678 src/HexDialogs.cpp:2009
@@ -292,7 +273,7 @@ msgstr "s 0x"
 
 #: src/HexDialogs.cpp:1778
 msgid "with 0x and Comma"
-msgstr ""
+msgstr "s 0x a čárkami"
 
 #: src/HexDialogs.cpp:1785
 msgid "HTML format"
@@ -479,9 +460,7 @@ msgid "ERROR!: Disk space is smaller than the image file."
 msgstr "CHYBA!: Místo na disku je menší než obraz souboru."
 
 #: src/HexDialogs.cpp:3290
-msgid ""
-"WARNING!: Disk space is bigger than the image file. \n"
-"Remaining space will remain untouched."
+msgid "WARNING!: Disk space is bigger than the image file. \nRemaining space will remain untouched."
 msgstr "VAROVÁNÍ!: Místo na disku je větší než obraz souboru. \nZbývající místo zůstane nezměněno."
 
 #: src/HexDialogs.cpp:3294
@@ -545,9 +524,7 @@ msgid "Critical Error. File pointer is not empty!"
 msgstr "Vážná chyba. Ukazatel souboru není prázdný!"
 
 #: src/HexEditor.cpp:335
-msgid ""
-"Switching to XORView Thru mode will reset Undo&Redo buffer. Unsaved changes will be discarded.\n"
-" Note also that you can't use methods that change file size (like delete and inject) while XORView Thru mode is active."
+msgid "Switching to XORView Thru mode will reset Undo&Redo buffer. Unsaved changes will be discarded.\n Note also that you can't use methods that change file size (like delete and inject) while XORView Thru mode is active."
 msgstr "Pro zapnutí prohlížecího režimu XOR budou znovu nastaveny vyrovnávací paměti pro všechny kroky zpět/znovu a neuložené změny budou zahozeny.\nTaké si všimněte, že když je prohlížecí režim XOR činný, nemůžete použít metody, které mění velikost souboru (jako jsou: smazat a vsadit)"
 
 #: src/HexEditor.cpp:335
@@ -563,9 +540,7 @@ msgid "File Save"
 msgstr "Uložit soubor"
 
 #: src/HexEditor.cpp:359
-msgid ""
-"File has some insertion/deletions. You cannot save this file-self (yet). "
-"Please use SaveAs."
+msgid "File has some insertion/deletions. You cannot save this file-self (yet). Please use SaveAs."
 msgstr "Soubor má několik vložení/smazání. Můžete tento soubor uložit jen pod jiným názvem. Použijte, prosím, Uložit jako."
 
 #: src/HexEditor.cpp:359
@@ -590,15 +565,12 @@ msgstr "Soubor nebyl změněn. Nic k uložení.\n"
 
 #: src/HexEditor.cpp:393
 #, c-format
-msgid ""
-"There are not enough free disk space.\n"
-"Required: %s\n"
-"Available: %s"
-msgstr ""
+msgid "There are not enough free disk space.\nRequired: %s\nAvailable: %s"
+msgstr "Nedostatek volného místa na disku.\nVyžadováno: %s\nK dispozici: %s"
 
 #: src/HexEditor.cpp:395
 msgid "Not Enought Space"
-msgstr ""
+msgstr "Nedostatek místa"
 
 #: src/HexEditor.cpp:404
 msgid "File save in progress"
@@ -625,9 +597,7 @@ msgid "File Has Changed!"
 msgstr "Soubor byl změněn!"
 
 #: src/HexEditor.cpp:461
-msgid ""
-"TAG file cannot be saved to default location.\n"
-"Do you want to Export TAGs file?"
+msgid "TAG file cannot be saved to default location.\nDo you want to Export TAGs file?"
 msgstr "Soubor se značkami (TAG) nelze do výchozího umístění uložit.\nChcete vyvést soubor se značkami (TAG)?"
 
 #: src/HexEditor.cpp:461
@@ -754,9 +724,7 @@ msgstr "Velikost bloku: %"
 
 #: src/HexEditor.cpp:1465
 #, c-format
-msgid ""
-"Notice!: This command will increase the file size and will generate too much overhead on file save.\n"
-"How many bytes do you want to inject to location to offset location %lld?"
+msgid "Notice!: This command will increase the file size and will generate too much overhead on file save.\nHow many bytes do you want to inject to location to offset location %lld?"
 msgstr "Pozor!: Tento příkaz změní velikost souboru (zvětší ji) a zřetelně zpomalí ukládání.\nKolik bytů chcete vsadit na místo %lld?"
 
 #: src/HexEditor.cpp:1466
@@ -768,13 +736,7 @@ msgid "Injection!"
 msgstr "Vsazení!"
 
 #: src/HexEditor.cpp:1551
-msgid ""
-"WARNING:\n"
-"The text you are copying includes a null character\n"
-"(00 in the hex pane) and will be truncated!\n"
-"\n"
-"If copying to another file in wxHexEditor you\n"
-"should copy from the Hex pane, not the text pane"
+msgid "WARNING:\nThe text you are copying includes a null character\n(00 in the hex pane) and will be truncated!\n\nIf copying to another file in wxHexEditor you\nshould copy from the Hex pane, not the text pane"
 msgstr "Varování:\nText, jejž kopírujete, zahrnuje nulový byt\n(00 v šestnáctkovém zobrazení) a bude zkrácen!\n\nKdyž v wxHexEditoru kopírujete do jiného souboru,\nměl byste kopírovat z pole se šestnáctkovým zobrazením, ne z pole s textovým zobrazením."
 
 #: src/HexEditor.cpp:1562
@@ -782,19 +744,16 @@ msgid "You have no RAM to copy this data."
 msgstr "Nemáte dostatek RAM, abyste mohl kopírovat tato data."
 
 #: src/HexEditor.cpp:1567
-msgid ""
-"You have tried to copy more than 10 MB of data.\n"
-"Copying above 10 MB to clipboard is not allowed.\n"
-"Only internal copy buffer used!"
+msgid "You have tried to copy more than 10 MB of data.\nCopying above 10 MB to clipboard is not allowed.\nOnly internal copy buffer used!"
 msgstr "Pokusil jste se o zkopírování více než 10 MB dat.\nKopírování více než 10 MB do schránky není povoleno.\nPoužívá se pouze vnitřní vyrovnávací paměť."
 
 #: src/HexEditor.cpp:1599
 msgid "No data available at clipboad!"
-msgstr ""
+msgstr "Ve schránce nejsou žádná data!"
 
 #: src/HexEditor.cpp:1601
 msgid "Note: Used internal binary copy buffer at paste operation."
-msgstr ""
+msgstr "Poznámka: při vložení byl použit interní binární kopírovací buffer."
 
 #: src/HexEditorFrame.cpp:197
 msgid "License Agreement"
@@ -1317,11 +1276,11 @@ msgstr "Malý dar autorovi jako jeho ocenění!"
 
 #: src/HexEditorGui.cpp:291
 msgid "Wiki"
-msgstr ""
+msgstr "Wiki"
 
 #: src/HexEditorGui.cpp:291
 msgid "Documentation page of wxHexEditor"
-msgstr ""
+msgstr "Stránka dokumentace wxHexEditor"
 
 #: src/HexEditorGui.cpp:295
 msgid "Bug Reporting"
@@ -1459,7 +1418,7 @@ msgstr "Bitový režim disassembleru"
 #: src/HexEditorGui.cpp:886 src/HexEditorGui.cpp:887 src/HexEditorGui.cpp:888
 #: src/HexEditorGui.cpp:889 src/HexEditorGui.cpp:890 src/HexEditorGui.cpp:891
 msgid " "
-msgstr "  "
+msgstr " "
 
 #: src/HexEditorGui.cpp:760
 msgid "Decimal"
@@ -1538,9 +1497,7 @@ msgid "Find Some Bytes"
 msgstr "Najít nějaké byty"
 
 #: src/HexEditorGui.cpp:946
-msgid ""
-"This function finds some different values at file. Usefull for finding non-"
-"null sections at disks."
+msgid "This function finds some different values at file. Usefull for finding non-null sections at disks."
 msgstr "tato funkce hledá rozdílné hodnoty. Má smysl pro hledání nenulových bloků na disku."
 
 #: src/HexEditorGui.cpp:960
@@ -1561,7 +1518,7 @@ msgstr "Stáhnout novou verzi wxHexEditoru"
 
 #: src/HexEditorGui.cpp:1036
 msgid "http://www.wxhexeditor.org"
-msgstr ""
+msgstr "http://www.wxhexeditor.org"
 
 #: src/HexEditorGui.cpp:1039
 msgid "Do not show this again."
@@ -1628,9 +1585,7 @@ msgid "Connect files for scrolling"
 msgstr "Spojit soubory pro projíždění"
 
 #: src/HexEditorGui.cpp:1158
-msgid ""
-"With this option enabled, compared files will always show same address "
-"location."
+msgid "With this option enabled, compared files will always show same address location."
 msgstr "Když je povolena tato volba, porovnávané soubory vždy budou ukazovat stejné umístění adresy."
 
 #: src/HexEditorGui.cpp:1171
@@ -1834,9 +1789,7 @@ msgid "Include Text Part"
 msgstr "Zahrnout textovou část"
 
 #: src/HexEditorGui.cpp:1591
-msgid ""
-"For switching XORView Thru mode, all Undo&Redo buffer will reset and non-saved changes will discarded.\n"
-"Also you can't use methods that changes file size (like delete and inject) with XORView Thru mode enabled."
+msgid "For switching XORView Thru mode, all Undo&Redo buffer will reset and non-saved changes will discarded.\nAlso you can't use methods that changes file size (like delete and inject) with XORView Thru mode enabled."
 msgstr "Pro zapnutí prohlížecího režimu XOR budou znovu nastaveny vyrovnávací paměti pro všechny kroky zpět/znovu a neuložené změny budou zahozeny.\nKdyž je prohlížecí režim XOR povolen, nemůžete použít metody, které mění velikost souboru (jako jsou: smazat a vsadit)"
 
 #: src/HexEditorGui.cpp:1598
@@ -1904,6 +1857,14 @@ msgid "Character Encoding:"
 msgstr "Kódování znaků:"
 
 #: src/HexEditorGui.cpp:1752 src/HexPanels.cpp:221
+#: src/HexEditorGui.cpp:2004 src/HexEditorGui.cpp:2010
+msgid "Glyph Font:"
+msgstr "Písmo znaků:"
+
+#: src/HexEditorGui.cpp:2010
+msgid "Font used to draw the text (right) panel. Pick an installed font that has the glyphs you need, e.g. SimSun-ExtB for rare CJK ideographs. Non fixed-width fonts may break column alignment."
+msgstr "Písmo použité k vykreslení textového (pravého) panelu. Zvolte nainstalované písmo obsahující potřebné znaky, např. SimSun-ExtB pro vzácné čínské znaky. Písma s proměnnou šířkou mohou narušit zarovnání sloupců."
+
 msgid "Size:"
 msgstr "Velikost:"
 
@@ -1945,7 +1906,7 @@ msgstr "Automaticky ukázat značky (TAG), když jsou značky rozpoznány"
 
 #: src/HexEditorGui.cpp:1810
 msgid "Make program portable "
-msgstr ""
+msgstr "Nastavit program jako přenosný "
 
 #: src/HexEditorGui.cpp:1893 src/HexEditorGui.cpp:1955
 msgid "Source :"
@@ -2038,11 +1999,11 @@ msgstr "Pohled na byty"
 
 #: src/HexEditorCtrl/wxHexCtrl/TagDialogGui.cpp:33
 msgid "Font Color"
-msgstr ""
+msgstr "Barva písma"
 
 #: src/HexEditorCtrl/wxHexCtrl/TagDialogGui.cpp:37
 msgid "Note Color"
-msgstr ""
+msgstr "Barva poznámky"
 
 #: src/HexEditorCtrl/wxHexCtrl/TagDialogGui.cpp:56
 msgid "Remove"
@@ -2051,3 +2012,57 @@ msgstr "Odstranit"
 #: src/HexEditorCtrl/wxHexCtrl/TagDialogGui.h:53
 msgid "Tag Dialog"
 msgstr "Dialog pro značku"
+
+#: menu translation supplement
+msgid "Import Template"
+msgstr "Importovat šablonu"
+
+#: menu translation supplement
+msgid "Hex2Color Mode"
+msgstr "Režim Hex2Color"
+
+#: menu translation supplement
+msgid "Open Memory SPD"
+msgstr "Otevřít SPD paměti"
+
+#: menu translation supplement
+msgid "Colorize HEX values with representing colors."
+msgstr "Barevné odlišení HEX hodnot odpovídajícími barvami."
+
+#: menu translation supplement
+msgid "Allow to edit Memory SPD values"
+msgstr "Umožňuje upravovat hodnoty SPD paměti"
+
+
+#: i18n supplement
+msgid "Find and Replace"
+msgstr "Najít a nahradit"
+
+#: i18n supplement
+msgid "Cut selected block and copies to clipboard"
+msgstr "Vyjmout vybraný blok a zkopírovat do schránky"
+
+#: i18n supplement
+msgid "Delete selected block"
+msgstr "Odstranit vybraný blok"
+
+#: i18n supplement
+msgid "Insert block"
+msgstr "Vložit blok"
+
+#: i18n supplement
+msgid "Hide"
+msgstr "Skrýt"
+
+#: i18n supplement
+msgid "Convert TAGs"
+msgstr "Převést značky"
+
+#: i18n supplement
+msgid "Showing Page: %llu"
+msgstr "Zobrazená stránka: %llu"
+
+#: i18n supplement
+msgid "Showing Page: %I64u"
+msgstr "Zobrazená stránka: %I64u"
+

@@ -39,6 +39,7 @@
 #endif //__BORLANDC__
 
 #include "HexEditorApp.h"
+#include "HexDialogs.h"
 IMPLEMENT_APP(wxHexEditorApp)
 
 #ifdef __WXMAC__
@@ -69,7 +70,7 @@ void MyClient::Connect(const wxString& sHost, const wxString& sService, const wx
 
 #include <wx/snglinst.h>
 #include <wx/stdpaths.h>
-#if !defined(__MINGW32__)
+#if !defined(__MINGW32__) && !defined(_MSC_VER)
 #include <sys/resource.h>
 #endif
 #include <wx/cmdline.h>
@@ -92,9 +93,10 @@ bool wxHexEditorApp::OnInit() {
 
 	wxCmdLineParser parser(cmdLineDesc, argc, argv);
 	parser.SetLogo( "wxHexEditor " _VERSION_S_ );
-	if( parser.Parse()==-1 )
+	int pr = parser.Parse();
+	if( pr==-1 )
 		return false;
-	if( parser.Parse()==0 )
+	if( pr==0 )
 		if (parser.Found("c")){
 			if( parser.GetParamCount()!=1){
 				wxPrintf("Error: Only two filenames allowed for --compare option." "\r\n");
@@ -107,8 +109,8 @@ bool wxHexEditorApp::OnInit() {
 			}
 
 	wxImage::AddHandler(new wxPNGHandler);
-	SetLanguage();
-	bool SingleInstance;
+		SetLanguage();
+		bool SingleInstance;
 	myConfigBase::Get()->Read( _T("SingleInstance"), &SingleInstance, false );
 	if( SingleInstance ) {
 		wxSingleInstanceChecker* m_checker = new wxSingleInstanceChecker;
@@ -126,11 +128,11 @@ bool wxHexEditorApp::OnInit() {
 			}
 		}
 
-	frame = new HexEditorFrame( 0L );
-	// frame->Connect( wxEVT_MOTION,	wxMouseEventHandler(wxHexEditorApp::OnMouseMove),NULL, this);
+		frame = new HexEditorFrame( 0L );
+		// frame->Connect( wxEVT_MOTION,	wxMouseEventHandler(wxHexEditorApp::OnMouseMove),NULL, this);
 	frame->Show();
-	wxYield();
-
+		wxYield();
+	
 	///Moved file opening via argv to OnEventLoopEnter()->MyFrameInit() because of need to wait FileSystemWatcher initialization.
 	return true;
 	}
@@ -208,8 +210,15 @@ void wxHexEditorApp::SetLanguage(void) {
 	if ( lang.IsEmpty() )
 		lang= wxLocale::GetLanguageName( wxLocale::GetSystemLanguage() );
 
-	if ( wxLocale::FindLanguageInfo( lang ) == NULL )
+	//Resolve the stored name against installed catalogs (accepts country-free
+	//display names, legacy descriptions, canonical and directory names).
+	const wxLanguageInfo* langinfo = wxHexEditor_ResolveLanguage( lang );
+	if ( langinfo == NULL ) {
 		lang=wxT("English"); //Defaulting to english.
+		langinfo = wxLocale::FindLanguageInfo( lang );
+		}
+	else
+		lang = wxHexEditor_GetCleanLanguageName( langinfo->Description ); //Migrates country/region-free name into configuration.
 
 	myConfigBase::Get()->Write( _T("Language"), lang );
 	myConfigBase::Get()->Flush();
@@ -229,9 +238,8 @@ void wxHexEditorApp::SetLanguage(void) {
 #endif
 
 	///init first
-	int langid = wxLocale::FindLanguageInfo( lang )->Language;
-	if( lang!=wxT("English") )  //Not init for English.
-		if ( !myLocale.Init( langid, wxLOCALE_LOAD_DEFAULT ) ) {
+	if( lang!=wxT("English") && langinfo != NULL )  //Not init for English.
+		if ( !myLocale.Init( langinfo->Language, wxLOCALE_LOAD_DEFAULT ) ) {
 			wxLogError(_T("This language is not supported by the system."));
 			//return; //not return here for continue to load this program catalog
 			}

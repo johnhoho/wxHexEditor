@@ -6,18 +6,7 @@
 # Erdem U. Altinyurt <spamjunkeater@gmail.com>, 2014-2015,2017
 # Erdem U. Altinyurt <spamjunkeater@gmail.com>, 2012
 msgid ""
-msgstr ""
-"Project-Id-Version: wxHexEditor\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-21 02:13+0300\n"
-"PO-Revision-Date: 2017-12-21 03:04+0000\n"
-"Last-Translator: Erdem U. Altinyurt <spamjunkeater@gmail.com>\n"
-"Language-Team: Turkish (http://www.transifex.com/eua/wxhexeditor/language/tr/)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Language: tr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+msgstr "Project-Id-Version: wxHexEditor\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2017-12-21 02:13+0300\nPO-Revision-Date: 2017-12-21 03:04+0000\nLast-Translator: Erdem U. Altinyurt <spamjunkeater@gmail.com>\nLanguage-Team: Turkish \nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nLanguage: tr \nPlural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: src/HexDialogs.h:70 src/HexEditorGui.h:300 src/HexEditorFrame.cpp:299
 #: src/HexEditorGui.cpp:134 src/HexEditorGui.cpp:938
@@ -30,7 +19,7 @@ msgstr "Ara & Değiştir"
 
 #: src/HexEditorGui.h:122
 msgid "wxHexEditor Alpha Development version"
-msgstr ""
+msgstr "wxHexEditor Alfa Geliştirme sürümü"
 
 #: src/HexEditorGui.h:263 src/HexEditorFrame.cpp:301 src/HexEditorGui.cpp:144
 msgid "Go to Offset"
@@ -86,7 +75,7 @@ msgstr "Sistem Panosuna Kopyalama Hatası"
 
 #: src/FAL.cpp:175
 msgid "Device is not mounted"
-msgstr ""
+msgstr "Aygıt bağlı değil"
 
 #: src/FAL.cpp:175 src/FAL.cpp:221 src/FAL.cpp:240 src/FAL.cpp:252
 #: src/FAL.cpp:272 src/FAL.cpp:286 src/FAL.cpp:310 src/FAL.cpp:321
@@ -104,9 +93,7 @@ msgid "File is not readable by permissions."
 msgstr "Dosya okunabilir izinli değil."
 
 #: src/FAL.cpp:221
-msgid ""
-"Please change file permissons or run this program with Windows UAC "
-"privileges."
+msgid "Please change file permissons or run this program with Windows UAC privileges."
 msgstr "Lütfen dosya izinlerini değiştirin yada bu programı Windows UAC hakları ile çalıştırın."
 
 #: src/FAL.cpp:240 src/FAL.cpp:310
@@ -118,13 +105,11 @@ msgid "File does not exists at path:"
 msgstr "Dosya bu yolda bulunmuyor:"
 
 #: src/FAL.cpp:259
-msgid ""
-"Please change file permissons or run this program with root privileges."
+msgid "Please change file permissons or run this program with root privileges."
 msgstr "Lütfen dosya izinlerini değiştirin yada bu programı yönetici hakları ile çalıştırın."
 
 #: src/FAL.cpp:260
-msgid ""
-"You can also try to own the file temporarily (requires root's password.)"
+msgid "You can also try to own the file temporarily (requires root's password.)"
 msgstr "Dosyayı geçici olarak sahiplenmeyi de deneyebilirsiniz (yönetici şifresi gerektirir)."
 
 #: src/FAL.cpp:261
@@ -152,9 +137,7 @@ msgid "File cannot open."
 msgstr "Dosya açılamıyor."
 
 #: src/FAL.cpp:430
-msgid ""
-"File load error!.\n"
-"File closed but not opened while access change. For avoid corruption close the program"
+msgid "File load error!.\nFile closed but not opened while access change. For avoid corruption close the program"
 msgstr "Dosya yükleme hatası!\nDosya kapatildi ama erişim değişimi ile açılamıyor. Bozulmayı önlemek için programı kapatın"
 
 #: src/FAL.cpp:438
@@ -244,9 +227,7 @@ msgid "Find All Done!"
 msgstr "Hepsini Bul Tamamlandı!"
 
 #: src/HexDialogs.cpp:1653 src/HexDialogs.cpp:1678
-msgid ""
-"Search and Replace sizes are not equal!\n"
-"Replacing with different size are not supported yet."
+msgid "Search and Replace sizes are not equal!\nReplacing with different size are not supported yet."
 msgstr "Arama ve Değiştirme boyutları eşit değil!\nDeğişik boyutlu değiştirme işlemi henüz desteklenmiyor."
 
 #: src/HexDialogs.cpp:1653 src/HexDialogs.cpp:1678 src/HexDialogs.cpp:2009
@@ -290,7 +271,7 @@ msgstr "0x ile"
 
 #: src/HexDialogs.cpp:1778
 msgid "with 0x and Comma"
-msgstr ""
+msgstr "0x ve virgül ile"
 
 #: src/HexDialogs.cpp:1785
 msgid "HTML format"
@@ -477,9 +458,7 @@ msgid "ERROR!: Disk space is smaller than the image file."
 msgstr "HATA!: Disk alanı imaj dosyasından daha küçük."
 
 #: src/HexDialogs.cpp:3290
-msgid ""
-"WARNING!: Disk space is bigger than the image file. \n"
-"Remaining space will remain untouched."
+msgid "WARNING!: Disk space is bigger than the image file. \nRemaining space will remain untouched."
 msgstr "UYARI!: Disk alanı imaj dosyasından daha büyük. \nArtakalan alandaki verilere dokunulmayacak."
 
 #: src/HexDialogs.cpp:3294
@@ -543,9 +522,7 @@ msgid "Critical Error. File pointer is not empty!"
 msgstr "Kritik Hata. Dosya işaretçisi boş değil!"
 
 #: src/HexEditor.cpp:335
-msgid ""
-"Switching to XORView Thru mode will reset Undo&Redo buffer. Unsaved changes will be discarded.\n"
-" Note also that you can't use methods that change file size (like delete and inject) while XORView Thru mode is active."
+msgid "Switching to XORView Thru mode will reset Undo&Redo buffer. Unsaved changes will be discarded.\n Note also that you can't use methods that change file size (like delete and inject) while XORView Thru mode is active."
 msgstr "XORView Thru modunu açmak için, tüm İleri-Geri Al belleği sıfırlanacaktır. Kayıt edilmemiş değişiklikler silinecektir.\nAyrıca bu modda dosya boyutunu değiştiren (sil ve ekle gibi) metotları kullanamazsınız."
 
 #: src/HexEditor.cpp:335
@@ -561,9 +538,7 @@ msgid "File Save"
 msgstr "Dosya Kaydet"
 
 #: src/HexEditor.cpp:359
-msgid ""
-"File has some insertion/deletions. You cannot save this file-self (yet). "
-"Please use SaveAs."
+msgid "File has some insertion/deletions. You cannot save this file-self (yet). Please use SaveAs."
 msgstr "Dosyada bazı eklemelere/çıkartmalara rastlandı. Bu dosyayı üzerine yazamazsınız (henüz). Lütfen Farklı Kaydet yapınız."
 
 #: src/HexEditor.cpp:359
@@ -588,10 +563,7 @@ msgstr "Dosya değişmemiş. Kayıt edecek birşey bulunamadı.\n"
 
 #: src/HexEditor.cpp:393
 #, c-format
-msgid ""
-"There are not enough free disk space.\n"
-"Required: %s\n"
-"Available: %s"
+msgid "There are not enough free disk space.\nRequired: %s\nAvailable: %s"
 msgstr "Yetersiz disk alanı.\nGerekli: %s\nMevcut: %s"
 
 #: src/HexEditor.cpp:395
@@ -623,9 +595,7 @@ msgid "File Has Changed!"
 msgstr "Dosya Değiştirildi!"
 
 #: src/HexEditor.cpp:461
-msgid ""
-"TAG file cannot be saved to default location.\n"
-"Do you want to Export TAGs file?"
+msgid "TAG file cannot be saved to default location.\nDo you want to Export TAGs file?"
 msgstr "TAG dosyası varsayılan yere kayıt edilemiyor..\nFarklı bir yere kayıt etmek ister misiniz?"
 
 #: src/HexEditor.cpp:461
@@ -752,9 +722,7 @@ msgstr "Blok Boyutu: %"
 
 #: src/HexEditor.cpp:1465
 #, c-format
-msgid ""
-"Notice!: This command will increase the file size and will generate too much overhead on file save.\n"
-"How many bytes do you want to inject to location to offset location %lld?"
+msgid "Notice!: This command will increase the file size and will generate too much overhead on file save.\nHow many bytes do you want to inject to location to offset location %lld?"
 msgstr "Not!: Bu komut dosya boyutunu arttıracaktır ve dosya kayıdı sırasında çok fazla işlem gerektirecektir.\nDosyanın %lld adresine ne kadar \"byte\" eklemek istiyorsunuz?"
 
 #: src/HexEditor.cpp:1466
@@ -766,13 +734,7 @@ msgid "Injection!"
 msgstr "Enjeksiyon!"
 
 #: src/HexEditor.cpp:1551
-msgid ""
-"WARNING:\n"
-"The text you are copying includes a null character\n"
-"(00 in the hex pane) and will be truncated!\n"
-"\n"
-"If copying to another file in wxHexEditor you\n"
-"should copy from the Hex pane, not the text pane"
+msgid "WARNING:\nThe text you are copying includes a null character\n(00 in the hex pane) and will be truncated!\n\nIf copying to another file in wxHexEditor you\nshould copy from the Hex pane, not the text pane"
 msgstr "UYARI:\nKopyaladığınız veri geçersiz/boş karakter içermekte\n(hex olarak 00) ve kopyalama bu noktaya kadar yapılabilir!\n\nEğer wxHexEditör içinde başka bir dosyaya kopyalama yapacaksanız\nparçayı Hex penceresinden kopyalayınız, Text penceresinden değil."
 
 #: src/HexEditor.cpp:1562
@@ -780,10 +742,7 @@ msgid "You have no RAM to copy this data."
 msgstr "Bu veriyi kopyalamaya yeterli bellek yok."
 
 #: src/HexEditor.cpp:1567
-msgid ""
-"You have tried to copy more than 10 MB of data.\n"
-"Copying above 10 MB to clipboard is not allowed.\n"
-"Only internal copy buffer used!"
+msgid "You have tried to copy more than 10 MB of data.\nCopying above 10 MB to clipboard is not allowed.\nOnly internal copy buffer used!"
 msgstr "10MB'dan büyük dosya kopyalamaya kalktınız.\n10MB dan büyük verilerin sistem panosuna kopyalanması desteklenmiyor.\nSadece iç kopyalama belleği kullanılacak!"
 
 #: src/HexEditor.cpp:1599
@@ -1315,11 +1274,11 @@ msgstr "Program yazarına bağış yaparak teşekkür edin!"
 
 #: src/HexEditorGui.cpp:291
 msgid "Wiki"
-msgstr ""
+msgstr "Wiki"
 
 #: src/HexEditorGui.cpp:291
 msgid "Documentation page of wxHexEditor"
-msgstr ""
+msgstr "wxHexEditor belgelendirme sayfası"
 
 #: src/HexEditorGui.cpp:295
 msgid "Bug Reporting"
@@ -1536,9 +1495,7 @@ msgid "Find Some Bytes"
 msgstr "Birkaç Byte Bul"
 
 #: src/HexEditorGui.cpp:946
-msgid ""
-"This function finds some different values at file. Usefull for finding non-"
-"null sections at disks."
+msgid "This function finds some different values at file. Usefull for finding non-null sections at disks."
 msgstr "Bu fonksiyon dosyada bulunabilecek farklı değerleri arar. Diskler ile uğraşırken boş olmayan kısımları bulmak için kullanışlı bir araçtır."
 
 #: src/HexEditorGui.cpp:960
@@ -1559,7 +1516,7 @@ msgstr "Yeni wxHexEditor'ü yükleyin"
 
 #: src/HexEditorGui.cpp:1036
 msgid "http://www.wxhexeditor.org"
-msgstr ""
+msgstr "http://www.wxhexeditor.org"
 
 #: src/HexEditorGui.cpp:1039
 msgid "Do not show this again."
@@ -1626,9 +1583,7 @@ msgid "Connect files for scrolling"
 msgstr "Dosyaları adres kaydırması için bağla"
 
 #: src/HexEditorGui.cpp:1158
-msgid ""
-"With this option enabled, compared files will always show same address "
-"location."
+msgid "With this option enabled, compared files will always show same address location."
 msgstr "Bu özellik açıldığında, karşılaştırılan dosyalar herzaman aynı adresi gösterecekler."
 
 #: src/HexEditorGui.cpp:1171
@@ -1832,9 +1787,7 @@ msgid "Include Text Part"
 msgstr "Metin Alanı İçer"
 
 #: src/HexEditorGui.cpp:1591
-msgid ""
-"For switching XORView Thru mode, all Undo&Redo buffer will reset and non-saved changes will discarded.\n"
-"Also you can't use methods that changes file size (like delete and inject) with XORView Thru mode enabled."
+msgid "For switching XORView Thru mode, all Undo&Redo buffer will reset and non-saved changes will discarded.\nAlso you can't use methods that changes file size (like delete and inject) with XORView Thru mode enabled."
 msgstr "XORView Thru modunu açmak için, tüm İleri-Geri Al belleği sıfırlanacak ve kayıt edilmemiş değişiklikler silinecek.Ayrıca bu modda dosya boyutunu değiştiren (sil ve ekle gibi) metotları kullanamazsınız."
 
 #: src/HexEditorGui.cpp:1598
@@ -1902,6 +1855,14 @@ msgid "Character Encoding:"
 msgstr "Karakter Kodu:"
 
 #: src/HexEditorGui.cpp:1752 src/HexPanels.cpp:221
+#: src/HexEditorGui.cpp:2004 src/HexEditorGui.cpp:2010
+msgid "Glyph Font:"
+msgstr "Glif Yazı Tipi:"
+
+#: src/HexEditorGui.cpp:2010
+msgid "Font used to draw the text (right) panel. Pick an installed font that has the glyphs you need, e.g. SimSun-ExtB for rare CJK ideographs. Non fixed-width fonts may break column alignment."
+msgstr "Metin (sağ) panelini çizmek için kullanılan yazı tipi. İhtiyacınız olan glifleri içeren yüklü bir yazı tipi seçin, örn. nadir CJK ideogramları için SimSun-ExtB. Sabit genişlikte olmayan yazı tipleri sütun hizalamasını bozabilir."
+
 msgid "Size:"
 msgstr "Boyut:"
 
@@ -1943,7 +1904,7 @@ msgstr "Tag algılandığında TAG panelini otomatik olark göster"
 
 #: src/HexEditorGui.cpp:1810
 msgid "Make program portable "
-msgstr ""
+msgstr "Programı taşınabilir yap "
 
 #: src/HexEditorGui.cpp:1893 src/HexEditorGui.cpp:1955
 msgid "Source :"
@@ -2049,3 +2010,57 @@ msgstr "Kaldır"
 #: src/HexEditorCtrl/wxHexCtrl/TagDialogGui.h:53
 msgid "Tag Dialog"
 msgstr "Etiket Diyaloğu"
+
+#: menu translation supplement
+msgid "Import Template"
+msgstr "Şablon İçe Aktar"
+
+#: menu translation supplement
+msgid "Hex2Color Mode"
+msgstr "Hex2Color Modu"
+
+#: menu translation supplement
+msgid "Open Memory SPD"
+msgstr "Bellek SPD'sini Aç"
+
+#: menu translation supplement
+msgid "Colorize HEX values with representing colors."
+msgstr "HEX değerlerini karşılık gelen renklerle renklendir."
+
+#: menu translation supplement
+msgid "Allow to edit Memory SPD values"
+msgstr "Bellek SPD değerlerinin düzenlenmesine izin verir"
+
+
+#: i18n supplement
+msgid "Find and Replace"
+msgstr "Bul ve Değiştir"
+
+#: i18n supplement
+msgid "Cut selected block and copies to clipboard"
+msgstr "Seçili bloğu kesip panoya kopyala"
+
+#: i18n supplement
+msgid "Delete selected block"
+msgstr "Seçili bloğu sil"
+
+#: i18n supplement
+msgid "Insert block"
+msgstr "Blok ekle"
+
+#: i18n supplement
+msgid "Hide"
+msgstr "Gizle"
+
+#: i18n supplement
+msgid "Convert TAGs"
+msgstr "Etiketleri Dönüştür"
+
+#: i18n supplement
+msgid "Showing Page: %llu"
+msgstr "Gösterilen sayfa: %llu"
+
+#: i18n supplement
+msgid "Showing Page: %I64u"
+msgstr "Gösterilen sayfa: %I64u"
+

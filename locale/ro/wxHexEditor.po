@@ -6,18 +6,7 @@
 # Dumitru Ursu <dima@ceata.org>, 2014
 # titus <titus0818@gmail.com>, 2015
 msgid ""
-msgstr ""
-"Project-Id-Version: wxHexEditor\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-21 02:13+0300\n"
-"PO-Revision-Date: 2017-12-21 03:04+0000\n"
-"Last-Translator: Erdem U. Altinyurt <spamjunkeater@gmail.com>\n"
-"Language-Team: Romanian (http://www.transifex.com/eua/wxhexeditor/language/ro/)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Language: ro\n"
-"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
+msgstr "Project-Id-Version: wxHexEditor\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2017-12-21 02:13+0300\nPO-Revision-Date: 2017-12-21 03:04+0000\nLast-Translator: Erdem U. Altinyurt <spamjunkeater@gmail.com>\nLanguage-Team: Romanian \nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nLanguage: ro \nPlural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
 
 #: src/HexDialogs.h:70 src/HexEditorGui.h:300 src/HexEditorFrame.cpp:299
 #: src/HexEditorGui.cpp:134 src/HexEditorGui.cpp:938
@@ -86,7 +75,7 @@ msgstr "Copie eroarea în clipboard"
 
 #: src/FAL.cpp:175
 msgid "Device is not mounted"
-msgstr ""
+msgstr "Dispozitivul nu este montat"
 
 #: src/FAL.cpp:175 src/FAL.cpp:221 src/FAL.cpp:240 src/FAL.cpp:252
 #: src/FAL.cpp:272 src/FAL.cpp:286 src/FAL.cpp:310 src/FAL.cpp:321
@@ -104,10 +93,8 @@ msgid "File is not readable by permissions."
 msgstr "Fișierul nu e citibil după permisiuni"
 
 #: src/FAL.cpp:221
-msgid ""
-"Please change file permissons or run this program with Windows UAC "
-"privileges."
-msgstr ""
+msgid "Please change file permissons or run this program with Windows UAC privileges."
+msgstr "Modificați permisiunile fișierului sau rulați programul cu drepturi Windows UAC."
 
 #: src/FAL.cpp:240 src/FAL.cpp:310
 msgid "Process cannot open."
@@ -118,13 +105,11 @@ msgid "File does not exists at path:"
 msgstr "Fișierul nu există la calea:"
 
 #: src/FAL.cpp:259
-msgid ""
-"Please change file permissons or run this program with root privileges."
+msgid "Please change file permissons or run this program with root privileges."
 msgstr "Schimbați permisiunile fișierului sau rulați programul cu privilegii de administrator."
 
 #: src/FAL.cpp:260
-msgid ""
-"You can also try to own the file temporarily (requires root's password.)"
+msgid "You can also try to own the file temporarily (requires root's password.)"
 msgstr "Puteți de asemenea să încercați să dețineți fișierul temporar (este necesară parola de administrator.)"
 
 #: src/FAL.cpp:261
@@ -141,7 +126,7 @@ msgstr "Eroare necunoscută la \"stat -c %U"
 
 #: src/FAL.cpp:286
 msgid "For using this function, please install \"gnomesu\" or \"gksu\" tools first."
-msgstr ""
+msgstr "Pentru a utiliza această funcție, instalați mai întâi utilitarele \"gnomesu\" sau \"gksu\"."
 
 #: src/FAL.cpp:321
 msgid "Please change file permissons or run this program with root privileges"
@@ -152,9 +137,7 @@ msgid "File cannot open."
 msgstr "Fișierul nu poate fi deschis."
 
 #: src/FAL.cpp:430
-msgid ""
-"File load error!.\n"
-"File closed but not opened while access change. For avoid corruption close the program"
+msgid "File load error!.\nFile closed but not opened while access change. For avoid corruption close the program"
 msgstr "Eroare la încărcarea fișierului.\nFișierul e închis dar nu poate fi deschis cît timp este o schimbare de acces. Pentru a evita coruperea fișierului închideți programul"
 
 #: src/FAL.cpp:438
@@ -244,9 +227,7 @@ msgid "Find All Done!"
 msgstr "Găsește tot a terminat!"
 
 #: src/HexDialogs.cpp:1653 src/HexDialogs.cpp:1678
-msgid ""
-"Search and Replace sizes are not equal!\n"
-"Replacing with different size are not supported yet."
+msgid "Search and Replace sizes are not equal!\nReplacing with different size are not supported yet."
 msgstr "Dimensiunile Căutare și Înlocuire nu sunt egale\nÎnlocuirea cu o dimensiune diferită încă nu e suportată."
 
 #: src/HexDialogs.cpp:1653 src/HexDialogs.cpp:1678 src/HexDialogs.cpp:2009
@@ -290,7 +271,7 @@ msgstr "cu 0x"
 
 #: src/HexDialogs.cpp:1778
 msgid "with 0x and Comma"
-msgstr ""
+msgstr "cu 0x și virgulă"
 
 #: src/HexDialogs.cpp:1785
 msgid "HTML format"
@@ -477,9 +458,7 @@ msgid "ERROR!: Disk space is smaller than the image file."
 msgstr "EROARE!: E prea puțin spațiu pe disp pentru fișierul-imagine."
 
 #: src/HexDialogs.cpp:3290
-msgid ""
-"WARNING!: Disk space is bigger than the image file. \n"
-"Remaining space will remain untouched."
+msgid "WARNING!: Disk space is bigger than the image file. \nRemaining space will remain untouched."
 msgstr "ATENȚIE!: Spațiul pe disc e mai mare ca fișierul-imagine.\nSpațiul rămas nu va fi atins."
 
 #: src/HexDialogs.cpp:3294
@@ -543,10 +522,8 @@ msgid "Critical Error. File pointer is not empty!"
 msgstr "Eroare critică. Pointerul fișierului nu e gol!"
 
 #: src/HexEditor.cpp:335
-msgid ""
-"Switching to XORView Thru mode will reset Undo&Redo buffer. Unsaved changes will be discarded.\n"
-" Note also that you can't use methods that change file size (like delete and inject) while XORView Thru mode is active."
-msgstr ""
+msgid "Switching to XORView Thru mode will reset Undo&Redo buffer. Unsaved changes will be discarded.\n Note also that you can't use methods that change file size (like delete and inject) while XORView Thru mode is active."
+msgstr "Comutarea în modul XORView Thru va reseta bufferul de anulare/refacere, iar modificările nesalvate vor fi pierdute.\nDe asemenea, în modul XORView Thru nu puteți utiliza metode care schimbă dimensiunea fișierului (precum ștergerea și injectarea)."
 
 #: src/HexEditor.cpp:335
 msgid "XORView Thru Warning"
@@ -561,9 +538,7 @@ msgid "File Save"
 msgstr "Slavare Fișier"
 
 #: src/HexEditor.cpp:359
-msgid ""
-"File has some insertion/deletions. You cannot save this file-self (yet). "
-"Please use SaveAs."
+msgid "File has some insertion/deletions. You cannot save this file-self (yet). Please use SaveAs."
 msgstr "Fișierul are cîteve inserții/ștergeri. Încă nu e posibilă rescrierea fișeirului. Utilizează \"Salvează ca\". "
 
 #: src/HexEditor.cpp:359
@@ -588,15 +563,12 @@ msgstr "Fișierul nu a fost modificat. Nu e nimic de salvat.\n"
 
 #: src/HexEditor.cpp:393
 #, c-format
-msgid ""
-"There are not enough free disk space.\n"
-"Required: %s\n"
-"Available: %s"
-msgstr ""
+msgid "There are not enough free disk space.\nRequired: %s\nAvailable: %s"
+msgstr "Nu există suficient spațiu liber pe disc.\nNecesar: %s\nDisponibil: %s"
 
 #: src/HexEditor.cpp:395
 msgid "Not Enought Space"
-msgstr ""
+msgstr "Spațiu insuficient"
 
 #: src/HexEditor.cpp:404
 msgid "File save in progress"
@@ -623,10 +595,8 @@ msgid "File Has Changed!"
 msgstr "Fișierul conține modificări!"
 
 #: src/HexEditor.cpp:461
-msgid ""
-"TAG file cannot be saved to default location.\n"
-"Do you want to Export TAGs file?"
-msgstr ""
+msgid "TAG file cannot be saved to default location.\nDo you want to Export TAGs file?"
+msgstr "Fișierul TAG nu poate fi salvat în locația implicită.\nDoriți să exportați fișierul de TAG-uri?"
 
 #: src/HexEditor.cpp:461
 msgid "TAGs Cannot Be Saved!!"
@@ -752,9 +722,7 @@ msgstr "Mărimea blocului: %"
 
 #: src/HexEditor.cpp:1465
 #, c-format
-msgid ""
-"Notice!: This command will increase the file size and will generate too much overhead on file save.\n"
-"How many bytes do you want to inject to location to offset location %lld?"
+msgid "Notice!: This command will increase the file size and will generate too much overhead on file save.\nHow many bytes do you want to inject to location to offset location %lld?"
 msgstr "Atenție!: Această comandă va crește dimensiunea fișierului și va genera prea multă informație pe deasupra la salvarea fișierului.\nCîți byți vrei să injectezei la locație pentru a crește deplasamentul %lld?"
 
 #: src/HexEditor.cpp:1466
@@ -766,13 +734,7 @@ msgid "Injection!"
 msgstr "Injectare!"
 
 #: src/HexEditor.cpp:1551
-msgid ""
-"WARNING:\n"
-"The text you are copying includes a null character\n"
-"(00 in the hex pane) and will be truncated!\n"
-"\n"
-"If copying to another file in wxHexEditor you\n"
-"should copy from the Hex pane, not the text pane"
+msgid "WARNING:\nThe text you are copying includes a null character\n(00 in the hex pane) and will be truncated!\n\nIf copying to another file in wxHexEditor you\nshould copy from the Hex pane, not the text pane"
 msgstr "Atenție:\nTextul copiat include un caracter nul\n(00 în panoul hexazecimal) și va fi trunchiată!\n\nDacă copii în altă fereastră wxHexEditor ar \ntrebui să o faci din panoux hexazecimal, nu panoul de text."
 
 #: src/HexEditor.cpp:1562
@@ -780,19 +742,16 @@ msgid "You have no RAM to copy this data."
 msgstr "Nu ai suficientă memorie pentru a copia aceste date."
 
 #: src/HexEditor.cpp:1567
-msgid ""
-"You have tried to copy more than 10 MB of data.\n"
-"Copying above 10 MB to clipboard is not allowed.\n"
-"Only internal copy buffer used!"
-msgstr ""
+msgid "You have tried to copy more than 10 MB of data.\nCopying above 10 MB to clipboard is not allowed.\nOnly internal copy buffer used!"
+msgstr "Ați încercat să copiați mai mult de 10 MB de date.\nCopierea a peste 10 MB în clipboard nu este permisă.\nSe folosește doar bufferul intern de copiere!"
 
 #: src/HexEditor.cpp:1599
 msgid "No data available at clipboad!"
-msgstr ""
+msgstr "Nu există date în clipboard!"
 
 #: src/HexEditor.cpp:1601
 msgid "Note: Used internal binary copy buffer at paste operation."
-msgstr ""
+msgstr "Notă: la operația de lipire s-a folosit bufferul intern de copiere binar."
 
 #: src/HexEditorFrame.cpp:197
 msgid "License Agreement"
@@ -1315,11 +1274,11 @@ msgstr "Donați în schimb ceva bani autorului!"
 
 #: src/HexEditorGui.cpp:291
 msgid "Wiki"
-msgstr ""
+msgstr "Wiki"
 
 #: src/HexEditorGui.cpp:291
 msgid "Documentation page of wxHexEditor"
-msgstr ""
+msgstr "Pagina de documentare wxHexEditor"
 
 #: src/HexEditorGui.cpp:295
 msgid "Bug Reporting"
@@ -1536,9 +1495,7 @@ msgid "Find Some Bytes"
 msgstr "Găsește niște octeți"
 
 #: src/HexEditorGui.cpp:946
-msgid ""
-"This function finds some different values at file. Usefull for finding non-"
-"null sections at disks."
+msgid "This function finds some different values at file. Usefull for finding non-null sections at disks."
 msgstr "Această funcție găsește unele valori diferite la un fișier. Este util pentru găsirea secțiunilor ne-nule la discuri."
 
 #: src/HexEditorGui.cpp:960
@@ -1559,7 +1516,7 @@ msgstr "Descarcă noul wxHexEditor"
 
 #: src/HexEditorGui.cpp:1036
 msgid "http://www.wxhexeditor.org"
-msgstr ""
+msgstr "http://www.wxhexeditor.org"
 
 #: src/HexEditorGui.cpp:1039
 msgid "Do not show this again."
@@ -1626,9 +1583,7 @@ msgid "Connect files for scrolling"
 msgstr "Conectează fișierele pentru derulare"
 
 #: src/HexEditorGui.cpp:1158
-msgid ""
-"With this option enabled, compared files will always show same address "
-"location."
+msgid "With this option enabled, compared files will always show same address location."
 msgstr "Cu această opțiune activată, fișierele comparate va arăta mereu poziția aceleiași adrese."
 
 #: src/HexEditorGui.cpp:1171
@@ -1832,9 +1787,7 @@ msgid "Include Text Part"
 msgstr "Inclusiv partea text"
 
 #: src/HexEditorGui.cpp:1591
-msgid ""
-"For switching XORView Thru mode, all Undo&Redo buffer will reset and non-saved changes will discarded.\n"
-"Also you can't use methods that changes file size (like delete and inject) with XORView Thru mode enabled."
+msgid "For switching XORView Thru mode, all Undo&Redo buffer will reset and non-saved changes will discarded.\nAlso you can't use methods that changes file size (like delete and inject) with XORView Thru mode enabled."
 msgstr "Pentru a schimba la modul XORView Thru, toată memoria cu Anulări/Refaceri va fi restată, și schimbările nesalvate vor fi anulate. \nDe asemenea nu puteți utiliza funcționalități care schimbă dimensiunea fișierului (de exemplu ștergere sau Injectare) cît timp modul XORView Thru e pornit."
 
 #: src/HexEditorGui.cpp:1598
@@ -1902,6 +1855,14 @@ msgid "Character Encoding:"
 msgstr "Caracter codificare:"
 
 #: src/HexEditorGui.cpp:1752 src/HexPanels.cpp:221
+#: src/HexEditorGui.cpp:2004 src/HexEditorGui.cpp:2010
+msgid "Glyph Font:"
+msgstr "Font pentru glife:"
+
+#: src/HexEditorGui.cpp:2010
+msgid "Font used to draw the text (right) panel. Pick an installed font that has the glyphs you need, e.g. SimSun-ExtB for rare CJK ideographs. Non fixed-width fonts may break column alignment."
+msgstr "Fontul folosit pentru desenarea panoului de text (dreapta). Alegeți un font instalat care conține glifele necesare, de ex. SimSun-ExtB pentru ideograme CJK rare. Fonturile cu lățime variabilă pot strica alinierea coloanelor."
+
 msgid "Size:"
 msgstr "Dimensiune:"
 
@@ -1943,7 +1904,7 @@ msgstr "Arată automat panoul etichetă dacă sunt detectate etichete"
 
 #: src/HexEditorGui.cpp:1810
 msgid "Make program portable "
-msgstr ""
+msgstr "Faceți programul portabil "
 
 #: src/HexEditorGui.cpp:1893 src/HexEditorGui.cpp:1955
 msgid "Source :"
@@ -2036,11 +1997,11 @@ msgstr "Vizualizare octet"
 
 #: src/HexEditorCtrl/wxHexCtrl/TagDialogGui.cpp:33
 msgid "Font Color"
-msgstr ""
+msgstr "Culoarea fontului"
 
 #: src/HexEditorCtrl/wxHexCtrl/TagDialogGui.cpp:37
 msgid "Note Color"
-msgstr ""
+msgstr "Culoarea notei"
 
 #: src/HexEditorCtrl/wxHexCtrl/TagDialogGui.cpp:56
 msgid "Remove"
@@ -2049,3 +2010,57 @@ msgstr "Elimină"
 #: src/HexEditorCtrl/wxHexCtrl/TagDialogGui.h:53
 msgid "Tag Dialog"
 msgstr "Etichetă dialog"
+
+#: menu translation supplement
+msgid "Import Template"
+msgstr "Importare șablon"
+
+#: menu translation supplement
+msgid "Hex2Color Mode"
+msgstr "Mod Hex2Color"
+
+#: menu translation supplement
+msgid "Open Memory SPD"
+msgstr "Deschide SPD memorie"
+
+#: menu translation supplement
+msgid "Colorize HEX values with representing colors."
+msgstr "Colorare valorilor HEX cu culorile corespunzătoare."
+
+#: menu translation supplement
+msgid "Allow to edit Memory SPD values"
+msgstr "Permite editarea valorilor SPD ale memoriei"
+
+
+#: i18n supplement
+msgid "Find and Replace"
+msgstr "Căutare și înlocuire"
+
+#: i18n supplement
+msgid "Cut selected block and copies to clipboard"
+msgstr "Taie blocul selectat și îl copiază în clipboard"
+
+#: i18n supplement
+msgid "Delete selected block"
+msgstr "Șterge blocul selectat"
+
+#: i18n supplement
+msgid "Insert block"
+msgstr "Inserare bloc"
+
+#: i18n supplement
+msgid "Hide"
+msgstr "Ascunde"
+
+#: i18n supplement
+msgid "Convert TAGs"
+msgstr "Convertire marcaje"
+
+#: i18n supplement
+msgid "Showing Page: %llu"
+msgstr "Pagina afișată: %llu"
+
+#: i18n supplement
+msgid "Showing Page: %I64u"
+msgstr "Pagina afișată: %I64u"
+

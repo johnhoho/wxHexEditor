@@ -40,13 +40,21 @@ set(hex_editor_ctrl_sources
 if (WIN32)
 	list(APPEND hex_editor_ctrl_sources
 		resources/resource.rc
-		windrv.cpp
-		windrv.h
+		src/windrv.cpp
+		src/windrv.h
 	)
 endif()
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin)
 add_executable(wxHexEditor ${hex_editor_ctrl_sources})
+set_target_properties(wxHexEditor PROPERTIES WIN32_EXECUTABLE TRUE)
+
+if (MSVC)
+	# Source uses ISO C++ alternative tokens (or/and/not); force-include ciso646
+	target_compile_options(wxHexEditor PRIVATE "/FIciso646")
+	# Sources are UTF-8 encoded (non-ASCII string literals)
+	target_compile_options(wxHexEditor PRIVATE "/utf-8")
+endif()
 target_include_directories(wxHexEditor PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 target_link_libraries(
 	wxHexEditor PRIVATE mhash udis ${wxWidgets_LIBRARIES}
@@ -54,4 +62,13 @@ target_link_libraries(
 
 if (WIN32)
 	target_link_libraries(wxHexEditor PRIVATE mhash udis ${wxWidgets_LIBRARIES} uxtheme oleacc psapi ws2_32)
+endif()
+
+if (MINGW)
+	# The wx DLL import libraries also carry the DLLs' C++ standard library
+	# exports, which can hijack the exe's std:: references (loader then fails
+	# with "entry point not found" when the wx DLLs were built with a different
+	# GCC than the local one). Link libstdc++/libgcc statically so every std::
+	# symbol is resolved inside the exe instead.
+	target_link_options(wxHexEditor PRIVATE -static-libstdc++ -static-libgcc)
 endif()

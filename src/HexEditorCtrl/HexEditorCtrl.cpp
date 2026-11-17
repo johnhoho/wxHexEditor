@@ -267,13 +267,36 @@ void HexEditorCtrl::SetFont( ) {
 	int FontSize=10;
 	myConfigBase::Get()->Read( wxT("FontSize"), &FontSize, 10 );
 
+	//User selectable glyph font. Empty means the platform default below.
+	wxString FontFace;
+	myConfigBase::Get()->Read( wxT("FontFace"), &FontFace, wxEmptyString );
+	FontFace.Trim( true ).Trim( false );
+
 #if defined( __WXOSX__ )
-	newfont = wxFont(FontSize, wxFONTFAMILY_MODERN, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_NORMAL, 0, wxT("Monaco"), wxFONTENCODING_ISO8859_1);// Fonts are too small on wxOSX 2.9.x series.
+	if( FontFace.IsEmpty() )
+		FontFace = wxT("Monaco");// Fonts are too small on wxOSX 2.9.x series.
+	newfont = wxFont(FontSize, wxFONTFAMILY_MODERN, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_NORMAL, 0, FontFace, wxFONTENCODING_ISO8859_1);
 #elif defined( __WXMSW__ )
-	newfont = wxFont(FontSize, wxFONTFAMILY_MODERN, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_NORMAL, 0, wxT("Courier New"), wxFONTENCODING_ISO8859_1);
+	if( FontFace.IsEmpty() )
+		FontFace = wxT("Courier New");
+	newfont = wxFont(FontSize, wxFONTFAMILY_MODERN, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_NORMAL, 0, FontFace, wxFONTENCODING_DEFAULT);
 #else
-	newfont = wxFont(FontSize, wxFONTFAMILY_MODERN, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_NORMAL, 0, wxT("Monospace"), wxFONTENCODING_ISO8859_1);
+	if( FontFace.IsEmpty() )
+		FontFace = wxT("Monospace");
+	newfont = wxFont(FontSize, wxFONTFAMILY_MODERN, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_NORMAL, 0, FontFace, wxFONTENCODING_ISO8859_1);
 #endif
+
+	//A stale/removed face name must not leave the editor with an unusable font.
+	if( !newfont.IsOk() ) {
+#if defined( __WXOSX__ )
+		newfont = wxFont(FontSize, wxFONTFAMILY_MODERN, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_NORMAL, 0, wxT("Monaco"), wxFONTENCODING_ISO8859_1);
+#elif defined( __WXMSW__ )
+		newfont = wxFont(FontSize, wxFONTFAMILY_MODERN, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_NORMAL, 0, wxT("Courier New"), wxFONTENCODING_DEFAULT);
+#else
+		newfont = wxFont(FontSize, wxFONTFAMILY_MODERN, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_NORMAL, 0, wxT("Monospace"), wxFONTENCODING_ISO8859_1);
+#endif
+		}
+
 	SetFont( newfont );
 	}
 
@@ -581,8 +604,31 @@ void HexEditorCtrl::OnResize( wxSizeEvent &event ) {
 	//Recalculate available area due hidden panels.
 	hexchr+=hex_ctrl->IsShown() ? fmt.Len() : 0;
 	textchr+=text_ctrl->IsShown() ? cnt_chr : 0;
+	//Multi-byte text (UTF-8 CJK, GBK, Big5...) is drawn one byte per cell
+	//(DrawCharByChar), so each byte still occupies exactly one cell width.
+	int text_char_w = chartx/(GetCharToHexSize()/2);
+	//Double-width CJK glyphs overflow their byte cell by about one cell; reserve
+	//extra cells at the column end so the last glyph is not clipped/covered
+	//by the scrollbar (3 cells covers a 2-cell glyph drawn at the last cell).
+	int text_extra_w = 0;
+	if( text_ctrl->IsShown() &&
+	    ( text_ctrl->FontEnc == wxFONTENCODING_UTF8 ||
+	      text_ctrl->FontEnc == wxFONTENCODING_GB2312 ||
+	      text_ctrl->FontEnc == wxFONTENCODING_CP936 ||
+	      text_ctrl->FontEnc == wxFONTENCODING_BIG5 ||
+	      text_ctrl->FontEnc == wxFONTENCODING_CP949 ||
+	      text_ctrl->FontEnc == wxFONTENCODING_EUC_JP ||
+	      text_ctrl->FontEnc == wxFONTENCODING_SHIFT_JIS ) ) {
+		text_extra_w = text_char_w * 3;
+		text_ctrl->SetPaddingX( text_extra_w );
+		}
+	else
+		text_ctrl->SetPaddingX( 0 );
 	int available_space=0;
-	available_space=x/(hexchr*charx+textchr*chartx/(GetCharToHexSize()/2));
+	//text_extra_w is a one-off column-end reserve, not a per-byte cost: subtract
+	//it from the available width instead of charging it to every byte, otherwise
+	//bytes-per-line is underestimated and a large blank area remains at the right.
+	available_space=wxMax(0,x-text_extra_w)/(hexchr*charx+textchr*text_char_w);
 
 	//Limiting Bytes Per Line
 	bool use_BytesPerLineLimit;
@@ -597,7 +643,7 @@ void HexEditorCtrl::OnResize( wxSizeEvent &event ) {
 		}
 
 	//Calculation of available area for Hex and Text panels.
-	int text_x = chartx*available_space*cnt_chr/(GetCharToHexSize()/2)  +2 +4;
+	int text_x = text_char_w*available_space*cnt_chr/(GetCharToHexSize()/2)  +2 +4 + text_extra_w;
 	int hex_x = charx*available_space*fmt.Len()  +2 +4 - charx ; //no need for last gap;
 	int ByteShownPerLine=available_space*cnt_chr;
 

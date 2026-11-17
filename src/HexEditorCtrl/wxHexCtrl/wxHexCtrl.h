@@ -24,6 +24,8 @@
 #ifndef __wxHexCtrl__
 #define __wxHexCtrl__
 #include <stdint.h>
+#include <vector>
+#include <map>
 #include <wx/defs.h>
 #include <wx/buffer.h>
 #include <wx/graphics.h>
@@ -176,6 +178,18 @@ class wxHexCtrl : public wxScrolledWindow {
 		wxBitmap*   internalBufferBMP;
 		wxString	HexFormat;
 		bool		DrawCharByChar;
+
+		//--- Glyph fallback (like Scintilla/Notepad++) -----------------------
+		//When the painting font has no glyph for a codepoint (e.g. CJK
+		//ideographs under Courier New), the first fallback font that owns the
+		//glyph is selected instead of drawing ".notdef" boxes.
+		void InitFallbackFonts( void );
+		///Returns -1 for the base font, >=0 an index into m_FallbackFonts,
+		///-2 when no known font owns the glyph.
+		int  FontIndexForCodepoint( uint32_t cp, wxDC* dc );
+		wxFont m_PaintFont;						//base font used for painting
+		std::vector<wxFont> m_FallbackFonts;	//candidate fallback fonts
+		std::map<uint32_t,int> m_GlyphFontCache;	//codepoint -> font index cache
 		enum CtrlTypes {HexControl, TextControl, OffsetControl};
 		CtrlTypes CtrlType;
 		// event handlers
@@ -267,6 +281,11 @@ class wxHexTextCtrl : public wxHexCtrl {
 		inline int GetByteCount( void ) {
 			return m_text.Length();
 			}
+		//Extra horizontal padding (pixels) reserved at the column end for CJK glyph
+		//overflow; excluded from the cells-per-line calculation so text rows stay
+		//in sync with the hex control's bytes-per-line.
+		int PaddingX = 0;
+		void SetPaddingX( int px ) { PaddingX = px; }
 		void Replace(unsigned text_location, const wxChar& value, bool paint);
 		void ChangeValue( const wxString& value, bool paint );
 		void SetBinValue( char* buffer, int len, bool paint );

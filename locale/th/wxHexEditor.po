@@ -1,0 +1,2069 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# chaol <1403941265@qq.com>, 2017
+# chaol <1403941265@qq.com>, 2017
+# godfrey <godfrey.public@gmail.com>, 2013-2014
+# zyphio <zyphio@gmail.com>, 2013-2014
+msgid ""
+msgstr "Project-Id-Version: wxHexEditor\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2017-12-21 02:13+0300\nPO-Revision-Date: 2017-12-21 03:04+0000\nLast-Translator: Erdem U. Altinyurt <spamjunkeater@gmail.com>\nLanguage-Team: Thai \nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nLanguage: th \nPlural-Forms: nplurals=1; plural=0;\n"
+
+#: src/HexDialogs.h:70 src/HexEditorGui.h:300 src/HexEditorFrame.cpp:299
+#: src/HexEditorGui.cpp:134 src/HexEditorGui.cpp:938
+msgid "Find"
+msgstr "ค้นหา"
+
+#: src/HexDialogs.h:106
+msgid "Find & Replace"
+msgstr "ค้นหาและแทนที่"
+
+#: src/HexEditorGui.h:122
+msgid "wxHexEditor Alpha Development version"
+msgstr "wxHexEditor รุ่นพัฒนาอัลฟา"
+
+#: src/HexEditorGui.h:263 src/HexEditorFrame.cpp:301 src/HexEditorGui.cpp:144
+msgid "Go to Offset"
+msgstr "ไปยังออฟเซ็ต"
+
+#: src/HexEditorGui.h:324
+msgid "New wxHexEditor Version!"
+msgstr "wxHexEditor เวอร์ชันใหม่!"
+
+#: src/HexEditorGui.h:363 src/HexEditorGui.cpp:210
+msgid "Compare Files"
+msgstr "เปรียบเทียบไฟล์"
+
+#: src/HexEditorGui.h:416 src/HexEditorGui.cpp:206
+msgid "Calculate Checksum"
+msgstr "คำนวณเช็คซัม"
+
+#: src/HexEditorGui.h:447
+msgid "Copy Selected Block As"
+msgstr "คัดลอกบล็อกที่เลือกเป็น"
+
+#: src/HexEditorGui.h:474
+msgid "XORView Thru Warning!"
+msgstr "คำเตือน XORView Thru!"
+
+#: src/HexEditorGui.h:523 src/HexEditorGui.cpp:280
+msgid "Preferences"
+msgstr "การตั้งค่า"
+
+#: src/HexEditorGui.h:549
+msgid "Disk/Partition Backup Tool"
+msgstr "เครื่องมือสำรองดิสก์/พาร์ติชัน"
+
+#: src/HexEditorGui.h:575
+msgid "Disk/Partition Restore Tool"
+msgstr "เครื่องมือกู้คืนดิสก์/พาร์ติชัน"
+
+#: src/HexEditorGui.h:600
+msgid "Disk/Partition Erase Tool"
+msgstr "เครื่องมือล้างดิสก์/พาร์ติชัน"
+
+#: src/HexEditor.h:217 src/HexEditor.h:237
+msgid "Clipboard could not be opened."
+msgstr "ไม่สามารถเปิดคลิปบอร์ดได้"
+
+#: src/HexEditor.h:217 src/HexEditor.h:237 src/HexEditor.cpp:1562
+msgid "Operation cancelled!"
+msgstr "ยกเลิกการทำงานแล้ว!"
+
+#: src/HexEditor.h:217 src/HexEditor.h:237 src/HexEditor.cpp:1562
+msgid "Copy To Clipboard Error"
+msgstr "ข้อผิดพลาดในการคัดลอกไปยังคลิปบอร์ด"
+
+#: src/FAL.cpp:175
+msgid "Device is not mounted"
+msgstr "อุปกรณ์ไม่ได้ถูกมาวนต์"
+
+#: src/FAL.cpp:175 src/FAL.cpp:221 src/FAL.cpp:240 src/FAL.cpp:252
+#: src/FAL.cpp:272 src/FAL.cpp:286 src/FAL.cpp:310 src/FAL.cpp:321
+#: src/FAL.cpp:337 src/FAL.cpp:430 src/FAL.cpp:438 src/HexDialogs.cpp:707
+#: src/HexDialogs.cpp:2213 src/HexDialogs.cpp:2217 src/HexDialogs.cpp:2666
+#: src/HexEditor.cpp:245 src/HexEditor.cpp:433 src/HexEditor.cpp:473
+#: src/HexEditor.cpp:616 src/HexEditor.cpp:647 src/HexEditorFrame.cpp:616
+#: src/HexEditorFrame.cpp:632 src/HexEditorFrame.cpp:636
+#: src/HexEditorFrame.cpp:1210
+msgid "Error"
+msgstr "ข้อผิดพลาด"
+
+#: src/FAL.cpp:221 src/FAL.cpp:258 src/FAL.cpp:321
+msgid "File is not readable by permissions."
+msgstr "สิทธิ์ไม่เพียงพอ อ่านไฟล์ไม่ได้"
+
+#: src/FAL.cpp:221
+msgid "Please change file permissons or run this program with Windows UAC privileges."
+msgstr "โปรดเปลี่ยนสิทธิ์ของไฟล์หรือรันโปรแกรมนี้ด้วยสิทธิ์ Windows UAC"
+
+#: src/FAL.cpp:240 src/FAL.cpp:310
+msgid "Process cannot open."
+msgstr "เปิดโปรเซสไม่ได้"
+
+#: src/FAL.cpp:252
+msgid "File does not exists at path:"
+msgstr "ไม่มีไฟล์อยู่ที่พาธนี้:"
+
+#: src/FAL.cpp:259
+msgid "Please change file permissons or run this program with root privileges."
+msgstr "โปรดเปลี่ยนสิทธิ์ของไฟล์หรือรันโปรแกรมนี้ด้วยสิทธิ์ root."
+
+#: src/FAL.cpp:260
+msgid "You can also try to own the file temporarily (requires root's password.)"
+msgstr "คุณยังลองรับสิทธิ์ครอบครองไฟล์ชั่วคราวได้ (ต้องใช้รหัสผ่าน root)"
+
+#: src/FAL.cpp:261
+msgid "Do you want to own the file?"
+msgstr "คุณต้องการรับสิทธิ์ครอบครองไฟล์นี้หรือไม่?"
+
+#: src/FAL.cpp:261 src/HexEditor.cpp:1556
+msgid "Warning"
+msgstr "คำเตือน"
+
+#: src/FAL.cpp:272
+msgid "Unknown error on \"stat -c %U"
+msgstr "ข้อผิดพลาดไม่ทราบสาเหตุใน \"stat -c %U"
+
+#: src/FAL.cpp:286
+msgid "For using this function, please install \"gnomesu\" or \"gksu\" tools first."
+msgstr "หากต้องการใช้ฟังก์ชันนี้ โปรดติดตั้งเครื่องมือ \"gnomesu\" หรือ \"gksu\" ก่อน"
+
+#: src/FAL.cpp:321
+msgid "Please change file permissons or run this program with root privileges"
+msgstr "โปรดเปลี่ยนสิทธิ์ของไฟล์หรือรันโปรแกรมนี้ด้วยสิทธิ์ root"
+
+#: src/FAL.cpp:337 src/HexEditor.cpp:245 src/HexEditorFrame.cpp:546
+msgid "File cannot open."
+msgstr "ไม่สามารถเปิดไฟล์ได้"
+
+#: src/FAL.cpp:430
+msgid "File load error!.\nFile closed but not opened while access change. For avoid corruption close the program"
+msgstr "ข้อผิดพลาดในการโหลดไฟล์!\nไฟล์ถูกปิดและเปิดใหม่ไม่ได้ระหว่างการเปลี่ยนสิทธิ์การเข้าถึง เพื่อป้องกันความเสียหายโปรดปิดโปรแกรม"
+
+#: src/FAL.cpp:438
+msgid "File cannot open in this mode : "
+msgstr "ไม่สามารถเปิดไฟล์ในโหมดนี้ได้: "
+
+#: src/FAL.cpp:453
+msgid "Access Invalid"
+msgstr "การเข้าถึงไม่ถูกต้อง"
+
+#: src/FAL.cpp:467 src/FAL.cpp:477 src/FAL.cpp:487
+msgid "Not Enought RAM"
+msgstr "RAM ไม่เพียงพอ"
+
+#: src/FAL.cpp:578
+msgid "Error on Write operation to Process RAM"
+msgstr "ข้อผิดพลาดในการเขียน RAM ของโปรเซส"
+
+#: src/FAL.cpp:578
+msgid "FATAL ERROR"
+msgstr "ข้อผิดพลาดร้ายแรง"
+
+#: src/HexDialogs.cpp:76
+msgid "Value is not hexadecimal!"
+msgstr "ค่านี้ไม่ใช่เลขฐานสิบหก!"
+
+#: src/HexDialogs.cpp:76 src/HexDialogs.cpp:82
+msgid "Format Error!"
+msgstr "รูปแบบไม่ถูกต้อง!"
+
+#: src/HexDialogs.cpp:82
+msgid "Value must be even digit!"
+msgstr "ค่าต้องมีจำนวนหลักเป็นเลขคู่!"
+
+#: src/HexDialogs.cpp:163 src/HexEditorGui.cpp:735 src/HexEditorGui.cpp:741
+#: src/HexEditorCtrl/HexEditorCtrl.cpp:44
+#: src/HexEditorCtrl/HexEditorCtrlGui.cpp:33
+msgid "Offset"
+msgstr "ออฟเซ็ต"
+
+#: src/HexDialogs.cpp:169 src/HexEditorGui.cpp:741
+msgid "Sector"
+msgstr "เซกเตอร์"
+
+#: src/HexDialogs.cpp:465
+msgid "Finding Some Bytes..."
+msgstr "กำลังค้นหาไบต์..."
+
+#: src/HexDialogs.cpp:467 src/HexDialogs.cpp:717
+msgid "wxHexEditor Searching"
+msgstr "wxHexEditor กำลังค้นหา"
+
+#: src/HexDialogs.cpp:502 src/HexDialogs.cpp:933 src/HexDialogs.cpp:1084
+msgid "Search Speed : "
+msgstr "ความเร็วการค้นหา: "
+
+#: src/HexDialogs.cpp:502 src/HexDialogs.cpp:933 src/HexDialogs.cpp:1084
+#: src/HexDialogs.cpp:2412 src/HexDialogs.cpp:2775 src/HexDialogs.cpp:3228
+#: src/HexDialogs.cpp:3318 src/HexDialogs.cpp:3379 src/HexEditor.cpp:195
+#: src/HexEditor.cpp:427
+msgid "MB/s"
+msgstr ""
+
+#: src/HexDialogs.cpp:544 src/HexDialogs.cpp:1144
+msgid "Search"
+msgstr "ค้นหา"
+
+#: src/HexDialogs.cpp:561 src/HexDialogs.cpp:1152
+msgid "Search value not found"
+msgstr "ไม่พบค่าที่ค้นหา"
+
+#: src/HexDialogs.cpp:561 src/HexDialogs.cpp:1152
+msgid "Nothing found!"
+msgstr "ไม่พบสิ่งใด!"
+
+#: src/HexDialogs.cpp:715
+msgid "Finding matches..."
+msgstr "กำลังค้นหารายการที่ตรงกัน..."
+
+#: src/HexDialogs.cpp:1159
+#, c-format
+msgid "Found %d matches."
+msgstr "พบ %d รายการที่ตรงกัน"
+
+#: src/HexDialogs.cpp:1159
+msgid "Find All Done!"
+msgstr "ค้นหาทั้งหมดเสร็จแล้ว!"
+
+#: src/HexDialogs.cpp:1653 src/HexDialogs.cpp:1678
+msgid "Search and Replace sizes are not equal!\nReplacing with different size are not supported yet."
+msgstr "ขนาดของข้อความค้นหากับข้อความแทนที่ไม่เท่ากัน!\nยังไม่รองรับการแทนที่ด้วยขนาดต่างกัน"
+
+#: src/HexDialogs.cpp:1653 src/HexDialogs.cpp:1678 src/HexDialogs.cpp:2009
+#: src/HexEditor.cpp:164
+msgid "Error!"
+msgstr "ข้อผิดพลาด!"
+
+#: src/HexDialogs.cpp:1661 src/HexDialogs.cpp:1699 src/HexEditorFrame.cpp:300
+#: src/HexEditorGui.cpp:139 src/HexEditorGui.cpp:955
+msgid "Replace"
+msgstr "แทนที่"
+
+#: src/HexDialogs.cpp:1720
+#, c-format
+msgid "%d records changed."
+msgstr "เปลี่ยนแปลง %d รายการ"
+
+#: src/HexDialogs.cpp:1720 src/HexEditor.cpp:1570 src/HexEditorFrame.cpp:721
+msgid "Info"
+msgstr "ข้อมูล"
+
+#: src/HexDialogs.cpp:1768
+msgid "Not Available"
+msgstr "ใช้ไม่ได้"
+
+#: src/HexDialogs.cpp:1774
+msgid "Raw Hex"
+msgstr "เลขฐานสิบหกดิบ"
+
+#: src/HexDialogs.cpp:1775
+msgid "With Space"
+msgstr "มีช่องว่าง"
+
+#: src/HexDialogs.cpp:1776
+msgid "Quad Hex"
+msgstr "เลขฐานสิบหกสี่ชุด"
+
+#: src/HexDialogs.cpp:1777
+msgid "with 0x"
+msgstr "มี 0x"
+
+#: src/HexDialogs.cpp:1778
+msgid "with 0x and Comma"
+msgstr "มี 0x และจุลภาค"
+
+#: src/HexDialogs.cpp:1785
+msgid "HTML format"
+msgstr "รูปแบบ HTML"
+
+#: src/HexDialogs.cpp:1786
+msgid "HTML with TAGs"
+msgstr "HTML พร้อมแท็ก"
+
+#: src/HexDialogs.cpp:1787
+msgid "phpBB forum style"
+msgstr "สไตล์ฟอรัม phpBB"
+
+#: src/HexDialogs.cpp:1788
+msgid "WiKi format"
+msgstr "รูปแบบวิกิ"
+
+#: src/HexDialogs.cpp:1789
+msgid "WiKi with TAGs"
+msgstr "วิกิพร้อมแท็ก"
+
+#: src/HexDialogs.cpp:1795
+msgid "8bit - Byte "
+msgstr "8 บิต - ไบต์ "
+
+#: src/HexDialogs.cpp:1796
+msgid "16bit - Words"
+msgstr "16 บิต - เวิร์ด"
+
+#: src/HexDialogs.cpp:1797
+msgid "32bit - Dwords"
+msgstr "32 บิต - ดับเบิลเวิร์ด"
+
+#: src/HexDialogs.cpp:1798
+msgid "64bit - Qwords"
+msgstr "64 บิต - ควอดเวิร์ด"
+
+#: src/HexDialogs.cpp:2009
+msgid "Selected block bigger than limit."
+msgstr "บล็อกที่เลือกใหญ่เกินกำหนด"
+
+#: src/HexDialogs.cpp:2213
+msgid "File #1 is not readable."
+msgstr "ไม่สามารถอ่านไฟล์ #1 ได้"
+
+#: src/HexDialogs.cpp:2217
+msgid "File #2 is not readable."
+msgstr "ไม่สามารถอ่านไฟล์ #2 ได้"
+
+#: src/HexDialogs.cpp:2233
+msgid "Error, File #1 cannot open."
+msgstr "ข้อผิดพลาด ไม่สามารถเปิดไฟล์ #1 ได้"
+
+#: src/HexDialogs.cpp:2237
+msgid "Error, File #2 cannot open."
+msgstr "ข้อผิดพลาด ไม่สามารถเปิดไฟล์ #2 ได้"
+
+#: src/HexDialogs.cpp:2243
+msgid "Error, Save File cannot open."
+msgstr "ข้อผิดพลาด ไม่สามารถเปิดไฟล์สำหรับบันทึกได้"
+
+#: src/HexDialogs.cpp:2246
+msgid "Comparing files..."
+msgstr "กำลังเปรียบเทียบไฟล์..."
+
+#: src/HexDialogs.cpp:2248
+msgid "wxHexEditor Comparing"
+msgstr "wxHexEditor กำลังเปรียบเทียบ"
+
+#: src/HexDialogs.cpp:2402
+msgid "Sorry, this program supports up to 500K differences."
+msgstr "ขออภัย โปรแกรมนี้รองรับความแตกต่างได้สูงสุด 500K รายการ"
+
+#: src/HexDialogs.cpp:2402
+msgid "Remaining differences not shown."
+msgstr "ความแตกต่างที่เหลือไม่ได้แสดงไว้"
+
+#: src/HexDialogs.cpp:2402
+msgid "Error on Comparison"
+msgstr "ข้อผิดพลาดในการเปรียบเทียบ"
+
+#: src/HexDialogs.cpp:2412
+msgid "Comparison Speed : "
+msgstr "ความเร็วการเปรียบเทียบ: "
+
+#: src/HexDialogs.cpp:2434
+msgid "File #1 : "
+msgstr "ไฟล์ #1: "
+
+#: src/HexDialogs.cpp:2434
+msgid "File #2 : "
+msgstr "ไฟล์ #2: "
+
+#: src/HexDialogs.cpp:2477 src/HexDialogs.cpp:2481
+msgid "This part doesn't exist at compared file"
+msgstr "ส่วนนี้ไม่มีอยู่ในไฟล์ที่เปรียบเทียบ"
+
+#: src/HexDialogs.cpp:2524
+msgid "Error, Save File is not selected."
+msgstr "ข้อผิดพลาด ยังไม่ได้เลือกไฟล์สำหรับบันทึก"
+
+#: src/HexDialogs.cpp:2666
+msgid "Cannot calculate checksum of an empty file."
+msgstr "ไม่สามารถคำนวณเช็คซัมของไฟล์ว่างได้"
+
+#: src/HexDialogs.cpp:2672
+msgid "File: "
+msgstr "ไฟล์: "
+
+#: src/HexDialogs.cpp:2673
+msgid "Notice: Checksum includes non-saved changes."
+msgstr "หมายเหตุ: เช็คซัมรวมการเปลี่ยนแปลงที่ยังไม่บันทึกด้วย"
+
+#: src/HexDialogs.cpp:2691
+msgid "Results copied to the clipboard."
+msgstr "คัดลอกผลลัพธ์ไปยังคลิปบอร์ดแล้ว"
+
+#: src/HexDialogs.cpp:2691
+msgid "Checksum Results"
+msgstr "ผลลัพธ์เช็คซัม"
+
+#: src/HexDialogs.cpp:2712 src/HexEditor.cpp:173
+msgid "Please wait while calculating checksum."
+msgstr "โปรดรอระหว่างคำนวณเช็คซัม"
+
+#: src/HexDialogs.cpp:2714 src/HexEditor.cpp:175
+msgid "Calculating Checksum"
+msgstr "กำลังคำนวณเช็คซัม"
+
+#: src/HexDialogs.cpp:2775 src/HexEditor.cpp:195
+msgid "Hash Speed : "
+msgstr "ความเร็วการแฮช: "
+
+#: src/HexDialogs.cpp:3161
+msgid "Are you sure about resetting colours?"
+msgstr "คุณแน่ใจหรือไม่ที่จะรีเซ็ตสี?"
+
+#: src/HexDialogs.cpp:3161
+msgid "Resetting Hex Colours"
+msgstr "กำลังรีเซ็ตสีเลขฐานสิบหก"
+
+#: src/HexDialogs.cpp:3200
+msgid "Please wait while backing up disk/partition image."
+msgstr "โปรดรอระหว่างสำรองอิมเมจดิสก์/พาร์ติชัน"
+
+#: src/HexDialogs.cpp:3202
+msgid "Disk/Partition Backup"
+msgstr "สำรองดิสก์/พาร์ติชัน"
+
+#: src/HexDialogs.cpp:3220
+msgid "Error on writing to backup image."
+msgstr "ข้อผิดพลาดในการเขียนอิมเมจสำรอง"
+
+#: src/HexDialogs.cpp:3220 src/HexDialogs.cpp:3285
+msgid "ERROR!"
+msgstr "ข้อผิดพลาด!"
+
+#: src/HexDialogs.cpp:3228
+msgid "Backup Speed : "
+msgstr "ความเร็วการสำรอง: "
+
+#: src/HexDialogs.cpp:3257
+msgid "Backup operation completed."
+msgstr "การสำรองข้อมูลเสร็จสมบูรณ์"
+
+#: src/HexDialogs.cpp:3257 src/HexDialogs.cpp:3326 src/HexDialogs.cpp:3386
+msgid "Operation Complete"
+msgstr "การทำงานเสร็จสมบูรณ์"
+
+#: src/HexDialogs.cpp:3281 src/HexDialogs.cpp:3341
+msgid "WARNING! THIS OPERATION WILL DESTROY EVERY INFORMATION AT :\n"
+msgstr "คำเตือน! การกระทำนี้จะทำลายข้อมูลทั้งหมดที่:\n"
+
+#: src/HexDialogs.cpp:3281 src/HexDialogs.cpp:3341
+msgid "ARE YOU SURE?"
+msgstr ""
+
+#: src/HexDialogs.cpp:3281 src/HexDialogs.cpp:3290 src/HexDialogs.cpp:3341
+msgid "WARNING!"
+msgstr "คำเตือน!"
+
+#: src/HexDialogs.cpp:3285
+msgid "ERROR!: Disk space is smaller than the image file."
+msgstr "ข้อผิดพลาด!: พื้นที่ดิสก์น้อยกว่าไฟล์อิมเมจ"
+
+#: src/HexDialogs.cpp:3290
+msgid "WARNING!: Disk space is bigger than the image file. \nRemaining space will remain untouched."
+msgstr "คำเตือน!: พื้นที่ดิสก์มากกว่าไฟล์อิมเมจ\nพื้นที่ที่เหลือจะไม่ถูกแตะต้อง"
+
+#: src/HexDialogs.cpp:3294
+msgid "Please wait while restoring disk/partition."
+msgstr "โปรดรอระหว่างกู้คืนดิสก์/พาร์ติชัน"
+
+#: src/HexDialogs.cpp:3296
+msgid "Disk/Partition Restore"
+msgstr "กู้คืนดิสก์/พาร์ติชัน"
+
+#: src/HexDialogs.cpp:3318
+msgid "Restore Speed : "
+msgstr "ความเร็วการกู้คืน: "
+
+#: src/HexDialogs.cpp:3326
+msgid "Restore operation completed."
+msgstr "การกู้คืนเสร็จสมบูรณ์"
+
+#: src/HexDialogs.cpp:3344
+msgid "Please wait while erasing disk/partition image."
+msgstr "โปรดรอระหว่างล้างอิมเมจดิสก์/พาร์ติชัน"
+
+#: src/HexDialogs.cpp:3346
+msgid "Disk/Partition Erase"
+msgstr "ล้างดิสก์/พาร์ติชัน"
+
+#: src/HexDialogs.cpp:3379
+msgid "Erase Speed : "
+msgstr "ความเร็วการล้าง: "
+
+#: src/HexDialogs.cpp:3386
+msgid "Erase operation completed."
+msgstr "การล้างเสร็จสมบูรณ์"
+
+#: src/HexEditor.cpp:164
+msgid "Cannot read hash file!"
+msgstr "ไม่สามารถอ่านไฟล์แฮชได้!"
+
+#: src/HexEditor.cpp:208
+msgid "File Corrupt!"
+msgstr "ไฟล์เสียหาย!"
+
+#: src/HexEditor.cpp:208
+msgid "File Hash:"
+msgstr "แฮชไฟล์:"
+
+#: src/HexEditor.cpp:211
+msgid "Hash File:"
+msgstr "ไฟล์แฮช:"
+
+#: src/HexEditor.cpp:212 src/HexEditor.cpp:216
+msgid "Hash Result"
+msgstr "ผลลัพธ์แฮช"
+
+#: src/HexEditor.cpp:216
+msgid "File Verified."
+msgstr "ตรวจสอบไฟล์ผ่านแล้ว"
+
+#: src/HexEditor.cpp:223
+msgid "Critical Error. File pointer is not empty!"
+msgstr "ข้อผิดพลาดร้ายแรง ตัวชี้ไฟล์ไม่ว่าง!"
+
+#: src/HexEditor.cpp:335
+msgid "Switching to XORView Thru mode will reset Undo&Redo buffer. Unsaved changes will be discarded.\n Note also that you can't use methods that change file size (like delete and inject) while XORView Thru mode is active."
+msgstr "การสลับไปโหมด XORView Thru จะรีเซ็ตบัฟเฟอร์เลิกทำ/ทำซ้ำ และการเปลี่ยนแปลงที่ยังไม่บันทึกจะสูญหาย\nโปรดทราบว่าขณะเปิดโหมด XORView Thru คุณจะใช้การกระทำที่เปลี่ยนขนาดไฟล์ (เช่น ลบและแทรก) ไม่ได้"
+
+#: src/HexEditor.cpp:335
+msgid "XORView Thru Warning"
+msgstr "คำเตือน XORView Thru"
+
+#: src/HexEditor.cpp:355
+msgid "File in Read Only mode. Cannot save file."
+msgstr "ไฟล์อยู่ในโหมดอ่านอย่างเดียว บันทึกไม่ได้"
+
+#: src/HexEditor.cpp:355 src/HexEditor.cpp:364 src/HexEditor.cpp:380
+msgid "File Save"
+msgstr "บันทึกไฟล์"
+
+#: src/HexEditor.cpp:359
+msgid "File has some insertion/deletions. You cannot save this file-self (yet). Please use SaveAs."
+msgstr "ไฟล์มีการแทรก/ลบ จึงยังบันทึกทับไฟล์เดิมไม่ได้ โปรดใช้บันทึกเป็น"
+
+#: src/HexEditor.cpp:359
+msgid "File Save Error."
+msgstr "ข้อผิดพลาดในการบันทึกไฟล์."
+
+#: src/HexEditor.cpp:364
+msgid "Do you want to save this file?"
+msgstr "คุณต้องการบันทึกไฟล์นี้หรือไม่?"
+
+#: src/HexEditor.cpp:369
+msgid "File cannot saved. Operation Cancelled"
+msgstr "บันทึกไฟล์ไม่สำเร็จ ยกเลิกการทำงาน"
+
+#: src/HexEditor.cpp:369
+msgid "File Save Error"
+msgstr "ข้อผิดพลาดในการบันทึกไฟล์"
+
+#: src/HexEditor.cpp:380
+msgid "File is not changed. Nothing to save.\n"
+msgstr "ไฟล์ไม่มีการเปลี่ยนแปลง ไม่มีอะไรต้องบันทึก\n"
+
+#: src/HexEditor.cpp:393
+#, c-format
+msgid "There are not enough free disk space.\nRequired: %s\nAvailable: %s"
+msgstr "พื้นที่ดิสก์ว่างไม่เพียงพอ\nต้องการ: %s\nมีอยู่: %s"
+
+#: src/HexEditor.cpp:395
+msgid "Not Enought Space"
+msgstr "พื้นที่ไม่เพียงพอ"
+
+#: src/HexEditor.cpp:404
+msgid "File save in progress"
+msgstr "กำลังบันทึกไฟล์"
+
+#: src/HexEditor.cpp:406
+msgid "Saving file"
+msgstr "กำลังบันทึกไฟล์"
+
+#: src/HexEditor.cpp:427
+msgid "Write Speed : "
+msgstr "ความเร็วการเขียน: "
+
+#: src/HexEditor.cpp:433
+msgid "File cannot save as "
+msgstr "ไม่สามารถบันทึกไฟล์เป็น "
+
+#: src/HexEditor.cpp:446
+msgid "Do you want to save file?\n"
+msgstr "คุณต้องการบันทึกไฟล์หรือไม่?\n"
+
+#: src/HexEditor.cpp:446
+msgid "File Has Changed!"
+msgstr "ไฟล์มีการเปลี่ยนแปลง!"
+
+#: src/HexEditor.cpp:461
+msgid "TAG file cannot be saved to default location.\nDo you want to Export TAGs file?"
+msgstr "ไม่สามารถบันทึกไฟล์แท็กไปยังตำแหน่งเริ่มต้นได้\nต้องการส่งออกไฟล์แท็กหรือไม่?"
+
+#: src/HexEditor.cpp:461
+msgid "TAGs Cannot Be Saved!!"
+msgstr "บันทึกแท็กไม่ได้!!"
+
+#: src/HexEditor.cpp:463 src/HexEditorFrame.cpp:624
+msgid "Choose a file for export TAGs"
+msgstr "เลือกไฟล์เพื่อส่งออกแท็ก"
+
+#: src/HexEditor.cpp:473
+msgid "TAGs cannot be exported to file : "
+msgstr "ไม่สามารถส่งออกแท็กไปยังไฟล์: "
+
+#: src/HexEditor.cpp:576
+msgid "Enter hex value(s) for fill"
+msgstr "ป้อนค่าเลขฐานสิบหกเพื่อเติม"
+
+#: src/HexEditor.cpp:576
+msgid "Fill Dialog"
+msgstr "กล่องกำหนดการเติม"
+
+#: src/HexEditor.cpp:577
+msgid "Fill"
+msgstr "เติม"
+
+#: src/HexEditor.cpp:595
+msgid "Choose a file for saving dump"
+msgstr "เลือกไฟล์เพื่อบันทึกดัมพ์"
+
+#: src/HexEditor.cpp:616
+msgid "Dump cannot saved as "
+msgstr "ไม่สามารถบันทึกดัมพ์เป็น "
+
+#: src/HexEditor.cpp:628 src/HexEditor.cpp:1405
+msgid "Showing Page: %"
+msgstr "กำลังแสดงหน้า: %"
+
+#: src/HexEditor.cpp:647
+msgid "File cannot read!"
+msgstr "ไม่สามารถอ่านไฟล์ได้!"
+
+#: src/HexEditor.cpp:1069 src/HexEditor.cpp:1409
+msgid "Selected Block: N/A"
+msgstr "บล็อกที่เลือก: ไม่มีข้อมูล"
+
+#: src/HexEditor.cpp:1070 src/HexEditor.cpp:1410
+msgid "Block Size: N/A"
+msgstr "ขนาดบล็อก: ไม่มีข้อมูล"
+
+#: src/HexEditor.cpp:1119 src/HexEditorFrame.cpp:306 src/HexEditorGui.cpp:92
+#: src/HexEditorGui.cpp:1552
+msgid "Copy"
+msgstr "คัดลอก"
+
+#: src/HexEditor.cpp:1120
+msgid "CopyAs"
+msgstr "คัดลอกเป็น"
+
+#: src/HexEditor.cpp:1121 src/HexEditorFrame.cpp:307 src/HexEditorGui.cpp:112
+msgid "Paste"
+msgstr "วาง"
+
+#: src/HexEditor.cpp:1124 src/HexEditorGui.cpp:107
+msgid "Cut"
+msgstr "ตัด"
+
+#: src/HexEditor.cpp:1125 src/HexEditorGui.cpp:122 src/HexPanels.cpp:338
+msgid "Delete"
+msgstr "ลบ"
+
+#: src/HexEditor.cpp:1126 src/HexEditorFrame.cpp:311 src/HexEditorGui.cpp:127
+msgid "Insert"
+msgstr "แทรก"
+
+#: src/HexEditor.cpp:1135 src/HexEditorGui.cpp:102
+msgid "Save As Dump"
+msgstr "บันทึกเป็นดัมพ์"
+
+#: src/HexEditor.cpp:1136 src/HexEditorGui.cpp:117
+msgid "Fill Selection"
+msgstr "เติมส่วนที่เลือก"
+
+#: src/HexEditor.cpp:1138
+msgid "Set Selection Block Start"
+msgstr "กำหนดจุดเริ่มต้นบล็อกที่เลือก"
+
+#: src/HexEditor.cpp:1140
+msgid "Set Selection Block End"
+msgstr "กำหนดจุดสิ้นสุดบล็อกที่เลือก"
+
+#: src/HexEditor.cpp:1142
+msgid "Quick Tag"
+msgstr "แท็กด่วน"
+
+#: src/HexEditor.cpp:1142
+msgid "Creates empty tag with Random Color."
+msgstr "สร้างแท็กว่างด้วยสีสุ่ม"
+
+#: src/HexEditor.cpp:1143
+msgid "New Tag"
+msgstr "แท็กใหม่"
+
+#: src/HexEditor.cpp:1144
+msgid "Tag Edit"
+msgstr "แก้ไขแท็ก"
+
+#: src/HexEditor.cpp:1406
+msgid "Cursor Offset: "
+msgstr "ออฟเซ็ตเคอร์เซอร์: "
+
+#: src/HexEditor.cpp:1407
+#, c-format
+msgid "Cursor Value: %u"
+msgstr "ค่าเคอร์เซอร์: %u"
+
+#: src/HexEditor.cpp:1413
+msgid "Selected Block: %"
+msgstr "บล็อกที่เลือก: %"
+
+#: src/HexEditor.cpp:1414
+msgid "Block Size: %"
+msgstr "ขนาดบล็อก: %"
+
+#: src/HexEditor.cpp:1465
+#, c-format
+msgid "Notice!: This command will increase the file size and will generate too much overhead on file save.\nHow many bytes do you want to inject to location to offset location %lld?"
+msgstr "ข้อควรระวัง!: คำสั่งนี้จะเพิ่มขนาดไฟล์และทำให้การบันทึกไฟล์มีต้นทุนสูงขึ้นมาก\nคุณต้องการแทรกกี่ไบต์ที่ตำแหน่งออฟเซ็ต %lld?"
+
+#: src/HexEditor.cpp:1466
+msgid "Bytes"
+msgstr "ไบต์"
+
+#: src/HexEditor.cpp:1466
+msgid "Injection!"
+msgstr "การแทรก!"
+
+#: src/HexEditor.cpp:1551
+msgid "WARNING:\nThe text you are copying includes a null character\n(00 in the hex pane) and will be truncated!\n\nIf copying to another file in wxHexEditor you\nshould copy from the Hex pane, not the text pane"
+msgstr "คำเตือน:\nข้อความที่คุณคัดลอกมีอักขระ null\n(00 ในช่องเลขฐานสิบหก) และจะถูกตัดให้สั้นลง!\n\nหากคัดลอกไปยังอีกไฟล์ใน wxHexEditor\nควรคัดลอกจากช่องเลขฐานสิบหก ไม่ใช่ช่องข้อความ"
+
+#: src/HexEditor.cpp:1562
+msgid "You have no RAM to copy this data."
+msgstr "RAM ไม่เพียงพอสำหรับคัดลอกข้อมูลนี้"
+
+#: src/HexEditor.cpp:1567
+msgid "You have tried to copy more than 10 MB of data.\nCopying above 10 MB to clipboard is not allowed.\nOnly internal copy buffer used!"
+msgstr "คุณพยายามคัดลอกข้อมูลเกิน 10 MB\nไม่อนุญาตให้คัดลอกเกิน 10 MB ไปยังคลิปบอร์ด\nจะใช้บัฟเฟอร์คัดลอกภายในเท่านั้น!"
+
+#: src/HexEditor.cpp:1599
+msgid "No data available at clipboad!"
+msgstr "ไม่มีข้อมูลในคลิปบอร์ด!"
+
+#: src/HexEditor.cpp:1601
+msgid "Note: Used internal binary copy buffer at paste operation."
+msgstr "หมายเหตุ: การวางใช้บัฟเฟอร์คัดลอกไบนารีภายใน"
+
+#: src/HexEditorFrame.cpp:197
+msgid "License Agreement"
+msgstr "ข้อตกลงสิทธิ์การใช้งาน"
+
+#: src/HexEditorFrame.cpp:293
+msgid "New File"
+msgstr "ไฟล์ใหม่"
+
+#: src/HexEditorFrame.cpp:293
+msgid "New file"
+msgstr "ไฟล์ใหม่"
+
+#: src/HexEditorFrame.cpp:294
+msgid "Open File"
+msgstr "เปิดไฟล์"
+
+#: src/HexEditorFrame.cpp:294
+msgid "Open"
+msgstr "เปิด"
+
+#: src/HexEditorFrame.cpp:295
+msgid "Save File"
+msgstr "บันทึกไฟล์"
+
+#: src/HexEditorFrame.cpp:295 src/HexEditorGui.cpp:1822
+#: src/HexEditorCtrl/wxHexCtrl/TagDialogGui.cpp:59
+msgid "Save"
+msgstr "บันทึก"
+
+#: src/HexEditorFrame.cpp:296
+msgid "SaveAs File"
+msgstr "บันทึกเป็นไฟล์"
+
+#: src/HexEditorFrame.cpp:296
+msgid "Save as"
+msgstr "บันทึกเป็น"
+
+#: src/HexEditorFrame.cpp:297
+msgid "Close File"
+msgstr "ปิดไฟล์"
+
+#: src/HexEditorFrame.cpp:297
+msgid "Close"
+msgstr "ปิด"
+
+#: src/HexEditorFrame.cpp:300
+msgid "Find and replace"
+msgstr "ค้นหาและแทนที่"
+
+#: src/HexEditorFrame.cpp:301
+msgid "GoTo"
+msgstr "ไปยัง"
+
+#: src/HexEditorFrame.cpp:303
+msgid "Undo"
+msgstr "เลิกทำ"
+
+#: src/HexEditorFrame.cpp:304
+msgid "Redo"
+msgstr "ทำซ้ำ"
+
+#: src/HexEditorFrame.cpp:306
+msgid "Copy Block"
+msgstr "คัดลอกบล็อก"
+
+#: src/HexEditorFrame.cpp:307
+msgid "Paste Block"
+msgstr "วางบล็อก"
+
+#: src/HexEditorFrame.cpp:309
+msgid "Cut Block"
+msgstr "ตัดบล็อก"
+
+#: src/HexEditorFrame.cpp:309
+msgid "Cuts selected block and copies to clipboard"
+msgstr "ตัดบล็อกที่เลือกและคัดลอกไปยังคลิปบอร์ด"
+
+#: src/HexEditorFrame.cpp:310
+msgid "Delete Block"
+msgstr "ลบบล็อก"
+
+#: src/HexEditorFrame.cpp:310
+msgid "Deletes selected block"
+msgstr "ลบบล็อกที่เลือก"
+
+#: src/HexEditorFrame.cpp:311
+msgid "Insert Block"
+msgstr "แทรกบล็อก"
+
+#: src/HexEditorFrame.cpp:323 src/HexEditorFrame.cpp:324
+#: src/HexEditorGui.cpp:156
+msgid "Toolbar"
+msgstr "แถบเครื่องมือ"
+
+#: src/HexEditorFrame.cpp:330 src/HexEditorFrame.cpp:331
+msgid "TagPanel"
+msgstr "แผงแท็ก"
+
+#: src/HexEditorFrame.cpp:341 src/HexEditorFrame.cpp:342
+#: src/HexEditorGui.cpp:168
+msgid "Disassembler Panel"
+msgstr "แผงดิแอสเซมเบลอร์"
+
+#: src/HexEditorFrame.cpp:353 src/HexEditorFrame.cpp:354
+msgid "Search Results"
+msgstr "ผลการค้นหา"
+
+#: src/HexEditorFrame.cpp:365 src/HexEditorFrame.cpp:366
+msgid "Comparison Results"
+msgstr "ผลการเปรียบเทียบ"
+
+#: src/HexEditorFrame.cpp:376 src/HexEditorFrame.cpp:377
+msgid "DataInterpreter"
+msgstr "ตัวแปลค่าข้อมูล"
+
+#: src/HexEditorFrame.cpp:387 src/HexEditorFrame.cpp:388
+#: src/HexEditorGui.cpp:160
+msgid "InfoPanel"
+msgstr "แผงข้อมูล"
+
+#: src/HexEditorFrame.cpp:477
+msgid "MD5 File detected. Do you request MD5 verification?"
+msgstr "พบไฟล์ MD5 ต้องการตรวจสอบ MD5 หรือไม่?"
+
+#: src/HexEditorFrame.cpp:477 src/HexEditorFrame.cpp:480
+#: src/HexEditorFrame.cpp:483
+msgid "Checksum File Detected"
+msgstr "พบไฟล์เช็คซัม"
+
+#: src/HexEditorFrame.cpp:480
+msgid "SHA1 File detected. Do you request SHA1 verification?"
+msgstr "พบไฟล์ SHA1 ต้องการตรวจสอบ SHA1 หรือไม่?"
+
+#: src/HexEditorFrame.cpp:483
+msgid "SHA256 File detected. Do you request SHA256 verification?"
+msgstr "พบไฟล์ SHA256 ต้องการตรวจสอบ SHA256 หรือไม่?"
+
+#: src/HexEditorFrame.cpp:518
+msgid "Please indicate file size in decimal."
+msgstr "โปรดระบุขนาดไฟล์เป็นเลขฐานสิบ"
+
+#: src/HexEditorFrame.cpp:519
+msgid "Enter File Size:"
+msgstr "ป้อนขนาดไฟล์:"
+
+#: src/HexEditorFrame.cpp:526
+#, c-format
+msgid "Wrong input: %d please retry..."
+msgstr "ข้อมูลที่ป้อนไม่ถูกต้อง: %d โปรดลองอีกครั้ง..."
+
+#: src/HexEditorFrame.cpp:530 src/HexEditorFrame.cpp:588
+msgid "Choose a file for save as"
+msgstr "เลือกไฟล์เพื่อบันทึกเป็น"
+
+#: src/HexEditorFrame.cpp:542
+msgid "File cannot create!"
+msgstr "ไม่สามารถสร้างไฟล์ได้!"
+
+#: src/HexEditorFrame.cpp:558
+msgid "Choose a file for editing"
+msgstr "เลือกไฟล์เพื่อแก้ไข"
+
+#: src/HexEditorFrame.cpp:608
+msgid "Choose a file for import TAGs"
+msgstr "เลือกไฟล์เพื่อนำเข้าแท็ก"
+
+#: src/HexEditorFrame.cpp:616
+msgid "TAGS cannot be imported from "
+msgstr "ไม่สามารถนำเข้าแท็กจาก "
+
+#: src/HexEditorFrame.cpp:632
+msgid "TAGs cannot be exported to "
+msgstr "ไม่สามารถส่งออกแท็กไปยัง "
+
+#: src/HexEditorFrame.cpp:636
+msgid "There is no TAGs to Export in current active file!"
+msgstr "ไฟล์ที่เปิดอยู่ไม่มีแท็กที่จะส่งออก!"
+
+#: src/HexEditorFrame.cpp:692
+msgid "Please enter process identification number."
+msgstr "โปรดป้อนหมายเลขประจำตัวโปรเซส (PID)"
+
+#: src/HexEditorFrame.cpp:692
+msgid "Enter PID:"
+msgstr "ป้อน PID:"
+
+#: src/HexEditorFrame.cpp:692 src/HexEditorGui.cpp:234
+msgid "Open Process RAM"
+msgstr "เปิด RAM ของโปรเซส"
+
+#: src/HexEditorFrame.cpp:721
+msgid "Please restart program for changes."
+msgstr "โปรดรีสตาร์ตโปรแกรมเพื่อให้การเปลี่ยนแปลงมีผล"
+
+#: src/HexEditorFrame.cpp:742
+msgid "This mode will write changes every change to file DIRECTLY."
+msgstr "โหมดนี้จะเขียนการเปลี่ยนแปลงลงไฟล์โดยตรงทุกครั้ง"
+
+#: src/HexEditorFrame.cpp:742
+msgid "Warning!"
+msgstr "คำเตือน!"
+
+#: src/HexEditorFrame.cpp:826
+msgid "wxHexEditor is a hex editor for HUGE files and devices."
+msgstr "wxHexEditor เป็นโปรแกรมแก้ไขเลขฐานสิบหกสำหรับไฟล์และอุปกรณ์ขนาดใหญ่"
+
+#: src/HexEditorFrame.cpp:935
+msgid "You needed administration privileges to see available devices"
+msgstr "ต้องใช้สิทธิ์ผู้ดูแลระบบจึงจะเห็นอุปกรณ์ที่ใช้ได้"
+
+#: src/HexEditorFrame.cpp:1210
+msgid "Cannot open dropped file: "
+msgstr "ไม่สามารถเปิดไฟล์ที่ลากมาวาง: "
+
+#: src/HexEditorFrame.cpp:1229 src/HexEditorGui.cpp:1032
+#, c-format
+msgid "New wxHexEditor version %s is available!"
+msgstr "มี wxHexEditor เวอร์ชันใหม่ %s ให้ใช้งานแล้ว!"
+
+#: src/HexEditorGui.cpp:29
+msgid "&New"
+msgstr "สร้างใหม่(&N)"
+
+#: src/HexEditorGui.cpp:29
+msgid "CTRL+N"
+msgstr ""
+
+#: src/HexEditorGui.cpp:29
+msgid "Creates a new file"
+msgstr "สร้างไฟล์ใหม่"
+
+#: src/HexEditorGui.cpp:33
+msgid "&Open"
+msgstr "เปิด(&O)"
+
+#: src/HexEditorGui.cpp:33
+msgid "CTRL+O"
+msgstr ""
+
+#: src/HexEditorGui.cpp:33
+msgid "Open a file"
+msgstr "เปิดไฟล์"
+
+#: src/HexEditorGui.cpp:37
+msgid "Open &Recent"
+msgstr "เปิดไฟล์ล่าสุด(&R)"
+
+#: src/HexEditorGui.cpp:39
+msgid "No Recent File"
+msgstr "ไม่มีไฟล์ล่าสุด"
+
+#: src/HexEditorGui.cpp:46
+msgid "&Save"
+msgstr "บันทึก(&S)"
+
+#: src/HexEditorGui.cpp:46
+msgid "CTRL+S"
+msgstr ""
+
+#: src/HexEditorGui.cpp:46
+msgid "Save modifications"
+msgstr "บันทึกการเปลี่ยนแปลง"
+
+#: src/HexEditorGui.cpp:51
+msgid "Save &As"
+msgstr "บันทึกเป็น(&A)"
+
+#: src/HexEditorGui.cpp:51
+msgid "SHIFT+CTRL+S"
+msgstr ""
+
+#: src/HexEditorGui.cpp:51
+msgid "Save current file as..."
+msgstr "บันทึกไฟล์ปัจจุบันเป็น..."
+
+#: src/HexEditorGui.cpp:56
+msgid "&Close"
+msgstr "ปิด(&C)"
+
+#: src/HexEditorGui.cpp:56
+msgid "CTRL+W"
+msgstr ""
+
+#: src/HexEditorGui.cpp:56
+msgid "Close current file"
+msgstr "ปิดไฟล์ปัจจุบัน"
+
+#: src/HexEditorGui.cpp:63
+msgid "Import TAGs"
+msgstr "นำเข้าแท็ก"
+
+#: src/HexEditorGui.cpp:67
+msgid "Export TAGs"
+msgstr "ส่งออกแท็ก"
+
+#: src/HexEditorGui.cpp:73
+msgid "&Quit"
+msgstr "ออก(&Q)"
+
+#: src/HexEditorGui.cpp:73
+msgid "CTRL+Q"
+msgstr ""
+
+#: src/HexEditorGui.cpp:73
+msgid "Quit the application"
+msgstr "ออกจากโปรแกรม"
+
+#: src/HexEditorGui.cpp:76
+msgid "&File"
+msgstr "ไฟล์(&F)"
+
+#: src/HexEditorGui.cpp:80
+msgid "&Undo"
+msgstr "เลิกทำ(&U)"
+
+#: src/HexEditorGui.cpp:80
+msgid "CTRL+Z"
+msgstr ""
+
+#: src/HexEditorGui.cpp:80
+msgid "Undo last operation"
+msgstr "เลิกทำการกระทำล่าสุด"
+
+#: src/HexEditorGui.cpp:85
+msgid "&Redo"
+msgstr "ทำซ้ำ(&R)"
+
+#: src/HexEditorGui.cpp:85
+msgid "CTRL+Y"
+msgstr ""
+
+#: src/HexEditorGui.cpp:85
+msgid "Reverts last undo"
+msgstr "ย้อนการเลิกทำล่าสุด"
+
+#: src/HexEditorGui.cpp:92
+msgid "CTRL+C"
+msgstr ""
+
+#: src/HexEditorGui.cpp:92
+msgid "Copies selection"
+msgstr "คัดลอกส่วนที่เลือก"
+
+#: src/HexEditorGui.cpp:97
+msgid "Copy As"
+msgstr "คัดลอกเป็น"
+
+#: src/HexEditorGui.cpp:97
+msgid "CTRL+SHIFT+C"
+msgstr ""
+
+#: src/HexEditorGui.cpp:97
+msgid "Copies selection in special format"
+msgstr "คัดลอกส่วนที่เลือกในรูปแบบพิเศษ"
+
+#: src/HexEditorGui.cpp:102
+msgid "CTRL+ALT+S"
+msgstr ""
+
+#: src/HexEditorGui.cpp:102
+msgid "Save selections as a file"
+msgstr "บันทึกส่วนที่เลือกเป็นไฟล์"
+
+#: src/HexEditorGui.cpp:107
+msgid "CTRL+X"
+msgstr ""
+
+#: src/HexEditorGui.cpp:107
+msgid "Cuts a selection"
+msgstr "ตัดส่วนที่เลือก"
+
+#: src/HexEditorGui.cpp:112
+msgid "CTRL+V"
+msgstr ""
+
+#: src/HexEditorGui.cpp:112
+msgid "Paste clipboard to cursor location"
+msgstr "วางคลิปบอร์ดที่ตำแหน่งเคอร์เซอร์"
+
+#: src/HexEditorGui.cpp:117
+msgid "Fill selection blocks"
+msgstr "เติมบล็อกที่เลือก"
+
+#: src/HexEditorGui.cpp:122
+msgid "Deletes selection"
+msgstr "ลบส่วนที่เลือก"
+
+#: src/HexEditorGui.cpp:127
+msgid "Inserts new bytes to cursor location"
+msgstr "แทรกไบต์ใหม่ที่ตำแหน่งเคอร์เซอร์"
+
+#: src/HexEditorGui.cpp:134
+msgid "CTRL+F"
+msgstr ""
+
+#: src/HexEditorGui.cpp:139
+msgid "CTRL+R"
+msgstr ""
+
+#: src/HexEditorGui.cpp:144
+msgid "CTRL+G"
+msgstr ""
+
+#: src/HexEditorGui.cpp:144
+msgid "Branches the given location"
+msgstr "กระโดดไปยังตำแหน่งที่กำหนด"
+
+#: src/HexEditorGui.cpp:148
+msgid "&Edit"
+msgstr "แก้ไข(&E)"
+
+#: src/HexEditorGui.cpp:152
+msgid "Data Interpreter"
+msgstr "ตัวแปลค่าข้อมูล"
+
+#: src/HexEditorGui.cpp:164
+msgid "TAG Panel"
+msgstr "แผงแท็ก"
+
+#: src/HexEditorGui.cpp:172
+msgid "Search Panel"
+msgstr "แผงค้นหา"
+
+#: src/HexEditorGui.cpp:176
+msgid "Comparison Panel"
+msgstr "แผงเปรียบเทียบ"
+
+#: src/HexEditorGui.cpp:182
+msgid "Zebra Striping"
+msgstr "ลายทางแถว"
+
+#: src/HexEditorGui.cpp:188
+msgid "Offset Control"
+msgstr "ส่วนออฟเซ็ต"
+
+#: src/HexEditorGui.cpp:193
+msgid "Hex Control"
+msgstr "ส่วนเลขฐานสิบหก"
+
+#: src/HexEditorGui.cpp:198
+msgid "Text Control"
+msgstr "ส่วนข้อความ"
+
+#: src/HexEditorGui.cpp:202
+msgid "&View"
+msgstr "มุมมอง(&V)"
+
+#: src/HexEditorGui.cpp:214
+msgid "XORView Thru"
+msgstr "มุมมอง XOR"
+
+#: src/HexEditorGui.cpp:214
+msgid "View your XOR encrypted file without decrypting!"
+msgstr "ดูไฟล์ที่เข้ารหัส XOR โดยไม่ต้องถอดรหัส!"
+
+#: src/HexEditorGui.cpp:217
+msgid "Tools"
+msgstr "เครื่องมือ"
+
+#: src/HexEditorGui.cpp:221
+msgid "Open RAM Device"
+msgstr "เปิดอุปกรณ์ RAM"
+
+#: src/HexEditorGui.cpp:226
+msgid "Open Disk Device"
+msgstr "เปิดอุปกรณ์ดิสก์"
+
+#: src/HexEditorGui.cpp:228
+msgid "N/A on this OS (yet)"
+msgstr "ยังไม่รองรับบนระบบปฏิบัติการนี้"
+
+#: src/HexEditorGui.cpp:241
+msgid "Device Image Tools"
+msgstr "เครื่องมืออิมเมจอุปกรณ์"
+
+#: src/HexEditorGui.cpp:243 src/HexEditorGui.cpp:1918
+msgid "Backup"
+msgstr "สำรองข้อมูล"
+
+#: src/HexEditorGui.cpp:247 src/HexEditorGui.cpp:1980
+msgid "Restore"
+msgstr "กู้คืน"
+
+#: src/HexEditorGui.cpp:251 src/HexEditorGui.cpp:2041
+msgid "Erase"
+msgstr "ล้าง"
+
+#: src/HexEditorGui.cpp:256
+msgid "Devices"
+msgstr "อุปกรณ์"
+
+#: src/HexEditorGui.cpp:260
+msgid "File Mode"
+msgstr "โหมดไฟล์"
+
+#: src/HexEditorGui.cpp:262
+msgid "Read Only"
+msgstr "อ่านอย่างเดียว"
+
+#: src/HexEditorGui.cpp:268
+msgid "Writeable"
+msgstr "เขียนได้"
+
+#: src/HexEditorGui.cpp:273
+msgid "Direct Write"
+msgstr "เขียนโดยตรง"
+
+#: src/HexEditorGui.cpp:283 src/HexEditorGui.cpp:912
+msgid "Options"
+msgstr "ตัวเลือก"
+
+#: src/HexEditorGui.cpp:287
+msgid "Donate"
+msgstr "บริจาค"
+
+#: src/HexEditorGui.cpp:287
+msgid "Donate some money to author as a return!"
+msgstr "บริจาคให้ผู้พัฒนาเพื่อเป็นการขอบคุณ!"
+
+#: src/HexEditorGui.cpp:291
+msgid "Wiki"
+msgstr "วิกิ"
+
+#: src/HexEditorGui.cpp:291
+msgid "Documentation page of wxHexEditor"
+msgstr "หน้าเอกสารของ wxHexEditor"
+
+#: src/HexEditorGui.cpp:295
+msgid "Bug Reporting"
+msgstr "รายงานข้อผิดพลาด"
+
+#: src/HexEditorGui.cpp:295
+msgid "Report bugs for smashing them!"
+msgstr "รายงานบั๊กเพื่อช่วยกำจัดมัน!"
+
+#: src/HexEditorGui.cpp:299
+msgid "&About"
+msgstr "เกี่ยวกับ(&A)"
+
+#: src/HexEditorGui.cpp:299
+msgid "F1"
+msgstr ""
+
+#: src/HexEditorGui.cpp:299
+msgid "Show info about this application"
+msgstr "แสดงข้อมูลเกี่ยวกับโปรแกรมนี้"
+
+#: src/HexEditorGui.cpp:302
+msgid "&Help"
+msgstr "ช่วยเหลือ(&H)"
+
+#: src/HexEditorGui.cpp:460
+msgid "Unsigned"
+msgstr "ไม่มีเครื่องหมาย"
+
+#: src/HexEditorGui.cpp:461
+msgid "Sans"
+msgstr "ไม่มีเชิง"
+
+#: src/HexEditorGui.cpp:465
+msgid "Big Endian"
+msgstr "Big Endian"
+
+#: src/HexEditorGui.cpp:478
+msgid "Binary"
+msgstr "เลขฐานสอง"
+
+#: src/HexEditorGui.cpp:490
+msgid "00000000"
+msgstr ""
+
+#: src/HexEditorGui.cpp:500
+msgid "Press enter to make changes!"
+msgstr "กด Enter เพื่อบันทึกการเปลี่ยนแปลง!"
+
+#: src/HexEditorGui.cpp:504
+msgid "Edit"
+msgstr "แก้ไข"
+
+#: src/HexEditorGui.cpp:506
+msgid "Allow editing by Data Interpreter Panel"
+msgstr "อนุญาตให้แก้ไขผ่านแผงแปลค่าข้อมูล"
+
+#: src/HexEditorGui.cpp:513
+msgid "8 bit"
+msgstr "8 บิต"
+
+#: src/HexEditorGui.cpp:519 src/HexEditorGui.cpp:530 src/HexEditorGui.cpp:541
+#: src/HexEditorGui.cpp:552 src/HexEditorGui.cpp:563 src/HexEditorGui.cpp:574
+msgid "0"
+msgstr ""
+
+#: src/HexEditorGui.cpp:524
+msgid "16 bit"
+msgstr "16 บิต"
+
+#: src/HexEditorGui.cpp:535
+msgid "32 bit"
+msgstr "32 บิต"
+
+#: src/HexEditorGui.cpp:546
+msgid "64 bit"
+msgstr "64 บิต"
+
+#: src/HexEditorGui.cpp:557
+msgid "Float"
+msgstr "ทศนิยมความละเอียดเดียว"
+
+#: src/HexEditorGui.cpp:568
+msgid "Double"
+msgstr "ทศนิยมความละเอียดสองเท่า"
+
+#: src/HexEditorGui.cpp:624
+msgid "Clear"
+msgstr "ล้าง"
+
+#: src/HexEditorGui.cpp:675 src/HexEditorGui.cpp:684
+msgid "INTEL"
+msgstr ""
+
+#: src/HexEditorGui.cpp:675
+msgid "AMD"
+msgstr ""
+
+#: src/HexEditorGui.cpp:680
+msgid "CPU Vendor"
+msgstr "ผู้ผลิต CPU"
+
+#: src/HexEditorGui.cpp:684
+msgid "AT&T"
+msgstr ""
+
+#: src/HexEditorGui.cpp:688
+msgid "Assembly Type"
+msgstr "ชนิดแอสเซมบลี"
+
+#: src/HexEditorGui.cpp:692
+msgid "16 Bit"
+msgstr "16 บิต"
+
+#: src/HexEditorGui.cpp:692
+msgid "32 Bit"
+msgstr "32 บิต"
+
+#: src/HexEditorGui.cpp:692
+msgid "64 Bit"
+msgstr "64 บิต"
+
+#: src/HexEditorGui.cpp:696
+msgid "Disassembly Bit Mode"
+msgstr "โหมดบิตของดิแอสเซมบลี"
+
+#: src/HexEditorGui.cpp:748 src/HexEditorGui.cpp:749 src/HexEditorGui.cpp:750
+#: src/HexEditorGui.cpp:751 src/HexEditorGui.cpp:752 src/HexEditorGui.cpp:753
+#: src/HexEditorGui.cpp:754 src/HexEditorGui.cpp:755 src/HexEditorGui.cpp:756
+#: src/HexEditorGui.cpp:757 src/HexEditorGui.cpp:863 src/HexEditorGui.cpp:864
+#: src/HexEditorGui.cpp:865 src/HexEditorGui.cpp:866 src/HexEditorGui.cpp:867
+#: src/HexEditorGui.cpp:868 src/HexEditorGui.cpp:869 src/HexEditorGui.cpp:870
+#: src/HexEditorGui.cpp:871 src/HexEditorGui.cpp:872 src/HexEditorGui.cpp:882
+#: src/HexEditorGui.cpp:883 src/HexEditorGui.cpp:884 src/HexEditorGui.cpp:885
+#: src/HexEditorGui.cpp:886 src/HexEditorGui.cpp:887 src/HexEditorGui.cpp:888
+#: src/HexEditorGui.cpp:889 src/HexEditorGui.cpp:890 src/HexEditorGui.cpp:891
+msgid " "
+msgstr ""
+
+#: src/HexEditorGui.cpp:760
+msgid "Decimal"
+msgstr "เลขฐานสิบ"
+
+#: src/HexEditorGui.cpp:764 src/HexEditorGui.cpp:905 src/HexEditorGui.cpp:1606
+msgid "Hex"
+msgstr "เลขฐานสิบหก"
+
+#: src/HexEditorGui.cpp:773
+msgid "Previous Sector"
+msgstr "เซกเตอร์ก่อนหน้า"
+
+#: src/HexEditorGui.cpp:778
+msgid "Next Sector"
+msgstr "เซกเตอร์ถัดไป"
+
+#: src/HexEditorGui.cpp:789
+msgid "From beginning"
+msgstr "จากจุดเริ่มต้น"
+
+#: src/HexEditorGui.cpp:789
+msgid "From here"
+msgstr "จากตำแหน่งนี้"
+
+#: src/HexEditorGui.cpp:789
+msgid "From end"
+msgstr "จากจุดสิ้นสุด"
+
+#: src/HexEditorGui.cpp:791
+msgid "Type of branch"
+msgstr "ชนิดการกระโดด"
+
+#: src/HexEditorGui.cpp:795
+msgid "Go!"
+msgstr "ไป!"
+
+#: src/HexEditorGui.cpp:858
+msgid "Search: "
+msgstr "ค้นหา: "
+
+#: src/HexEditorGui.cpp:875
+msgid "Replace: "
+msgstr "แทนที่ด้วย: "
+
+#: src/HexEditorGui.cpp:905
+msgid "Text"
+msgstr "ข้อความ"
+
+#: src/HexEditorGui.cpp:907
+msgid "Search as"
+msgstr "ค้นหาในรูปแบบ"
+
+#: src/HexEditorGui.cpp:914
+msgid "Match Case"
+msgstr "จับคู่ตัวพิมพ์ใหญ่เล็ก"
+
+#: src/HexEditorGui.cpp:917
+msgid "Search backwards"
+msgstr "ค้นหาย้อนหลัง"
+
+#: src/HexEditorGui.cpp:920
+msgid "Wrap around"
+msgstr "ค้นหาวนกลับ"
+
+#: src/HexEditorGui.cpp:923
+msgid "As UTF-8"
+msgstr "เป็น UTF-8"
+
+#: src/HexEditorGui.cpp:942
+msgid "Find All"
+msgstr "ค้นหาทั้งหมด"
+
+#: src/HexEditorGui.cpp:945
+msgid "Find Some Bytes"
+msgstr "ค้นหาไบต์"
+
+#: src/HexEditorGui.cpp:946
+msgid "This function finds some different values at file. Usefull for finding non-null sections at disks."
+msgstr "ฟังก์ชันนี้ค้นหาค่าที่แตกต่างกันในไฟล์ มีประโยชน์สำหรับหาช่วงที่ไม่ว่างในดิสก์"
+
+#: src/HexEditorGui.cpp:960
+msgid "Replace All"
+msgstr "แทนที่ทั้งหมด"
+
+#: src/HexEditorGui.cpp:965 src/HexEditorGui.cpp:1168
+#: src/HexEditorGui.cpp:1375 src/HexEditorGui.cpp:1549
+#: src/HexEditorGui.cpp:1618 src/HexEditorGui.cpp:1819
+#: src/HexEditorGui.cpp:1915 src/HexEditorGui.cpp:1977
+#: src/HexEditorGui.cpp:2038 src/HexEditorCtrl/wxHexCtrl/TagDialogGui.cpp:53
+msgid "Cancel"
+msgstr "ยกเลิก"
+
+#: src/HexEditorGui.cpp:1036
+msgid "Download new wxHexEditor"
+msgstr "ดาวน์โหลด wxHexEditor รุ่นใหม่"
+
+#: src/HexEditorGui.cpp:1036
+msgid "http://www.wxhexeditor.org"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1039
+msgid "Do not show this again."
+msgstr "ไม่ต้องแสดงอีก"
+
+#: src/HexEditorGui.cpp:1074
+msgid "File #1"
+msgstr "ไฟล์ #1"
+
+#: src/HexEditorGui.cpp:1078 src/HexEditorGui.cpp:1085
+#: src/HexEditorGui.cpp:1146 src/HexEditorGui.cpp:1240
+#: src/HexEditorGui.cpp:1906 src/HexEditorGui.cpp:1959
+msgid "Select a file"
+msgstr "เลือกไฟล์"
+
+#: src/HexEditorGui.cpp:1078 src/HexEditorGui.cpp:1085
+#: src/HexEditorGui.cpp:1240 src/HexEditorGui.cpp:1906
+#: src/HexEditorGui.cpp:1959
+msgid "*"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1081
+msgid "File #2"
+msgstr "ไฟล์ #2"
+
+#: src/HexEditorGui.cpp:1092
+msgid "Search For"
+msgstr "ค้นหาสำหรับ"
+
+#: src/HexEditorGui.cpp:1094
+msgid "Different bytes"
+msgstr "ไบต์ที่ต่างกัน"
+
+#: src/HexEditorGui.cpp:1098
+msgid "Same bytes"
+msgstr "ไบต์ที่เหมือนกัน"
+
+#: src/HexEditorGui.cpp:1107
+msgid "Stop comparison after"
+msgstr "หยุดเปรียบเทียบหลังจาก"
+
+#: src/HexEditorGui.cpp:1115
+msgid "hits"
+msgstr "รายการ"
+
+#: src/HexEditorGui.cpp:1125
+msgid "Merge sections if close as"
+msgstr "รวมช่วงถ้าห่างกันไม่เกิน"
+
+#: src/HexEditorGui.cpp:1133
+msgid "bytes"
+msgstr "ไบต์"
+
+#: src/HexEditorGui.cpp:1143
+msgid "Save Results to File"
+msgstr "บันทึกผลลัพธ์เป็นไฟล์"
+
+#: src/HexEditorGui.cpp:1146
+msgid "*.txt"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1157
+msgid "Connect files for scrolling"
+msgstr "เชื่อมไฟล์ให้เลื่อนพร้อมกัน"
+
+#: src/HexEditorGui.cpp:1158
+msgid "With this option enabled, compared files will always show same address location."
+msgstr "เมื่อเปิดตัวเลือกนี้ ไฟล์ที่เปรียบเทียบจะแสดงตำแหน่งที่อยู่เดียวกันเสมอ"
+
+#: src/HexEditorGui.cpp:1171
+msgid "Compare"
+msgstr "เปรียบเทียบ"
+
+#: src/HexEditorGui.cpp:1228
+msgid "File To Hash:"
+msgstr "ไฟล์ที่จะแฮช:"
+
+#: src/HexEditorGui.cpp:1235
+msgid "Current File"
+msgstr "ไฟล์ปัจจุบัน"
+
+#: src/HexEditorGui.cpp:1253
+msgid "MD"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1255
+msgid "MD2 (slow!)"
+msgstr "MD2 (ช้า!)"
+
+#: src/HexEditorGui.cpp:1258
+msgid "MD4"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1261
+msgid "MD5"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1268
+msgid "SHA"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1270
+msgid "SHA1"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1273
+msgid "SHA224"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1276
+msgid "SHA256"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1279
+msgid "SHA384"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1282
+msgid "SHA512"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1289
+msgid "RipeMD"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1291
+msgid "RipeMD128"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1294
+msgid "RipeMD160"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1297
+msgid "RipeMD256"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1300
+msgid "RipeMD320"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1307
+msgid "HAVAL"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1309
+msgid "HAVAL128"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1312
+msgid "HAVAL160"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1315
+msgid "HAVAL192"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1318
+msgid "HAVAL224"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1321
+msgid "HAVAL256"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1328
+msgid "TIGER"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1330
+msgid "TIGER128"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1333
+msgid "TIGER160"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1336
+msgid "TIGER192"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1343
+msgid "Others"
+msgstr "อื่น ๆ"
+
+#: src/HexEditorGui.cpp:1345
+msgid "ADLER32"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1348
+msgid "CRC32"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1351
+msgid "CRC32B"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1354
+msgid "WHIRLPOOL"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1357
+msgid "GOST"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1360
+msgid "SNEFRU128"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1363
+msgid "SNEFRU256"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1378
+msgid "Calculate"
+msgstr "คำนวณ"
+
+#: src/HexEditorGui.cpp:1478
+msgid "Copy As :"
+msgstr "คัดลอกเป็น:"
+
+#: src/HexEditorGui.cpp:1482
+msgid "Full Text"
+msgstr "ข้อความเต็ม"
+
+#: src/HexEditorGui.cpp:1482
+msgid "Special Hex"
+msgstr "เลขฐานสิบหกพิเศษ"
+
+#: src/HexEditorGui.cpp:1482
+msgid "Internet"
+msgstr "อินเทอร์เน็ต"
+
+#: src/HexEditorGui.cpp:1482
+msgid "C/C++ Source"
+msgstr "ซอร์ส C/C++"
+
+#: src/HexEditorGui.cpp:1482
+msgid "Assembler Source"
+msgstr "ซอร์สแอสเซมเบลอร์"
+
+#: src/HexEditorGui.cpp:1488
+msgid "Option:"
+msgstr "ตัวเลือก:"
+
+#: src/HexEditorGui.cpp:1508
+msgid "As BigEndian"
+msgstr "เป็น BigEndian"
+
+#: src/HexEditorGui.cpp:1514
+msgid "Bytes Per Line"
+msgstr "ไบต์ต่อบรรทัด"
+
+#: src/HexEditorGui.cpp:1516
+msgid "16"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1528
+msgid "Include Offset Part"
+msgstr "รวมส่วนออฟเซ็ต"
+
+#: src/HexEditorGui.cpp:1532
+msgid "Include Hex Part"
+msgstr "รวมส่วนเลขฐานสิบหก"
+
+#: src/HexEditorGui.cpp:1536
+msgid "Include Text Part"
+msgstr "รวมส่วนข้อความ"
+
+#: src/HexEditorGui.cpp:1591
+msgid "For switching XORView Thru mode, all Undo&Redo buffer will reset and non-saved changes will discarded.\nAlso you can't use methods that changes file size (like delete and inject) with XORView Thru mode enabled."
+msgstr "เมื่อสลับไปโหมด XORView Thru บัฟเฟอร์เลิกทำ/ทำซ้ำทั้งหมดจะถูกรีเซ็ตและการเปลี่ยนแปลงที่ยังไม่บันทึกจะสูญหาย\nและในโหมด XORView Thru คุณจะใช้การกระทำที่เปลี่ยนขนาดไฟล์ (เช่น ลบและแทรก) ไม่ได้"
+
+#: src/HexEditorGui.cpp:1598
+msgid "Please enter XOR key as "
+msgstr "โปรดป้อนคีย์ XOR เป็น "
+
+#: src/HexEditorGui.cpp:1602
+msgid "ASCII"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1621 src/HexEditorGui.cpp:2088
+msgid "OK"
+msgstr "ตกลง"
+
+#: src/HexEditorGui.cpp:1659
+msgid "Colours"
+msgstr "สี"
+
+#: src/HexEditorGui.cpp:1666
+msgid "Hex Colors:"
+msgstr "สีเลขฐานสิบหก:"
+
+#: src/HexEditorGui.cpp:1671
+msgid "Foreground Colour"
+msgstr "สีพื้นหน้า"
+
+#: src/HexEditorGui.cpp:1676
+msgid "Background Colour"
+msgstr "สีพื้นหลัง"
+
+#: src/HexEditorGui.cpp:1681
+msgid "Zebra Colour"
+msgstr "สีลายทาง"
+
+#: src/HexEditorGui.cpp:1685
+msgid "Selection Colours:"
+msgstr "สีของส่วนที่เลือก:"
+
+#: src/HexEditorGui.cpp:1690
+msgid "Selection Foreground Colour"
+msgstr "สีพื้นหน้าของส่วนที่เลือก"
+
+#: src/HexEditorGui.cpp:1695
+msgid "Selection Colour"
+msgstr "สีของส่วนที่เลือก"
+
+#: src/HexEditorGui.cpp:1699
+msgid "Reset"
+msgstr "รีเซ็ต"
+
+#: src/HexEditorGui.cpp:1700
+msgid "Reset Colour Values to Default"
+msgstr "รีเซ็ตค่าสีเป็นค่าเริ่มต้น"
+
+#: src/HexEditorGui.cpp:1713
+msgid "Language:"
+msgstr "ภาษา:"
+
+#: src/HexEditorGui.cpp:1728
+msgid "Character Encoding Family:"
+msgstr "กลุ่มการเข้ารหัสอักขระ:"
+
+#: src/HexEditorGui.cpp:1743
+msgid "Character Encoding:"
+msgstr "การเข้ารหัสอักขระ:"
+
+#: src/HexEditorGui.cpp:1752 src/HexPanels.cpp:221
+#: src/HexEditorGui.cpp:2004 src/HexEditorGui.cpp:2010
+msgid "Glyph Font:"
+msgstr "ฟอนต์รูปอักขระ:"
+
+#: src/HexEditorGui.cpp:2010
+msgid "Font used to draw the text (right) panel. Pick an installed font that has the glyphs you need, e.g. SimSun-ExtB for rare CJK ideographs. Non fixed-width fonts may break column alignment."
+msgstr "ฟอนต์ที่ใช้วาดแผงข้อความ (ด้านขวา) โปรดเลือกฟอนต์ที่ติดตั้งไว้ซึ่งมีรูปอักขระที่ต้องการ เช่น SimSun-ExtB สำหรับอักษรจีนที่หายาก ฟอนต์ที่ไม่ใช่ความกว้างคงที่อาจทำให้การจัดคอลัมน์เสียหาย"
+
+msgid "Size:"
+msgstr "ขนาด:"
+
+#: src/HexEditorGui.cpp:1763
+msgid "Custom Hex Formating"
+msgstr "รูปแบบเลขฐานสิบหกแบบกำหนดเอง"
+
+#: src/HexEditorGui.cpp:1771
+msgid "xx "
+msgstr ""
+
+#: src/HexEditorGui.cpp:1772
+msgid "xxxx "
+msgstr ""
+
+#: src/HexEditorGui.cpp:1773
+msgid "xx xx xx xx xx xx xx xx  "
+msgstr ""
+
+#: src/HexEditorGui.cpp:1774
+msgid "xxxx xxxx xxxx xxxx  "
+msgstr ""
+
+#: src/HexEditorGui.cpp:1776
+msgid "Recursive custom hex format pattern"
+msgstr "ใช้รูปแบบเลขฐานสิบหกกำหนดเองแบบซ้ำ"
+
+#: src/HexEditorGui.cpp:1780
+msgid "Enable"
+msgstr "เปิดใช้งาน"
+
+#: src/HexEditorGui.cpp:1789
+msgid "Bytes Per Line Limit"
+msgstr "จำกัดไบต์ต่อบรรทัด"
+
+#: src/HexEditorGui.cpp:1806
+msgid "Auto show tag panel if tags detected"
+msgstr "แสดงแผงแท็กอัตโนมัติเมื่อพบแท็ก"
+
+#: src/HexEditorGui.cpp:1810
+msgid "Make program portable "
+msgstr "ทำให้โปรแกรมเป็นแบบพกพา "
+
+#: src/HexEditorGui.cpp:1893 src/HexEditorGui.cpp:1955
+msgid "Source :"
+msgstr "ต้นทาง:"
+
+#: src/HexEditorGui.cpp:1902 src/HexEditorGui.cpp:1962
+#: src/HexEditorGui.cpp:2017
+msgid "Destination :"
+msgstr "ปลายทาง:"
+
+#: src/HexEditorGui.cpp:2029
+msgid "0x00"
+msgstr ""
+
+#: src/HexEditorGui.cpp:2029
+msgid "0xFF"
+msgstr ""
+
+#: src/HexEditorGui.cpp:2029
+msgid "0xRANDOM"
+msgstr ""
+
+#: src/HexEditorGui.cpp:2031
+msgid "Erase With "
+msgstr "ล้างด้วย "
+
+#: src/HexPanels.cpp:219
+msgid "Name:"
+msgstr "ชื่อ:"
+
+#: src/HexPanels.cpp:220
+msgid "Path:"
+msgstr "พาธ:"
+
+#: src/HexPanels.cpp:222
+msgid "Access:"
+msgstr "การเข้าถึง:"
+
+#: src/HexPanels.cpp:223
+msgid "Device:"
+msgstr "อุปกรณ์:"
+
+#: src/HexPanels.cpp:225 src/HexPanels.cpp:230
+msgid "BLOCK"
+msgstr "บล็อก"
+
+#: src/HexPanels.cpp:225 src/HexPanels.cpp:227
+msgid "FILE"
+msgstr "ไฟล์"
+
+#: src/HexPanels.cpp:228
+msgid "DIRECTORY"
+msgstr "ไดเรกทอรี"
+
+#: src/HexPanels.cpp:229
+msgid "CHARACTER"
+msgstr "อักขระ"
+
+#: src/HexPanels.cpp:231
+msgid "FIFO"
+msgstr "FIFO"
+
+#: src/HexPanels.cpp:232
+msgid "LINK"
+msgstr "ลิงก์"
+
+#: src/HexPanels.cpp:233
+msgid "SOCKET"
+msgstr "ซ็อกเก็ต"
+
+#: src/HexPanels.cpp:244
+msgid "Sector Size: "
+msgstr "ขนาดเซกเตอร์: "
+
+#: src/HexPanels.cpp:245
+msgid "Sector Count: "
+msgstr "จำนวนเซกเตอร์: "
+
+#: src/HexPanels.cpp:249
+msgid "XORKey:"
+msgstr "คีย์ XOR:"
+
+#: src/HexEditorCtrl/HexEditorCtrlGui.cpp:39
+msgid "Address"
+msgstr "ที่อยู่"
+
+#: src/HexEditorCtrl/HexEditorCtrlGui.cpp:45
+msgid "Byte View"
+msgstr "มุมมองไบต์"
+
+#: src/HexEditorCtrl/wxHexCtrl/TagDialogGui.cpp:33
+msgid "Font Color"
+msgstr "สีฟอนต์"
+
+#: src/HexEditorCtrl/wxHexCtrl/TagDialogGui.cpp:37
+msgid "Note Color"
+msgstr "สีโน้ต"
+
+#: src/HexEditorCtrl/wxHexCtrl/TagDialogGui.cpp:56
+msgid "Remove"
+msgstr "เอาออก"
+
+#: src/HexEditorCtrl/wxHexCtrl/TagDialogGui.h:53
+msgid "Tag Dialog"
+msgstr "กล่องกำหนดแท็ก"
+
+#: menu translation supplement
+msgid "Import Template"
+msgstr "นำเข้าเทมเพลต"
+
+#: menu translation supplement
+msgid "Hex2Color Mode"
+msgstr "โหมด Hex2Color"
+
+#: menu translation supplement
+msgid "Open Memory SPD"
+msgstr "เปิด SPD หน่วยความจำ"
+
+#: menu translation supplement
+msgid "Colorize HEX values with representing colors."
+msgstr "ระบายสีค่า HEX ด้วยสีที่สอดคล้องกัน"
+
+#: menu translation supplement
+msgid "Allow to edit Memory SPD values"
+msgstr "อนุญาตให้แก้ไขค่า SPD ของหน่วยความจำ"
+
+#: menu translation supplement
+
+#: i18n supplement
+msgid "Find and Replace"
+msgstr "ค้นหาและแทนที่"
+
+#: i18n supplement
+msgid "Cut selected block and copies to clipboard"
+msgstr "ตัดบล็อกที่เลือกและคัดลอกไปยังคลิปบอร์ด"
+
+#: i18n supplement
+msgid "Delete selected block"
+msgstr "ลบบล็อกที่เลือก"
+
+#: i18n supplement
+msgid "Insert block"
+msgstr "แทรกบล็อก"
+
+#: i18n supplement
+msgid "Hide"
+msgstr "ซ่อน"
+
+#: i18n supplement
+msgid "Convert TAGs"
+msgstr "แปลงแท็ก"
+
+#: i18n supplement
+msgid "Showing Page: %llu"
+msgstr "แสดงหน้า: %llu"
+
+#: i18n supplement
+msgid "Showing Page: %I64u"
+msgstr "แสดงหน้า: %I64u"
+

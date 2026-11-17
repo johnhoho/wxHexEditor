@@ -31,6 +31,15 @@
 #include "HexEditorGui.h"
 #include <vector>
 #include <wx/dnd.h>
+#include <wx/intl.h>
+
+//Returns a language name without any country/region information (e.g.
+//"Chinese (Simplified)" instead of "Chinese (Simplified, China)").
+wxString wxHexEditor_GetCleanLanguageName( const wxString& desc );
+//Resolves a stored language string (country-free display name, legacy wx
+//description, canonical name or locale directory name) against the installed
+//locale catalogs. Returns the language info of the providing locale, or NULL.
+const wxLanguageInfo* wxHexEditor_ResolveLanguage( const wxString& name );
 #ifdef WX_GCH
 	#include <wx_pch.h>
 #else
@@ -173,6 +182,9 @@ class PreferencesDialog : public PreferencesDialogGui{
 
 		wxArrayString LangNames;
 		wxArrayLong LangIds;
+		//Country/region-free names shown in the language combo; parallel to
+		//LangNames/LangIds (which keep the original wx descriptions and ids).
+		wxArrayString LangDisplay;
 
 		wxArrayString ExperimentalEncodingsList;
 		wxArrayString AvailableEncodings;

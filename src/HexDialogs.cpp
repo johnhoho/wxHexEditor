@@ -25,9 +25,10 @@
 #include "HexDialogs.h"
 #include <wx/progdlg.h>
 #include <wx/filepicker.h>
+#include <wx/fontenum.h>
 #include "../mhash/include/mhash.h"
 
-#ifdef __SSE2__
+#if defined(__SSE2__) || defined(_M_X64)
 #include <emmintrin.h>
 #endif
 
@@ -1311,13 +1312,13 @@ void FindDialog::OnFindAll( bool internal ) {
 //Returns indice of first found if used with (  options & SEARCH_FINDALL) ret_ptr return vector pointer filled with locations at buffer
 //WARNING! THIS FUNCTION WILL CHANGE BFR and/or SEARCH strings if SEARCH_MATCHCASE not selected as an option!
 inline int FindDialog::SearchAtBuffer( char *bfr, int bfr_size, char* search, int search_size, unsigned options, std::vector<int> *ret_ptr ) {
-	static const int REG_SZ = sizeof(__m128i);
+	static const int SIMD_REG_SZ = sizeof(__m128i);
 
-	char internal_array[REG_SZ];
+	char internal_array[SIMD_REG_SZ];
 
 	if( bfr_size < search_size )
 		return -1;
-	if(bfr_size < REG_SZ) {
+	if(bfr_size < SIMD_REG_SZ) {
 		memset(&internal_array[0], 0, sizeof(internal_array));
 		memcpy(&internal_array[0], bfr, bfr_size);
 		bfr = &internal_array[0];
@@ -1418,7 +1419,7 @@ inline int FindDialog::SearchAtBuffer( char *bfr, int bfr_size, char* search, in
 		const __m128i b = _mm_set1_epi8(FirstChL);
 		const __m128i c = _mm_set1_epi8(FirstChU);
 		if((options & SEARCH_FINDALL) || !( options & SEARCH_BACKWARDS)) { //Normal Operation
-			for(int i = 0; i <= bfr_size - std::max(search_size, REG_SZ) ; i += REG_SZ) {
+			for(int i = 0; i <= bfr_size - std::max(search_size, SIMD_REG_SZ) ; i += SIMD_REG_SZ) {
 				const __m128i a = _mm_loadu_si128 ( reinterpret_cast<__m128i*>(bfr+i));
 				const __m128i r1 = _mm_cmpeq_epi8 ( a, b );
 				const __m128i r2 = _mm_cmpeq_epi8 ( a, c );
@@ -1426,27 +1427,27 @@ inline int FindDialog::SearchAtBuffer( char *bfr, int bfr_size, char* search, in
 				const int reg2 = _mm_movemask_epi8( r2 );
 				if(reg1 || reg2) {	//If SIMD return a possible match in this block
 #ifdef _DEBUG_FIND_
-					char s[REG_SZ];
+					char s[SIMD_REG_SZ];
 					__m128i* k = (__m128i*)(s);
 					std::cout << "\nSSE2 Debug for i=" << i << std::hex << "\t Reg1 : 0x" << reg1 << "\t Reg2 : 0x" << reg2 << std::dec;
 					_mm_storeu_si128(k, a);
 					std::cout << "\nREG MMX A=";
-					for(int z=0; z< REG_SZ ; z++ ) std::cout << (s[z]==0?' ':s[z]);
+					for(int z=0; z< SIMD_REG_SZ ; z++ ) std::cout << (s[z]==0?' ':s[z]);
 					_mm_storeu_si128(k, b);
 					std::cout << "\nREG MMX B=";
-					for(int z=0; z< REG_SZ ; z++ ) std::cout << s[z];
+					for(int z=0; z< SIMD_REG_SZ ; z++ ) std::cout << s[z];
 					_mm_storeu_si128(k, r1);
 					std::cout << "\nREG MMX R=";
-					for(int z=0; z< REG_SZ ; z++ ) std::cout << (s[z]==0?' ':'X');
+					for(int z=0; z< SIMD_REG_SZ ; z++ ) std::cout << (s[z]==0?' ':'X');
 					_mm_storeu_si128(k, c);
 					std::cout << "\nREG MMX C=";
-					for(int z=0; z< REG_SZ ; z++ ) std::cout << s[z];
+					for(int z=0; z< SIMD_REG_SZ ; z++ ) std::cout << s[z];
 					_mm_storeu_si128(k, r2);
 					std::cout << "\nREG MMX R=";
-					for(int z=0; z< REG_SZ ; z++ ) std::cout << (s[z]==0?' ':'X');
+					for(int z=0; z< SIMD_REG_SZ ; z++ ) std::cout << (s[z]==0?' ':'X');
 					std::cout << std::endl;
 #endif // _DEBUG_FIND_
-					for(int j = 0; j < REG_SZ; j++ ) {
+					for(int j = 0; j < SIMD_REG_SZ; j++ ) {
 						const int  ij   = i + j;
 						if(ij > bfr_size - search_size) break;
 						const char bfij = bfr[ij];
@@ -1469,7 +1470,7 @@ inline int FindDialog::SearchAtBuffer( char *bfr, int bfr_size, char* search, in
 			}
 		}
 		else { //Backward Search!
-			for (int i = bfr_size - std::max(search_size, REG_SZ); i > -REG_SZ; i -= REG_SZ) {
+			for (int i = bfr_size - std::max(search_size, SIMD_REG_SZ); i > -SIMD_REG_SZ; i -= SIMD_REG_SZ) {
 				if (i < 0) i = 0;
 				__m128i a = _mm_loadu_si128 ( reinterpret_cast<__m128i*>(bfr+i));
 				__m128i r1 = _mm_cmpeq_epi8 ( a, b );
@@ -1478,27 +1479,27 @@ inline int FindDialog::SearchAtBuffer( char *bfr, int bfr_size, char* search, in
 				int reg2=_mm_movemask_epi8( r2 );
 				if(reg1 || reg2) {	//If SIMD return a possible match in this block
 #ifdef _DEBUG_FIND_
-					char s[REG_SZ];
+					char s[SIMD_REG_SZ];
 					__m128i* k = (__m128i*)(s);
 					std::cout << "\nSSE2 Debug for i=" << i << std::hex << "\t Reg1 : 0x" << reg1 << "\t Reg2 : 0x" << reg2 << std::dec;
 					_mm_storeu_si128(k, a);
 					std::cout << "\nREG MMX A=";
-					for(int z=0; z< REG_SZ ; z++ ) std::cout << (s[z]==0?' ':s[z]);
+					for(int z=0; z< SIMD_REG_SZ ; z++ ) std::cout << (s[z]==0?' ':s[z]);
 					_mm_storeu_si128(k, b);
 					std::cout << "\nREG MMX B=";
-					for(int z=0; z< REG_SZ ; z++ ) std::cout << s[z];
+					for(int z=0; z< SIMD_REG_SZ ; z++ ) std::cout << s[z];
 					_mm_storeu_si128(k, r1);
 					std::cout << "\nREG MMX R=";
-					for(int z=0; z< REG_SZ ; z++ ) std::cout << (s[z]==0?' ':'X');
+					for(int z=0; z< SIMD_REG_SZ ; z++ ) std::cout << (s[z]==0?' ':'X');
 					_mm_storeu_si128(k, c);
 					std::cout << "\nREG MMX C=";
-					for(int z=0; z< REG_SZ ; z++ ) std::cout << s[z];
+					for(int z=0; z< SIMD_REG_SZ ; z++ ) std::cout << s[z];
 					_mm_storeu_si128(k, r2);
 					std::cout << "\nREG MMX R=";
-					for(int z=0; z< REG_SZ ; z++ ) std::cout << (s[z]==0?' ':'X');
+					for(int z=0; z< SIMD_REG_SZ ; z++ ) std::cout << (s[z]==0?' ':'X');
 					std::cout << std::endl;
 #endif // _DEBUG_FIND_
-					for (int j = std::min(REG_SZ - 1, bfr_size - search_size - i); j >= 0; j--) {
+					for (int j = std::min(SIMD_REG_SZ - 1, bfr_size - search_size - i); j >= 0; j--) {
 						const int  ij   = i + j;
 						const char bfij = bfr[ij];
 
@@ -1567,7 +1568,7 @@ inline int FindDialog::SearchAtBuffer( char *bfr, int bfr_size, char* search, in
 		//681 clk with SSE2 vs 1200clk with C++
 		__m128i b = _mm_set1_epi8 ( search[0] );
 
-		for(int i = 0; i <= bfr_size - std::max(search_size, REG_SZ) ; i += REG_SZ ) {
+		for(int i = 0; i <= bfr_size - std::max(search_size, SIMD_REG_SZ) ; i += SIMD_REG_SZ ) {
 			__m128i a = _mm_loadu_si128 ( reinterpret_cast<__m128i*>(bfr+i));
 			__m128i r = _mm_cmpeq_epi8 ( a, b );
 			short reg=_mm_movemask_epi8( r );
@@ -1587,7 +1588,7 @@ inline int FindDialog::SearchAtBuffer( char *bfr, int bfr_size, char* search, in
 			std::cout << std::endl;
 		#endif // _DEBUG_FIND_
 			if( reg )
-				for(int j = 0; j < REG_SZ; j++ ) {
+				for(int j = 0; j < SIMD_REG_SZ; j++ ) {
 					const int  ij   = i + j;
 					if(ij > bfr_size - search_size) break;
 					const char bfij = bfr[ij];
@@ -1626,29 +1627,29 @@ inline int FindDialog::SearchAtBuffer( char *bfr, int bfr_size, char* search, in
 #ifdef __SSE2__
 		//676clk with SSE2, 1251 clk with C++
 		__m128i b = _mm_set1_epi8 ( search[0] );
-		for (int i = bfr_size - std::max(search_size, REG_SZ); i > -REG_SZ; i -= REG_SZ) {
+		for (int i = bfr_size - std::max(search_size, SIMD_REG_SZ); i > -SIMD_REG_SZ; i -= SIMD_REG_SZ) {
 			if (i < 0) i = 0;
 			__m128i a = _mm_loadu_si128 ( reinterpret_cast<__m128i*>(bfr+i));
 			__m128i r = _mm_cmpeq_epi8 ( a, b );
 			short reg=_mm_movemask_epi8( r );
 #ifdef _DEBUG_FIND_
 
-			char s[REG_SZ];
+			char s[SIMD_REG_SZ];
 			__m128i* k = (__m128i*)(s);
 			std::cout << " SSE2 Debug for i=" << i << std::hex << "\t Reg : 0x" << reg << std::dec;
 			_mm_storeu_si128(k, a);
 			std::cout << "\nREG MMX A=";
-			for(int z=0; z< REG_SZ ; z++ ) std::cout << (s[z]==0?' ':s[z]);
+			for(int z=0; z< SIMD_REG_SZ ; z++ ) std::cout << (s[z]==0?' ':s[z]);
 			_mm_storeu_si128(k, b);
 			std::cout << "\nREG MMX B=";
-			for(int z=0; z< REG_SZ ; z++ ) std::cout << s[z];
+			for(int z=0; z< SIMD_REG_SZ ; z++ ) std::cout << s[z];
 			_mm_storeu_si128(k, r);
 			std::cout << "\nREG MMX R=";
-			for(int z=0; z< REG_SZ ; z++ ) std::cout << (s[z]==0?' ':'X');
+			for(int z=0; z< SIMD_REG_SZ ; z++ ) std::cout << (s[z]==0?' ':'X');
 			std::cout << std::endl;
 #endif // _DEBUG_FIND_
 			if( reg ) {
-				for( int j = std::min(REG_SZ - 1, bfr_size - search_size - i); j >= 0; j--) {
+				for( int j = std::min(SIMD_REG_SZ - 1, bfr_size - search_size - i); j >= 0; j--) {
 					const int  ij   = i + j;
 					const char bfij = bfr[ij];
 					//if( (1<<j) & reg)
@@ -2955,21 +2956,171 @@ void XORViewDialog::EventHandler( wxCommandEvent& event ) {
 	event.Skip();
 	}
 
+//Returns a language name without any country/region information, for display in
+//the preferences language combo and for storing into the configuration. Script
+//variants (Simplified/Traditional Chinese, Norwegian Bokmål, ...) are kept so the
+//entries stay distinguishable, but every country reference ("China", "Taiwan",
+//"Brazil", ...) is dropped.
+wxString wxHexEditor_GetCleanLanguageName( const wxString& desc ) {
+	if( desc == wxT("Chinese (Simplified, China)") )	return wxT("Chinese (Simplified)");
+	if( desc == wxT("Chinese (Traditional, Taiwan)") )	return wxT("Chinese (Traditional)");
+
+	static const wxString RegionWords[] = {
+		wxT("China"), wxT("Taiwan"), wxT("Hong Kong"), wxT("Macao"), wxT("Macau"),
+		wxT("Brazil"), wxT("Portugal"), wxT("Germany"), wxT("Austria"), wxT("Switzerland"),
+		wxT("Spain"), wxT("Mexico"), wxT("Argentina"), wxT("France"), wxT("Italy"),
+		wxT("Japan"), wxT("Netherlands"), wxT("Belgium"), wxT("Poland"), wxT("Romania"),
+		wxT("Russia"), wxT("Turkey"), wxT("Korea"), wxT("North Korea"), wxT("South Korea"),
+		wxT("India"), wxT("Pakistan"), wxT("Israel"), wxT("Palestine"), wxT("Ukraine"),
+		wxT("USA"), wxT("United States"), wxT("UK"), wxT("United Kingdom"), wxT("Canada"),
+		wxT("Australia"), wxT("New Zealand"), wxT("Singapore"), wxT("Malaysia"),
+		wxT("Indonesia"), wxT("Vietnam"), wxT("Thailand"), wxT("Philippines"),
+		wxT("Egypt"), wxT("Saudi Arabia"), wxT("Iran"), wxT("Iraq"), wxT("Syria"),
+		wxT("South Africa"), wxT("Nigeria"), wxT("Kenya"), wxT("Morocco"), wxT("Algeria"),
+		wxT("Ireland"), wxT("Denmark"), wxT("Sweden"), wxT("Norway"), wxT("Finland"),
+		wxT("Iceland"), wxT("Greece"), wxT("Hungary"), wxT("Czech Republic"), wxT("Slovakia"),
+		wxT("Serbia"), wxT("Croatia"), wxT("Bosnia"), wxT("Montenegro"), wxT("Macedonia"),
+		wxT("Slovenia"), wxT("Bulgaria"), wxT("Latvia"), wxT("Lithuania"), wxT("Estonia"),
+		wxT("Georgia"), wxT("Armenia"), wxT("Azerbaijan"), wxT("Kazakhstan"),
+		wxT("Uzbekistan"), wxT("Mongolia"), wxT("Nepal"), wxT("Sri Lanka"),
+		wxT("Bangladesh"), wxT("Myanmar"), wxT("Cambodia"), wxT("Laos"),
+		wxT("Colombia"), wxT("Peru"), wxT("Chile"), wxT("Bolivia"), wxT("Venezuela"),
+		wxT("Ecuador"), wxT("Uruguay"), wxT("Paraguay"), wxT("Costa Rica"),
+		wxT("Panama"), wxT("Guatemala"), wxT("Cuba"), wxT("Dominican Republic"),
+		wxT("Puerto Rico"), wxT("Belize"), wxT("Liechtenstein"), wxT("Luxembourg"),
+		wxT("Monaco"), wxT("Malta"), wxT("Cyprus")
+		};
+
+	wxString name = desc;
+	int open = name.Find('(');
+	if( open == wxNOT_FOUND || !name.EndsWith(wxT(")")) )
+		return name; //No parenthesized qualifier.
+
+	wxString inner = name.Mid( open + 1, name.Len() - open - 2 ).Trim().Trim(false);
+
+	//"Name (Variant, Country)" keeps only the variant part ("Name (Variant)").
+	int comma = inner.Find(',');
+	if( comma != wxNOT_FOUND )
+		inner = inner.Left( comma ).Trim().Trim(false);
+
+	bool is_region = false;
+	for( unsigned i = 0 ; i < WXSIZEOF(RegionWords) ; i++ )
+		if( inner.IsSameAs( RegionWords[i], false ) ) { //Case-insensitive compare.
+			is_region = true;
+			break;
+			}
+	if( is_region )
+		return name.Left( open ).Trim().Trim(false); //Drop the qualifier entirely.
+	return name; //Script/variant qualifier (Bokmål, Simplified, ...): keep it.
+	}
+
+//Scans the locale directories that may contain wxHexEditor catalogs and matches
+//each installed locale against 'name'. 'name' may be a country-free display name,
+//the original wx description, a canonical name or the raw directory name.
+static const wxLanguageInfo* FindInstalledLocale( const wxString& name ) {
+	wxArrayString dirs; //Directories to scan for locale subdirectories.
+	{
+		wxFileName flnm( wxTheApp->argv[0] );
+		dirs.Add( flnm.GetPath() + wxFileName::GetPathSeparator() + _T("locale") );
+#ifdef __WXMAC__
+		dirs.Add( flnm.GetPath() + wxFileName::GetPathSeparator() + _T("..") +
+		          wxFileName::GetPathSeparator() + _T("Resources") +
+		          wxFileName::GetPathSeparator() + _T("locale") );
+#endif
+		dirs.Add( _T("/usr/local/share/locale") );
+		dirs.Add( _T("/usr/share/locale") );
+		}
+	for( unsigned d = 0 ; d < dirs.Count() ; d++ ) {
+		if( !wxDir::Exists( dirs.Item(d) ) )
+			continue;
+		wxDir dir( dirs.Item(d) );
+		wxString sub;
+		for(bool cont = dir.GetFirst(&sub, _T(""), wxDIR_DEFAULT);
+		      cont;
+		      cont = dir.GetNext(&sub)) {
+			//Unix system paths keep catalogs in <lang>/LC_MESSAGES/, the
+			//application locale directory keeps them directly in <lang>/.
+			wxString mo = dirs.Item(d) + wxFileName::GetPathSeparator() + sub +
+			              wxFileName::GetPathSeparator();
+			if( dirs.Item(d) == _T("/usr/local/share/locale") ||
+			    dirs.Item(d) == _T("/usr/share/locale") )
+				mo += wxString(_T("LC_MESSAGES")) + wxFileName::GetPathSeparator();
+			mo += _T("wxHexEditor.mo");
+			if( !wxFileExists( mo ) )
+				continue;
+			const wxLanguageInfo* langinfo = wxLocale::FindLanguageInfo( sub );
+			if( langinfo == NULL )
+				continue;
+			if( name.CmpNoCase( sub ) == 0 ||
+			    name.CmpNoCase( langinfo->Description ) == 0 ||
+			    name.CmpNoCase( wxHexEditor_GetCleanLanguageName( langinfo->Description ) ) == 0 )
+				return langinfo;
+			}
+		}
+	return NULL;
+	}
+
+const wxLanguageInfo* wxHexEditor_ResolveLanguage( const wxString& name ) {
+	if( name.IsEmpty() )
+		return NULL;
+	//Installed catalogs win: their language ids point at locale directories that
+	//AddCatalog() can actually load (e.g. zh_CN instead of the directory-less
+	//zh-Hans variant FindLanguageInfo("Chinese (Simplified)") would return).
+	const wxLanguageInfo* langinfo = FindInstalledLocale( name );
+	if( langinfo != NULL )
+		return langinfo;
+	return wxLocale::FindLanguageInfo( name ); //e.g. "English"
+	}
+
 PreferencesDialog::PreferencesDialog( wxWindow* parent ):PreferencesDialogGui(parent, wxID_ANY) {
 	GetInstalledLanguages( LangNames, LangIds );
+	//Build a country/region-free display list kept in parallel with LangNames/LangIds.
+	LangDisplay.Clear();
+	for( unsigned i = 0 ; i < LangNames.Count() ; i++ )
+		LangDisplay.Add( wxHexEditor_GetCleanLanguageName( LangNames.Item(i) ) );
+
+	//Sort by display name while keeping the three parallel arrays in sync.
+	wxArrayLong order;
+	for( unsigned i = 0 ; i < LangDisplay.Count() ; i++ )
+		order.Add( i );
+	for( unsigned i = 1 ; i < order.Count() ; i++ ) { //Insertion sort on indices.
+		long val = order.Item( i );
+		unsigned j = i;
+		while( j > 0 && LangDisplay.Item( order.Item( j - 1 ) ).Cmp( LangDisplay.Item( val ) ) > 0 ) {
+			order.Item( j ) = order.Item( j - 1 );
+			j--;
+			}
+		order.Item( j ) = val;
+		}
+	wxArrayString disp_names, real_names;
+	wxArrayLong ids;
+	for( unsigned i = 0 ; i < order.Count() ; i++ ) {
+		disp_names.Add( LangDisplay.Item( order.Item( i ) ) );
+		real_names.Add( LangNames.Item( order.Item( i ) ) );
+		ids.Add( LangIds.Item( order.Item( i ) ) );
+		}
+	LangDisplay = disp_names;
+	LangNames = real_names;
+	LangIds = ids;
+
 	chcLang->Clear();
-	LangNames.Sort();
-	chcLang->Append( LangNames );
+	chcLang->Append( LangDisplay );
 	wxConfigBase *pConfig = myConfigBase::Get();
 
 	if ( ! pConfig->Read(_T("Language")).IsEmpty() ) {
 		wxString lang = pConfig->Read(_T("Language"), wxEmptyString) ;
-		if ( !lang.IsEmpty() )
-			for( unsigned i = 0 ; i < LangNames.Count() ; i++)
-				if( lang == LangNames.Item(i)) {
-					chcLang->SetSelection(i);
-					break;
-					}
+		if ( !lang.IsEmpty() ) {
+			//Resolve the stored name (clean display name of the current or of a
+			//previous version, legacy description with country info, canonical
+			//name...) and select the entry providing that language.
+			const wxLanguageInfo* cfginfo = wxHexEditor_ResolveLanguage( lang );
+			if( cfginfo != NULL )
+				for( unsigned i = 0 ; i < LangIds.Count() ; i++)
+					if( LangIds.Item(i) == cfginfo->Language ) {
+						chcLang->SetSelection(i);
+						break;
+						}
+			}
 		}
 	else
 		chcLang->SetSelection(0);
@@ -3002,6 +3153,45 @@ PreferencesDialog::PreferencesDialog( wxWindow* parent ):PreferencesDialogGui(pa
 
 	myConfigBase::Get()->Read( _T("FontSize"), &TempInt, 10 );
 	spinFontSize->SetValue( TempInt );
+
+	//Glyph font list: faces that are known to carry CJK/symbol glyphs first, then
+	//every other fixed width face, then all remaining ones. Missing faces are
+	//skipped so the list stays usable on any machine.
+	comboFontFace->Clear();
+	const wxString PreferredFaces[] = {
+		wxT("Courier New"), wxT("Consolas"), wxT("Lucida Console"), wxT("Lucida Sans Typewriter"),
+		wxT("SimSun"), wxT("NSimSun"), wxT("SimSun-ExtB"), wxT("MingLiU-ExtB"),
+		wxT("Microsoft YaHei"), wxT("Microsoft JhengHei"), wxT("MS Gothic"), wxT("MS Mincho"),
+		wxT("Malgun Gothic"), wxT("Segoe UI Symbol"), wxT("Segoe UI Emoji")
+		};
+	for( unsigned i=0; i<WXSIZEOF(PreferredFaces); i++ )
+		if( wxFontEnumerator::IsValidFacename( PreferredFaces[i] ) )
+			comboFontFace->Append( PreferredFaces[i] );
+
+	wxArrayString FixedFaces = wxFontEnumerator::GetFacenames( wxFONTENCODING_SYSTEM, true );
+	FixedFaces.Sort();
+	for( unsigned i=0; i<FixedFaces.Count(); i++ )
+		if( comboFontFace->FindString( FixedFaces.Item(i) ) == wxNOT_FOUND )
+			comboFontFace->Append( FixedFaces.Item(i) );
+
+	wxArrayString AllFaces = wxFontEnumerator::GetFacenames( wxFONTENCODING_SYSTEM, false );
+	AllFaces.Sort();
+	for( unsigned i=0; i<AllFaces.Count(); i++ )
+		if( comboFontFace->FindString( AllFaces.Item(i) ) == wxNOT_FOUND )
+			comboFontFace->Append( AllFaces.Item(i) );
+
+	wxString FaceName;
+	myConfigBase::Get()->Read( _T("FontFace"), &FaceName, wxEmptyString );
+	if( FaceName.IsEmpty() ) {
+#if defined( __WXOSX__ )
+		FaceName = wxT("Monaco");
+#elif defined( __WXMSW__ )
+		FaceName = wxT("Courier New");
+#else
+		FaceName = wxT("Monospace");
+#endif
+		}
+	comboFontFace->SetValue( FaceName );
 
 	if( AvailableEncodings.IsEmpty() )
 		AvailableEncodings=GetSupportedEncodings();
@@ -3230,6 +3420,17 @@ void PreferencesDialog::EventHandler( wxCommandEvent& event ) {
 			wxPostEvent( GetParent(), eventx );
 			}
 	*/
+	if( event.GetId() == comboFontFace->GetId() ) {
+		wxString Face = comboFontFace->GetValue();
+		Face.Trim( true ).Trim( false );
+		if( !Face.IsEmpty() ) {
+			myConfigBase::Get()->Write( _T("FontFace"), Face );
+			myConfigBase::Get()->Flush();
+			wxUpdateUIEvent eventx( RESET_STYLE_EVENT );
+			wxPostEvent( GetParent(), eventx );
+			}
+		}
+
 	if(event.GetId() == chkCustom->GetId() )
 		comboCustomHexFormat->Enable( event.IsChecked() );
 	if(event.GetId() == chkBytePerLineLimit->GetId() )
@@ -3259,7 +3460,12 @@ void PreferencesDialog::EventHandler( wxCommandEvent& event ) {
 	}
 
 void PreferencesDialog::SaveRegistry( void ) {
-	myConfigBase::Get()->Write( _T("Language"), wxLocale::FindLanguageInfo( chcLang->GetString( chcLang->GetSelection() ) )->Description ); //Saves string into configuration file.
+	//LangDisplay holds country-free language names, so they can be stored into
+	//the configuration as-is (and resolved back at startup through
+	//wxHexEditor_ResolveLanguage). LangDisplay/LangNames/LangIds stay parallel.
+	int LangSel = chcLang->GetSelection();
+	if( LangSel != wxNOT_FOUND && (unsigned)LangSel < LangDisplay.Count() )
+		myConfigBase::Get()->Write( _T("Language"), LangDisplay.Item( LangSel ) ); //Saves string into configuration file.
 
 	myConfigBase::Get()->Write( _T("ColourHexForeground"), clrPickerForeground->GetColour().GetAsString(wxC2S_HTML_SYNTAX) );
 	myConfigBase::Get()->Write( _T("ColourHexBackground"), clrPickerBackground->GetColour().GetAsString(wxC2S_HTML_SYNTAX) );
@@ -3283,13 +3489,17 @@ void PreferencesDialog::SaveRegistry( void ) {
 	myConfigBase::Get()->Write( _T("CharacterEncodingFamily"), chcCharacterEncodingFamily->GetStringSelection() );
 	myConfigBase::Get()->Write( _T("CharacterEncoding"), chcCharacterEncoding->GetStringSelection() );
 	myConfigBase::Get()->Write( _T("FontSize"), spinFontSize->GetValue() );
+	myConfigBase::Get()->Write( _T("FontFace"), comboFontFace->GetValue() );
 
 	myConfigBase::Get()->Write( _T("AutoShowTagPanel"), chkAutoShowTagPanel->GetValue() );
 	myConfigBase::Get()->Write( _T("SingleInstance"), chkSingleInstance->GetValue() );
 
 	myConfigBase::Get()->Flush();
 
-	wxUpdateUIEvent eventx( REDRAW_EVENT );
+	//Font size/face changes require the font objects and character metrics to be
+	//rebuilt, so RESET_STYLE_EVENT (which calls SetFont()) is used instead of a
+	//plain redraw.
+	wxUpdateUIEvent eventx( RESET_STYLE_EVENT );
 	wxPostEvent( GetParent(), eventx );
 	}
 void PreferencesDialog::OnSave( wxCommandEvent& event ) {

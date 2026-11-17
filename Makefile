@@ -39,7 +39,7 @@ BINDIR      = $(PREFIX)/bin
 DATADIR     = $(PREFIX)/share
 LOCALEDIR   = $(DATADIR)/locale
 
-VERSION = 0.25 Beta
+VERSION = 0.26 Beta
 
 .DEFAULT_GOAL := all
 

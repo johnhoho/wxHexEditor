@@ -1,0 +1,2069 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# chaol <1403941265@qq.com>, 2017
+# chaol <1403941265@qq.com>, 2017
+# godfrey <godfrey.public@gmail.com>, 2013-2014
+# zyphio <zyphio@gmail.com>, 2013-2014
+msgid ""
+msgstr "Project-Id-Version: wxHexEditor\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2017-12-21 02:13+0300\nPO-Revision-Date: 2017-12-21 03:04+0000\nLast-Translator: Erdem U. Altinyurt <spamjunkeater@gmail.com>\nLanguage-Team: Korean \nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nLanguage: ko \nPlural-Forms: nplurals=1; plural=0;\n"
+
+#: src/HexDialogs.h:70 src/HexEditorGui.h:300 src/HexEditorFrame.cpp:299
+#: src/HexEditorGui.cpp:134 src/HexEditorGui.cpp:938
+msgid "Find"
+msgstr "찾기"
+
+#: src/HexDialogs.h:106
+msgid "Find & Replace"
+msgstr "찾기 및 바꾸기"
+
+#: src/HexEditorGui.h:122
+msgid "wxHexEditor Alpha Development version"
+msgstr "wxHexEditor 알파 개발 버전"
+
+#: src/HexEditorGui.h:263 src/HexEditorFrame.cpp:301 src/HexEditorGui.cpp:144
+msgid "Go to Offset"
+msgstr "오프셋으로 이동"
+
+#: src/HexEditorGui.h:324
+msgid "New wxHexEditor Version!"
+msgstr "새 wxHexEditor 버전!"
+
+#: src/HexEditorGui.h:363 src/HexEditorGui.cpp:210
+msgid "Compare Files"
+msgstr "파일 비교"
+
+#: src/HexEditorGui.h:416 src/HexEditorGui.cpp:206
+msgid "Calculate Checksum"
+msgstr "체크섬 계산"
+
+#: src/HexEditorGui.h:447
+msgid "Copy Selected Block As"
+msgstr "선택한 블록을 다른 형식으로 복사"
+
+#: src/HexEditorGui.h:474
+msgid "XORView Thru Warning!"
+msgstr "XORView Thru 경고!"
+
+#: src/HexEditorGui.h:523 src/HexEditorGui.cpp:280
+msgid "Preferences"
+msgstr "환경설정"
+
+#: src/HexEditorGui.h:549
+msgid "Disk/Partition Backup Tool"
+msgstr "디스크/파티션 백업 도구"
+
+#: src/HexEditorGui.h:575
+msgid "Disk/Partition Restore Tool"
+msgstr "디스크/파티션 복원 도구"
+
+#: src/HexEditorGui.h:600
+msgid "Disk/Partition Erase Tool"
+msgstr "디스크/파티션 지우기 도구"
+
+#: src/HexEditor.h:217 src/HexEditor.h:237
+msgid "Clipboard could not be opened."
+msgstr "클립보드를 열 수 없습니다."
+
+#: src/HexEditor.h:217 src/HexEditor.h:237 src/HexEditor.cpp:1562
+msgid "Operation cancelled!"
+msgstr "작업이 취소되었습니다!"
+
+#: src/HexEditor.h:217 src/HexEditor.h:237 src/HexEditor.cpp:1562
+msgid "Copy To Clipboard Error"
+msgstr "클립보드 복사 오류"
+
+#: src/FAL.cpp:175
+msgid "Device is not mounted"
+msgstr "장치가 마운트되지 않았습니다"
+
+#: src/FAL.cpp:175 src/FAL.cpp:221 src/FAL.cpp:240 src/FAL.cpp:252
+#: src/FAL.cpp:272 src/FAL.cpp:286 src/FAL.cpp:310 src/FAL.cpp:321
+#: src/FAL.cpp:337 src/FAL.cpp:430 src/FAL.cpp:438 src/HexDialogs.cpp:707
+#: src/HexDialogs.cpp:2213 src/HexDialogs.cpp:2217 src/HexDialogs.cpp:2666
+#: src/HexEditor.cpp:245 src/HexEditor.cpp:433 src/HexEditor.cpp:473
+#: src/HexEditor.cpp:616 src/HexEditor.cpp:647 src/HexEditorFrame.cpp:616
+#: src/HexEditorFrame.cpp:632 src/HexEditorFrame.cpp:636
+#: src/HexEditorFrame.cpp:1210
+msgid "Error"
+msgstr "오류"
+
+#: src/FAL.cpp:221 src/FAL.cpp:258 src/FAL.cpp:321
+msgid "File is not readable by permissions."
+msgstr "권한 때문에 파일을 읽을 수 없습니다."
+
+#: src/FAL.cpp:221
+msgid "Please change file permissons or run this program with Windows UAC privileges."
+msgstr "파일 권한을 변경하거나 이 프로그램을 Windows UAC 권한으로 실행하세요."
+
+#: src/FAL.cpp:240 src/FAL.cpp:310
+msgid "Process cannot open."
+msgstr "프로세스를 열 수 없습니다."
+
+#: src/FAL.cpp:252
+msgid "File does not exists at path:"
+msgstr "해당 경로에 파일이 없습니다:"
+
+#: src/FAL.cpp:259
+msgid "Please change file permissons or run this program with root privileges."
+msgstr "파일 권한을 변경하거나 이 프로그램을 루트 권한으로 실행하세요."
+
+#: src/FAL.cpp:260
+msgid "You can also try to own the file temporarily (requires root's password.)"
+msgstr "파일 소유권을 임시로 가져오는 방법도 시도할 수 있습니다(루트 암호 필요)."
+
+#: src/FAL.cpp:261
+msgid "Do you want to own the file?"
+msgstr "이 파일의 소유권을 가져오시겠습니까?"
+
+#: src/FAL.cpp:261 src/HexEditor.cpp:1556
+msgid "Warning"
+msgstr "경고"
+
+#: src/FAL.cpp:272
+msgid "Unknown error on \"stat -c %U"
+msgstr "\"stat -c %U\" 처리 중 알 수 없는 오류"
+
+#: src/FAL.cpp:286
+msgid "For using this function, please install \"gnomesu\" or \"gksu\" tools first."
+msgstr "이 기능을 사용하려면 먼저 \"gnomesu\" 또는 \"gksu\" 도구를 설치하세요."
+
+#: src/FAL.cpp:321
+msgid "Please change file permissons or run this program with root privileges"
+msgstr "파일 권한을 변경하거나 이 프로그램을 루트 권한으로 실행하세요"
+
+#: src/FAL.cpp:337 src/HexEditor.cpp:245 src/HexEditorFrame.cpp:546
+msgid "File cannot open."
+msgstr "파일을 열 수 없습니다."
+
+#: src/FAL.cpp:430
+msgid "File load error!.\nFile closed but not opened while access change. For avoid corruption close the program"
+msgstr "파일 불러오기 오류!\n접근 권한 변경 중 파일이 닫혀 열지 못했습니다. 손상을 방지하려면 프로그램을 종료하세요."
+
+#: src/FAL.cpp:438
+msgid "File cannot open in this mode : "
+msgstr "이 모드로는 파일을 열 수 없습니다: "
+
+#: src/FAL.cpp:453
+msgid "Access Invalid"
+msgstr "잘못된 접근"
+
+#: src/FAL.cpp:467 src/FAL.cpp:477 src/FAL.cpp:487
+msgid "Not Enought RAM"
+msgstr "RAM이 부족합니다"
+
+#: src/FAL.cpp:578
+msgid "Error on Write operation to Process RAM"
+msgstr "프로세스 RAM 쓰기 작업 오류"
+
+#: src/FAL.cpp:578
+msgid "FATAL ERROR"
+msgstr "치명적 오류"
+
+#: src/HexDialogs.cpp:76
+msgid "Value is not hexadecimal!"
+msgstr "값이 16진수가 아닙니다!"
+
+#: src/HexDialogs.cpp:76 src/HexDialogs.cpp:82
+msgid "Format Error!"
+msgstr "형식 오류!"
+
+#: src/HexDialogs.cpp:82
+msgid "Value must be even digit!"
+msgstr "값은 짝수 자릿수여야 합니다!"
+
+#: src/HexDialogs.cpp:163 src/HexEditorGui.cpp:735 src/HexEditorGui.cpp:741
+#: src/HexEditorCtrl/HexEditorCtrl.cpp:44
+#: src/HexEditorCtrl/HexEditorCtrlGui.cpp:33
+msgid "Offset"
+msgstr "오프셋"
+
+#: src/HexDialogs.cpp:169 src/HexEditorGui.cpp:741
+msgid "Sector"
+msgstr "섹터"
+
+#: src/HexDialogs.cpp:465
+msgid "Finding Some Bytes..."
+msgstr "바이트 찾는 중..."
+
+#: src/HexDialogs.cpp:467 src/HexDialogs.cpp:717
+msgid "wxHexEditor Searching"
+msgstr "wxHexEditor 검색 중"
+
+#: src/HexDialogs.cpp:502 src/HexDialogs.cpp:933 src/HexDialogs.cpp:1084
+msgid "Search Speed : "
+msgstr "검색 속도: "
+
+#: src/HexDialogs.cpp:502 src/HexDialogs.cpp:933 src/HexDialogs.cpp:1084
+#: src/HexDialogs.cpp:2412 src/HexDialogs.cpp:2775 src/HexDialogs.cpp:3228
+#: src/HexDialogs.cpp:3318 src/HexDialogs.cpp:3379 src/HexEditor.cpp:195
+#: src/HexEditor.cpp:427
+msgid "MB/s"
+msgstr ""
+
+#: src/HexDialogs.cpp:544 src/HexDialogs.cpp:1144
+msgid "Search"
+msgstr "검색"
+
+#: src/HexDialogs.cpp:561 src/HexDialogs.cpp:1152
+msgid "Search value not found"
+msgstr "검색 값을 찾지 못했습니다"
+
+#: src/HexDialogs.cpp:561 src/HexDialogs.cpp:1152
+msgid "Nothing found!"
+msgstr "아무것도 찾지 못했습니다!"
+
+#: src/HexDialogs.cpp:715
+msgid "Finding matches..."
+msgstr "일치 항목 찾는 중..."
+
+#: src/HexDialogs.cpp:1159
+#, c-format
+msgid "Found %d matches."
+msgstr "%d개의 일치 항목을 찾았습니다."
+
+#: src/HexDialogs.cpp:1159
+msgid "Find All Done!"
+msgstr "모두 찾기 완료!"
+
+#: src/HexDialogs.cpp:1653 src/HexDialogs.cpp:1678
+msgid "Search and Replace sizes are not equal!\nReplacing with different size are not supported yet."
+msgstr "찾기/바꾸기 크기가 다릅니다!\n크기가 다른 바꾸기는 아직 지원되지 않습니다."
+
+#: src/HexDialogs.cpp:1653 src/HexDialogs.cpp:1678 src/HexDialogs.cpp:2009
+#: src/HexEditor.cpp:164
+msgid "Error!"
+msgstr "오류!"
+
+#: src/HexDialogs.cpp:1661 src/HexDialogs.cpp:1699 src/HexEditorFrame.cpp:300
+#: src/HexEditorGui.cpp:139 src/HexEditorGui.cpp:955
+msgid "Replace"
+msgstr "바꾸기"
+
+#: src/HexDialogs.cpp:1720
+#, c-format
+msgid "%d records changed."
+msgstr "%d개 레코드가 변경되었습니다."
+
+#: src/HexDialogs.cpp:1720 src/HexEditor.cpp:1570 src/HexEditorFrame.cpp:721
+msgid "Info"
+msgstr "정보"
+
+#: src/HexDialogs.cpp:1768
+msgid "Not Available"
+msgstr "사용 불가"
+
+#: src/HexDialogs.cpp:1774
+msgid "Raw Hex"
+msgstr "원본 16진수"
+
+#: src/HexDialogs.cpp:1775
+msgid "With Space"
+msgstr "공백 포함"
+
+#: src/HexDialogs.cpp:1776
+msgid "Quad Hex"
+msgstr "4중 16진수"
+
+#: src/HexDialogs.cpp:1777
+msgid "with 0x"
+msgstr "0x 포함"
+
+#: src/HexDialogs.cpp:1778
+msgid "with 0x and Comma"
+msgstr "0x와 쉼표 포함"
+
+#: src/HexDialogs.cpp:1785
+msgid "HTML format"
+msgstr "HTML 형식"
+
+#: src/HexDialogs.cpp:1786
+msgid "HTML with TAGs"
+msgstr "태그 포함 HTML"
+
+#: src/HexDialogs.cpp:1787
+msgid "phpBB forum style"
+msgstr "phpBB 포럼 스타일"
+
+#: src/HexDialogs.cpp:1788
+msgid "WiKi format"
+msgstr "위키 형식"
+
+#: src/HexDialogs.cpp:1789
+msgid "WiKi with TAGs"
+msgstr "태그 포함 위키"
+
+#: src/HexDialogs.cpp:1795
+msgid "8bit - Byte "
+msgstr "8비트 - 바이트 "
+
+#: src/HexDialogs.cpp:1796
+msgid "16bit - Words"
+msgstr "16비트 - 워드"
+
+#: src/HexDialogs.cpp:1797
+msgid "32bit - Dwords"
+msgstr "32비트 - 더블워드"
+
+#: src/HexDialogs.cpp:1798
+msgid "64bit - Qwords"
+msgstr "64비트 - 쿼드워드"
+
+#: src/HexDialogs.cpp:2009
+msgid "Selected block bigger than limit."
+msgstr "선택한 블록이 제한보다 큽니다."
+
+#: src/HexDialogs.cpp:2213
+msgid "File #1 is not readable."
+msgstr "파일 #1을 읽을 수 없습니다."
+
+#: src/HexDialogs.cpp:2217
+msgid "File #2 is not readable."
+msgstr "파일 #2를 읽을 수 없습니다."
+
+#: src/HexDialogs.cpp:2233
+msgid "Error, File #1 cannot open."
+msgstr "오류: 파일 #1을 열 수 없습니다."
+
+#: src/HexDialogs.cpp:2237
+msgid "Error, File #2 cannot open."
+msgstr "오류: 파일 #2를 열 수 없습니다."
+
+#: src/HexDialogs.cpp:2243
+msgid "Error, Save File cannot open."
+msgstr "오류: 저장 파일을 열 수 없습니다."
+
+#: src/HexDialogs.cpp:2246
+msgid "Comparing files..."
+msgstr "파일 비교 중..."
+
+#: src/HexDialogs.cpp:2248
+msgid "wxHexEditor Comparing"
+msgstr "wxHexEditor 비교 중"
+
+#: src/HexDialogs.cpp:2402
+msgid "Sorry, this program supports up to 500K differences."
+msgstr "죄송합니다. 이 프로그램은 최대 50만 개의 차이점까지 지원합니다."
+
+#: src/HexDialogs.cpp:2402
+msgid "Remaining differences not shown."
+msgstr "나머지 차이점은 표시되지 않았습니다."
+
+#: src/HexDialogs.cpp:2402
+msgid "Error on Comparison"
+msgstr "비교 중 오류 발생"
+
+#: src/HexDialogs.cpp:2412
+msgid "Comparison Speed : "
+msgstr "비교 속도: "
+
+#: src/HexDialogs.cpp:2434
+msgid "File #1 : "
+msgstr "파일 #1: "
+
+#: src/HexDialogs.cpp:2434
+msgid "File #2 : "
+msgstr "파일 #2: "
+
+#: src/HexDialogs.cpp:2477 src/HexDialogs.cpp:2481
+msgid "This part doesn't exist at compared file"
+msgstr "비교 파일에 이 부분이 없습니다"
+
+#: src/HexDialogs.cpp:2524
+msgid "Error, Save File is not selected."
+msgstr "오류: 저장 파일이 선택되지 않았습니다."
+
+#: src/HexDialogs.cpp:2666
+msgid "Cannot calculate checksum of an empty file."
+msgstr "빈 파일의 체크섬은 계산할 수 없습니다."
+
+#: src/HexDialogs.cpp:2672
+msgid "File: "
+msgstr "파일: "
+
+#: src/HexDialogs.cpp:2673
+msgid "Notice: Checksum includes non-saved changes."
+msgstr "참고: 체크섬에 저장되지 않은 변경 사항이 포함됩니다."
+
+#: src/HexDialogs.cpp:2691
+msgid "Results copied to the clipboard."
+msgstr "결과가 클립보드에 복사되었습니다."
+
+#: src/HexDialogs.cpp:2691
+msgid "Checksum Results"
+msgstr "체크섬 결과"
+
+#: src/HexDialogs.cpp:2712 src/HexEditor.cpp:173
+msgid "Please wait while calculating checksum."
+msgstr "체크섬을 계산하는 동안 기다려 주세요."
+
+#: src/HexDialogs.cpp:2714 src/HexEditor.cpp:175
+msgid "Calculating Checksum"
+msgstr "체크섬 계산 중"
+
+#: src/HexDialogs.cpp:2775 src/HexEditor.cpp:195
+msgid "Hash Speed : "
+msgstr "해시 속도: "
+
+#: src/HexDialogs.cpp:3161
+msgid "Are you sure about resetting colours?"
+msgstr "색상을 초기화하시겠습니까?"
+
+#: src/HexDialogs.cpp:3161
+msgid "Resetting Hex Colours"
+msgstr "16진수 색상 초기화 중"
+
+#: src/HexDialogs.cpp:3200
+msgid "Please wait while backing up disk/partition image."
+msgstr "디스크/파티션 이미지를 백업하는 동안 기다려 주세요."
+
+#: src/HexDialogs.cpp:3202
+msgid "Disk/Partition Backup"
+msgstr "디스크/파티션 백업"
+
+#: src/HexDialogs.cpp:3220
+msgid "Error on writing to backup image."
+msgstr "백업 이미지에 쓰는 중 오류가 발생했습니다."
+
+#: src/HexDialogs.cpp:3220 src/HexDialogs.cpp:3285
+msgid "ERROR!"
+msgstr "오류!"
+
+#: src/HexDialogs.cpp:3228
+msgid "Backup Speed : "
+msgstr "백업 속도: "
+
+#: src/HexDialogs.cpp:3257
+msgid "Backup operation completed."
+msgstr "백업 작업이 완료되었습니다."
+
+#: src/HexDialogs.cpp:3257 src/HexDialogs.cpp:3326 src/HexDialogs.cpp:3386
+msgid "Operation Complete"
+msgstr "작업 완료"
+
+#: src/HexDialogs.cpp:3281 src/HexDialogs.cpp:3341
+msgid "WARNING! THIS OPERATION WILL DESTROY EVERY INFORMATION AT :\n"
+msgstr "경고! 이 작업은 다음 위치의 모든 데이터를 파괴합니다:\n"
+
+#: src/HexDialogs.cpp:3281 src/HexDialogs.cpp:3341
+msgid "ARE YOU SURE?"
+msgstr ""
+
+#: src/HexDialogs.cpp:3281 src/HexDialogs.cpp:3290 src/HexDialogs.cpp:3341
+msgid "WARNING!"
+msgstr "경고!"
+
+#: src/HexDialogs.cpp:3285
+msgid "ERROR!: Disk space is smaller than the image file."
+msgstr "오류!: 디스크 공간이 이미지 파일보다 작습니다."
+
+#: src/HexDialogs.cpp:3290
+msgid "WARNING!: Disk space is bigger than the image file. \nRemaining space will remain untouched."
+msgstr "경고!: 디스크 공간이 이미지 파일보다 큽니다.\n남은 공간은 그대로 유지됩니다."
+
+#: src/HexDialogs.cpp:3294
+msgid "Please wait while restoring disk/partition."
+msgstr "디스크/파티션을 복원하는 동안 기다려 주세요."
+
+#: src/HexDialogs.cpp:3296
+msgid "Disk/Partition Restore"
+msgstr "디스크/파티션 복원"
+
+#: src/HexDialogs.cpp:3318
+msgid "Restore Speed : "
+msgstr "복원 속도: "
+
+#: src/HexDialogs.cpp:3326
+msgid "Restore operation completed."
+msgstr "복원 작업이 완료되었습니다."
+
+#: src/HexDialogs.cpp:3344
+msgid "Please wait while erasing disk/partition image."
+msgstr "디스크/파티션 이미지를 지우는 동안 기다려 주세요."
+
+#: src/HexDialogs.cpp:3346
+msgid "Disk/Partition Erase"
+msgstr "디스크/파티션 지우기"
+
+#: src/HexDialogs.cpp:3379
+msgid "Erase Speed : "
+msgstr "지우기 속도: "
+
+#: src/HexDialogs.cpp:3386
+msgid "Erase operation completed."
+msgstr "지우기 작업이 완료되었습니다."
+
+#: src/HexEditor.cpp:164
+msgid "Cannot read hash file!"
+msgstr "해시 파일을 읽을 수 없습니다!"
+
+#: src/HexEditor.cpp:208
+msgid "File Corrupt!"
+msgstr "파일이 손상되었습니다!"
+
+#: src/HexEditor.cpp:208
+msgid "File Hash:"
+msgstr "파일 해시:"
+
+#: src/HexEditor.cpp:211
+msgid "Hash File:"
+msgstr "해시 파일:"
+
+#: src/HexEditor.cpp:212 src/HexEditor.cpp:216
+msgid "Hash Result"
+msgstr "해시 결과"
+
+#: src/HexEditor.cpp:216
+msgid "File Verified."
+msgstr "파일이 확인되었습니다."
+
+#: src/HexEditor.cpp:223
+msgid "Critical Error. File pointer is not empty!"
+msgstr "치명적 오류. 파일 포인터가 비어 있지 않습니다!"
+
+#: src/HexEditor.cpp:335
+msgid "Switching to XORView Thru mode will reset Undo&Redo buffer. Unsaved changes will be discarded.\n Note also that you can't use methods that change file size (like delete and inject) while XORView Thru mode is active."
+msgstr "XORView Thru 모드로 전환하면 실행 취소/다시 실행 버퍼가 초기화되고 저장되지 않은 변경 사항은 버려집니다.\n또한 XORView Thru 모드가 활성화된 동안에는 파일 크기를 변경하는 작업(삭제, 삽입 등)을 사용할 수 없습니다."
+
+#: src/HexEditor.cpp:335
+msgid "XORView Thru Warning"
+msgstr "XORView Thru 경고"
+
+#: src/HexEditor.cpp:355
+msgid "File in Read Only mode. Cannot save file."
+msgstr "파일이 읽기 전용 모드입니다. 저장할 수 없습니다."
+
+#: src/HexEditor.cpp:355 src/HexEditor.cpp:364 src/HexEditor.cpp:380
+msgid "File Save"
+msgstr "파일 저장"
+
+#: src/HexEditor.cpp:359
+msgid "File has some insertion/deletions. You cannot save this file-self (yet). Please use SaveAs."
+msgstr "파일에 삽입/삭제가 있어 아직 이 파일을 그대로 저장할 수 없습니다. 다른 이름으로 저장을 사용하세요."
+
+#: src/HexEditor.cpp:359
+msgid "File Save Error."
+msgstr "파일 저장 오류."
+
+#: src/HexEditor.cpp:364
+msgid "Do you want to save this file?"
+msgstr "이 파일을 저장하시겠습니까?"
+
+#: src/HexEditor.cpp:369
+msgid "File cannot saved. Operation Cancelled"
+msgstr "파일을 저장하지 못했습니다. 작업이 취소되었습니다"
+
+#: src/HexEditor.cpp:369
+msgid "File Save Error"
+msgstr "파일 저장 오류"
+
+#: src/HexEditor.cpp:380
+msgid "File is not changed. Nothing to save.\n"
+msgstr "파일이 변경되지 않았습니다. 저장할 내용이 없습니다.\n"
+
+#: src/HexEditor.cpp:393
+#, c-format
+msgid "There are not enough free disk space.\nRequired: %s\nAvailable: %s"
+msgstr "남은 디스크 공간이 부족합니다.\n필요: %s\n사용 가능: %s"
+
+#: src/HexEditor.cpp:395
+msgid "Not Enought Space"
+msgstr "공간이 부족합니다"
+
+#: src/HexEditor.cpp:404
+msgid "File save in progress"
+msgstr "파일 저장 중"
+
+#: src/HexEditor.cpp:406
+msgid "Saving file"
+msgstr "파일 저장 중"
+
+#: src/HexEditor.cpp:427
+msgid "Write Speed : "
+msgstr "쓰기 속도: "
+
+#: src/HexEditor.cpp:433
+msgid "File cannot save as "
+msgstr "파일을 다음으로 저장할 수 없습니다: "
+
+#: src/HexEditor.cpp:446
+msgid "Do you want to save file?\n"
+msgstr "파일을 저장하시겠습니까?\n"
+
+#: src/HexEditor.cpp:446
+msgid "File Has Changed!"
+msgstr "파일이 변경되었습니다!"
+
+#: src/HexEditor.cpp:461
+msgid "TAG file cannot be saved to default location.\nDo you want to Export TAGs file?"
+msgstr "태그 파일을 기본 위치에 저장할 수 없습니다.\n태그 파일을 내보내시겠습니까?"
+
+#: src/HexEditor.cpp:461
+msgid "TAGs Cannot Be Saved!!"
+msgstr "태그를 저장할 수 없습니다!!"
+
+#: src/HexEditor.cpp:463 src/HexEditorFrame.cpp:624
+msgid "Choose a file for export TAGs"
+msgstr "태그를 내보낼 파일 선택"
+
+#: src/HexEditor.cpp:473
+msgid "TAGs cannot be exported to file : "
+msgstr "태그를 다음 파일로 내보낼 수 없습니다: "
+
+#: src/HexEditor.cpp:576
+msgid "Enter hex value(s) for fill"
+msgstr "채울 16진수 값을 입력하세요"
+
+#: src/HexEditor.cpp:576
+msgid "Fill Dialog"
+msgstr "채우기 대화상자"
+
+#: src/HexEditor.cpp:577
+msgid "Fill"
+msgstr "채우기"
+
+#: src/HexEditor.cpp:595
+msgid "Choose a file for saving dump"
+msgstr "덤프를 저장할 파일 선택"
+
+#: src/HexEditor.cpp:616
+msgid "Dump cannot saved as "
+msgstr "덤프를 다음으로 저장할 수 없습니다: "
+
+#: src/HexEditor.cpp:628 src/HexEditor.cpp:1405
+msgid "Showing Page: %"
+msgstr "표시 페이지: %"
+
+#: src/HexEditor.cpp:647
+msgid "File cannot read!"
+msgstr "파일을 읽을 수 없습니다!"
+
+#: src/HexEditor.cpp:1069 src/HexEditor.cpp:1409
+msgid "Selected Block: N/A"
+msgstr "선택한 블록: 해당 없음"
+
+#: src/HexEditor.cpp:1070 src/HexEditor.cpp:1410
+msgid "Block Size: N/A"
+msgstr "블록 크기: 해당 없음"
+
+#: src/HexEditor.cpp:1119 src/HexEditorFrame.cpp:306 src/HexEditorGui.cpp:92
+#: src/HexEditorGui.cpp:1552
+msgid "Copy"
+msgstr "복사"
+
+#: src/HexEditor.cpp:1120
+msgid "CopyAs"
+msgstr "다른 형식으로 복사"
+
+#: src/HexEditor.cpp:1121 src/HexEditorFrame.cpp:307 src/HexEditorGui.cpp:112
+msgid "Paste"
+msgstr "붙여넣기"
+
+#: src/HexEditor.cpp:1124 src/HexEditorGui.cpp:107
+msgid "Cut"
+msgstr "잘라내기"
+
+#: src/HexEditor.cpp:1125 src/HexEditorGui.cpp:122 src/HexPanels.cpp:338
+msgid "Delete"
+msgstr "삭제"
+
+#: src/HexEditor.cpp:1126 src/HexEditorFrame.cpp:311 src/HexEditorGui.cpp:127
+msgid "Insert"
+msgstr "삽입"
+
+#: src/HexEditor.cpp:1135 src/HexEditorGui.cpp:102
+msgid "Save As Dump"
+msgstr "덤프로 저장"
+
+#: src/HexEditor.cpp:1136 src/HexEditorGui.cpp:117
+msgid "Fill Selection"
+msgstr "선택 영역 채우기"
+
+#: src/HexEditor.cpp:1138
+msgid "Set Selection Block Start"
+msgstr "선택 블록 시작 지정"
+
+#: src/HexEditor.cpp:1140
+msgid "Set Selection Block End"
+msgstr "선택 블록 끝 지정"
+
+#: src/HexEditor.cpp:1142
+msgid "Quick Tag"
+msgstr "빠른 태그"
+
+#: src/HexEditor.cpp:1142
+msgid "Creates empty tag with Random Color."
+msgstr "무작위 색상으로 빈 태그를 만듭니다."
+
+#: src/HexEditor.cpp:1143
+msgid "New Tag"
+msgstr "새 태그"
+
+#: src/HexEditor.cpp:1144
+msgid "Tag Edit"
+msgstr "태그 편집"
+
+#: src/HexEditor.cpp:1406
+msgid "Cursor Offset: "
+msgstr "커서 오프셋: "
+
+#: src/HexEditor.cpp:1407
+#, c-format
+msgid "Cursor Value: %u"
+msgstr "커서 값: %u"
+
+#: src/HexEditor.cpp:1413
+msgid "Selected Block: %"
+msgstr "선택한 블록: %"
+
+#: src/HexEditor.cpp:1414
+msgid "Block Size: %"
+msgstr "블록 크기: %"
+
+#: src/HexEditor.cpp:1465
+#, c-format
+msgid "Notice!: This command will increase the file size and will generate too much overhead on file save.\nHow many bytes do you want to inject to location to offset location %lld?"
+msgstr "알림!: 이 명령은 파일 크기를 늘리고 저장 시 오버헤드가 크게 발생합니다.\n오프셋 %lld 위치에 몇 바이트를 삽입하시겠습니까?"
+
+#: src/HexEditor.cpp:1466
+msgid "Bytes"
+msgstr "바이트"
+
+#: src/HexEditor.cpp:1466
+msgid "Injection!"
+msgstr "삽입!"
+
+#: src/HexEditor.cpp:1551
+msgid "WARNING:\nThe text you are copying includes a null character\n(00 in the hex pane) and will be truncated!\n\nIf copying to another file in wxHexEditor you\nshould copy from the Hex pane, not the text pane"
+msgstr "경고:\n복사하는 텍스트에 널 문자가 포함되어 있습니다\n(16진수 창에서 00)\n복사 시 잘릴 수 있습니다!\n\nwxHexEditor에서 다른 파일로 복사할 때는\n텍스트 창이 아닌 16진수 창에서 복사하세요"
+
+#: src/HexEditor.cpp:1562
+msgid "You have no RAM to copy this data."
+msgstr "이 데이터를 복사할 RAM이 부족합니다."
+
+#: src/HexEditor.cpp:1567
+msgid "You have tried to copy more than 10 MB of data.\nCopying above 10 MB to clipboard is not allowed.\nOnly internal copy buffer used!"
+msgstr "10MB를 초과하는 데이터를 복사하려고 했습니다.\n클립보드로 10MB 이상 복사는 허용되지 않습니다.\n내부 복사 버퍼만 사용합니다!"
+
+#: src/HexEditor.cpp:1599
+msgid "No data available at clipboad!"
+msgstr "클립보드에 데이터가 없습니다!"
+
+#: src/HexEditor.cpp:1601
+msgid "Note: Used internal binary copy buffer at paste operation."
+msgstr "참고: 붙여넣기 작업에서 내부 이진 복사 버퍼를 사용했습니다."
+
+#: src/HexEditorFrame.cpp:197
+msgid "License Agreement"
+msgstr "라이선스 동의"
+
+#: src/HexEditorFrame.cpp:293
+msgid "New File"
+msgstr "새 파일"
+
+#: src/HexEditorFrame.cpp:293
+msgid "New file"
+msgstr "새 파일"
+
+#: src/HexEditorFrame.cpp:294
+msgid "Open File"
+msgstr "파일 열기"
+
+#: src/HexEditorFrame.cpp:294
+msgid "Open"
+msgstr "열기"
+
+#: src/HexEditorFrame.cpp:295
+msgid "Save File"
+msgstr "파일 저장"
+
+#: src/HexEditorFrame.cpp:295 src/HexEditorGui.cpp:1822
+#: src/HexEditorCtrl/wxHexCtrl/TagDialogGui.cpp:59
+msgid "Save"
+msgstr "저장"
+
+#: src/HexEditorFrame.cpp:296
+msgid "SaveAs File"
+msgstr "다른 이름으로 저장"
+
+#: src/HexEditorFrame.cpp:296
+msgid "Save as"
+msgstr "다른 이름으로 저장"
+
+#: src/HexEditorFrame.cpp:297
+msgid "Close File"
+msgstr "파일 닫기"
+
+#: src/HexEditorFrame.cpp:297
+msgid "Close"
+msgstr "닫기"
+
+#: src/HexEditorFrame.cpp:300
+msgid "Find and replace"
+msgstr "찾기 및 바꾸기"
+
+#: src/HexEditorFrame.cpp:301
+msgid "GoTo"
+msgstr "이동"
+
+#: src/HexEditorFrame.cpp:303
+msgid "Undo"
+msgstr "실행 취소"
+
+#: src/HexEditorFrame.cpp:304
+msgid "Redo"
+msgstr "다시 실행"
+
+#: src/HexEditorFrame.cpp:306
+msgid "Copy Block"
+msgstr "블록 복사"
+
+#: src/HexEditorFrame.cpp:307
+msgid "Paste Block"
+msgstr "블록 붙여넣기"
+
+#: src/HexEditorFrame.cpp:309
+msgid "Cut Block"
+msgstr "블록 잘라내기"
+
+#: src/HexEditorFrame.cpp:309
+msgid "Cuts selected block and copies to clipboard"
+msgstr "선택한 블록을 잘라내어 클립보드에 복사"
+
+#: src/HexEditorFrame.cpp:310
+msgid "Delete Block"
+msgstr "블록 삭제"
+
+#: src/HexEditorFrame.cpp:310
+msgid "Deletes selected block"
+msgstr "선택한 블록 삭제"
+
+#: src/HexEditorFrame.cpp:311
+msgid "Insert Block"
+msgstr "블록 삽입"
+
+#: src/HexEditorFrame.cpp:323 src/HexEditorFrame.cpp:324
+#: src/HexEditorGui.cpp:156
+msgid "Toolbar"
+msgstr "도구 모음"
+
+#: src/HexEditorFrame.cpp:330 src/HexEditorFrame.cpp:331
+msgid "TagPanel"
+msgstr "태그 패널"
+
+#: src/HexEditorFrame.cpp:341 src/HexEditorFrame.cpp:342
+#: src/HexEditorGui.cpp:168
+msgid "Disassembler Panel"
+msgstr "디스어셈블러 패널"
+
+#: src/HexEditorFrame.cpp:353 src/HexEditorFrame.cpp:354
+msgid "Search Results"
+msgstr "검색 결과"
+
+#: src/HexEditorFrame.cpp:365 src/HexEditorFrame.cpp:366
+msgid "Comparison Results"
+msgstr "비교 결과"
+
+#: src/HexEditorFrame.cpp:376 src/HexEditorFrame.cpp:377
+msgid "DataInterpreter"
+msgstr "데이터 해석기"
+
+#: src/HexEditorFrame.cpp:387 src/HexEditorFrame.cpp:388
+#: src/HexEditorGui.cpp:160
+msgid "InfoPanel"
+msgstr "정보 패널"
+
+#: src/HexEditorFrame.cpp:477
+msgid "MD5 File detected. Do you request MD5 verification?"
+msgstr "MD5 파일이 감지되었습니다. MD5 검증을 수행하시겠습니까?"
+
+#: src/HexEditorFrame.cpp:477 src/HexEditorFrame.cpp:480
+#: src/HexEditorFrame.cpp:483
+msgid "Checksum File Detected"
+msgstr "체크섬 파일 감지됨"
+
+#: src/HexEditorFrame.cpp:480
+msgid "SHA1 File detected. Do you request SHA1 verification?"
+msgstr "SHA1 파일이 감지되었습니다. SHA1 검증을 수행하시겠습니까?"
+
+#: src/HexEditorFrame.cpp:483
+msgid "SHA256 File detected. Do you request SHA256 verification?"
+msgstr "SHA256 파일이 감지되었습니다. SHA256 검증을 수행하시겠습니까?"
+
+#: src/HexEditorFrame.cpp:518
+msgid "Please indicate file size in decimal."
+msgstr "파일 크기를 10진수로 입력하세요."
+
+#: src/HexEditorFrame.cpp:519
+msgid "Enter File Size:"
+msgstr "파일 크기 입력:"
+
+#: src/HexEditorFrame.cpp:526
+#, c-format
+msgid "Wrong input: %d please retry..."
+msgstr "잘못된 입력: %d, 다시 시도하세요..."
+
+#: src/HexEditorFrame.cpp:530 src/HexEditorFrame.cpp:588
+msgid "Choose a file for save as"
+msgstr "다른 이름으로 저장할 파일 선택"
+
+#: src/HexEditorFrame.cpp:542
+msgid "File cannot create!"
+msgstr "파일을 만들 수 없습니다!"
+
+#: src/HexEditorFrame.cpp:558
+msgid "Choose a file for editing"
+msgstr "편집할 파일 선택"
+
+#: src/HexEditorFrame.cpp:608
+msgid "Choose a file for import TAGs"
+msgstr "태그를 가져올 파일 선택"
+
+#: src/HexEditorFrame.cpp:616
+msgid "TAGS cannot be imported from "
+msgstr "다음에서 태그를 가져올 수 없습니다: "
+
+#: src/HexEditorFrame.cpp:632
+msgid "TAGs cannot be exported to "
+msgstr "다음으로 태그를 내보낼 수 없습니다: "
+
+#: src/HexEditorFrame.cpp:636
+msgid "There is no TAGs to Export in current active file!"
+msgstr "현재 활성 파일에 내보낼 태그가 없습니다!"
+
+#: src/HexEditorFrame.cpp:692
+msgid "Please enter process identification number."
+msgstr "프로세스 식별 번호(PID)를 입력하세요."
+
+#: src/HexEditorFrame.cpp:692
+msgid "Enter PID:"
+msgstr "PID 입력:"
+
+#: src/HexEditorFrame.cpp:692 src/HexEditorGui.cpp:234
+msgid "Open Process RAM"
+msgstr "프로세스 RAM 열기"
+
+#: src/HexEditorFrame.cpp:721
+msgid "Please restart program for changes."
+msgstr "변경 사항을 적용하려면 프로그램을 다시 시작하세요."
+
+#: src/HexEditorFrame.cpp:742
+msgid "This mode will write changes every change to file DIRECTLY."
+msgstr "이 모드에서는 변경 사항이 파일에 매번 직접 기록됩니다."
+
+#: src/HexEditorFrame.cpp:742
+msgid "Warning!"
+msgstr "경고!"
+
+#: src/HexEditorFrame.cpp:826
+msgid "wxHexEditor is a hex editor for HUGE files and devices."
+msgstr "wxHexEditor는 대용량 파일과 장치를 위한 16진수 편집기입니다."
+
+#: src/HexEditorFrame.cpp:935
+msgid "You needed administration privileges to see available devices"
+msgstr "사용 가능한 장치를 보려면 관리자 권한이 필요합니다"
+
+#: src/HexEditorFrame.cpp:1210
+msgid "Cannot open dropped file: "
+msgstr "끌어다 놓은 파일을 열 수 없습니다: "
+
+#: src/HexEditorFrame.cpp:1229 src/HexEditorGui.cpp:1032
+#, c-format
+msgid "New wxHexEditor version %s is available!"
+msgstr "새 wxHexEditor 버전 %s을(를) 사용할 수 있습니다!"
+
+#: src/HexEditorGui.cpp:29
+msgid "&New"
+msgstr "새로 만들기(&N)"
+
+#: src/HexEditorGui.cpp:29
+msgid "CTRL+N"
+msgstr ""
+
+#: src/HexEditorGui.cpp:29
+msgid "Creates a new file"
+msgstr "새 파일을 만듭니다"
+
+#: src/HexEditorGui.cpp:33
+msgid "&Open"
+msgstr "열기(&O)"
+
+#: src/HexEditorGui.cpp:33
+msgid "CTRL+O"
+msgstr ""
+
+#: src/HexEditorGui.cpp:33
+msgid "Open a file"
+msgstr "파일 열기"
+
+#: src/HexEditorGui.cpp:37
+msgid "Open &Recent"
+msgstr "최근 파일 열기(&R)"
+
+#: src/HexEditorGui.cpp:39
+msgid "No Recent File"
+msgstr "최근 파일 없음"
+
+#: src/HexEditorGui.cpp:46
+msgid "&Save"
+msgstr "저장(&S)"
+
+#: src/HexEditorGui.cpp:46
+msgid "CTRL+S"
+msgstr ""
+
+#: src/HexEditorGui.cpp:46
+msgid "Save modifications"
+msgstr "변경 사항 저장"
+
+#: src/HexEditorGui.cpp:51
+msgid "Save &As"
+msgstr "다른 이름으로 저장(&A)"
+
+#: src/HexEditorGui.cpp:51
+msgid "SHIFT+CTRL+S"
+msgstr ""
+
+#: src/HexEditorGui.cpp:51
+msgid "Save current file as..."
+msgstr "현재 파일을 다른 이름으로 저장..."
+
+#: src/HexEditorGui.cpp:56
+msgid "&Close"
+msgstr "닫기(&C)"
+
+#: src/HexEditorGui.cpp:56
+msgid "CTRL+W"
+msgstr ""
+
+#: src/HexEditorGui.cpp:56
+msgid "Close current file"
+msgstr "현재 파일 닫기"
+
+#: src/HexEditorGui.cpp:63
+msgid "Import TAGs"
+msgstr "태그 가져오기"
+
+#: src/HexEditorGui.cpp:67
+msgid "Export TAGs"
+msgstr "태그 내보내기"
+
+#: src/HexEditorGui.cpp:73
+msgid "&Quit"
+msgstr "종료(&Q)"
+
+#: src/HexEditorGui.cpp:73
+msgid "CTRL+Q"
+msgstr ""
+
+#: src/HexEditorGui.cpp:73
+msgid "Quit the application"
+msgstr "프로그램 종료"
+
+#: src/HexEditorGui.cpp:76
+msgid "&File"
+msgstr "파일(&F)"
+
+#: src/HexEditorGui.cpp:80
+msgid "&Undo"
+msgstr "실행 취소(&U)"
+
+#: src/HexEditorGui.cpp:80
+msgid "CTRL+Z"
+msgstr ""
+
+#: src/HexEditorGui.cpp:80
+msgid "Undo last operation"
+msgstr "마지막 작업 실행 취소"
+
+#: src/HexEditorGui.cpp:85
+msgid "&Redo"
+msgstr "다시 실행(&R)"
+
+#: src/HexEditorGui.cpp:85
+msgid "CTRL+Y"
+msgstr ""
+
+#: src/HexEditorGui.cpp:85
+msgid "Reverts last undo"
+msgstr "마지막 실행 취소를 되돌립니다"
+
+#: src/HexEditorGui.cpp:92
+msgid "CTRL+C"
+msgstr ""
+
+#: src/HexEditorGui.cpp:92
+msgid "Copies selection"
+msgstr "선택 영역 복사"
+
+#: src/HexEditorGui.cpp:97
+msgid "Copy As"
+msgstr "다른 형식으로 복사"
+
+#: src/HexEditorGui.cpp:97
+msgid "CTRL+SHIFT+C"
+msgstr ""
+
+#: src/HexEditorGui.cpp:97
+msgid "Copies selection in special format"
+msgstr "선택 영역을 특수 형식으로 복사"
+
+#: src/HexEditorGui.cpp:102
+msgid "CTRL+ALT+S"
+msgstr ""
+
+#: src/HexEditorGui.cpp:102
+msgid "Save selections as a file"
+msgstr "선택 영역을 파일로 저장"
+
+#: src/HexEditorGui.cpp:107
+msgid "CTRL+X"
+msgstr ""
+
+#: src/HexEditorGui.cpp:107
+msgid "Cuts a selection"
+msgstr "선택 영역 잘라내기"
+
+#: src/HexEditorGui.cpp:112
+msgid "CTRL+V"
+msgstr ""
+
+#: src/HexEditorGui.cpp:112
+msgid "Paste clipboard to cursor location"
+msgstr "클립보드 내용을 커서 위치에 붙여넣기"
+
+#: src/HexEditorGui.cpp:117
+msgid "Fill selection blocks"
+msgstr "선택한 블록 채우기"
+
+#: src/HexEditorGui.cpp:122
+msgid "Deletes selection"
+msgstr "선택 영역 삭제"
+
+#: src/HexEditorGui.cpp:127
+msgid "Inserts new bytes to cursor location"
+msgstr "커서 위치에 새 바이트를 삽입합니다"
+
+#: src/HexEditorGui.cpp:134
+msgid "CTRL+F"
+msgstr ""
+
+#: src/HexEditorGui.cpp:139
+msgid "CTRL+R"
+msgstr ""
+
+#: src/HexEditorGui.cpp:144
+msgid "CTRL+G"
+msgstr ""
+
+#: src/HexEditorGui.cpp:144
+msgid "Branches the given location"
+msgstr "지정한 위치로 분기"
+
+#: src/HexEditorGui.cpp:148
+msgid "&Edit"
+msgstr "편집(&E)"
+
+#: src/HexEditorGui.cpp:152
+msgid "Data Interpreter"
+msgstr "데이터 해석기"
+
+#: src/HexEditorGui.cpp:164
+msgid "TAG Panel"
+msgstr "태그 패널"
+
+#: src/HexEditorGui.cpp:172
+msgid "Search Panel"
+msgstr "검색 패널"
+
+#: src/HexEditorGui.cpp:176
+msgid "Comparison Panel"
+msgstr "비교 패널"
+
+#: src/HexEditorGui.cpp:182
+msgid "Zebra Striping"
+msgstr "줄무늬 표시"
+
+#: src/HexEditorGui.cpp:188
+msgid "Offset Control"
+msgstr "오프셋 창"
+
+#: src/HexEditorGui.cpp:193
+msgid "Hex Control"
+msgstr "16진수 창"
+
+#: src/HexEditorGui.cpp:198
+msgid "Text Control"
+msgstr "텍스트 창"
+
+#: src/HexEditorGui.cpp:202
+msgid "&View"
+msgstr "보기(&V)"
+
+#: src/HexEditorGui.cpp:214
+msgid "XORView Thru"
+msgstr "XOR 뷰"
+
+#: src/HexEditorGui.cpp:214
+msgid "View your XOR encrypted file without decrypting!"
+msgstr "복호화하지 않고 XOR 암호화 파일을 볼 수 있습니다!"
+
+#: src/HexEditorGui.cpp:217
+msgid "Tools"
+msgstr "도구"
+
+#: src/HexEditorGui.cpp:221
+msgid "Open RAM Device"
+msgstr "RAM 장치 열기"
+
+#: src/HexEditorGui.cpp:226
+msgid "Open Disk Device"
+msgstr "디스크 장치 열기"
+
+#: src/HexEditorGui.cpp:228
+msgid "N/A on this OS (yet)"
+msgstr "이 OS에서는 아직 지원되지 않음"
+
+#: src/HexEditorGui.cpp:241
+msgid "Device Image Tools"
+msgstr "장치 이미지 도구"
+
+#: src/HexEditorGui.cpp:243 src/HexEditorGui.cpp:1918
+msgid "Backup"
+msgstr "백업"
+
+#: src/HexEditorGui.cpp:247 src/HexEditorGui.cpp:1980
+msgid "Restore"
+msgstr "복원"
+
+#: src/HexEditorGui.cpp:251 src/HexEditorGui.cpp:2041
+msgid "Erase"
+msgstr "지우기"
+
+#: src/HexEditorGui.cpp:256
+msgid "Devices"
+msgstr "장치"
+
+#: src/HexEditorGui.cpp:260
+msgid "File Mode"
+msgstr "파일 모드"
+
+#: src/HexEditorGui.cpp:262
+msgid "Read Only"
+msgstr "읽기 전용"
+
+#: src/HexEditorGui.cpp:268
+msgid "Writeable"
+msgstr "쓰기 가능"
+
+#: src/HexEditorGui.cpp:273
+msgid "Direct Write"
+msgstr "직접 쓰기"
+
+#: src/HexEditorGui.cpp:283 src/HexEditorGui.cpp:912
+msgid "Options"
+msgstr "옵션"
+
+#: src/HexEditorGui.cpp:287
+msgid "Donate"
+msgstr "기부"
+
+#: src/HexEditorGui.cpp:287
+msgid "Donate some money to author as a return!"
+msgstr "감사의 표시로 개발자에게 기부해 보세요!"
+
+#: src/HexEditorGui.cpp:291
+msgid "Wiki"
+msgstr "위키"
+
+#: src/HexEditorGui.cpp:291
+msgid "Documentation page of wxHexEditor"
+msgstr "wxHexEditor 문서 페이지"
+
+#: src/HexEditorGui.cpp:295
+msgid "Bug Reporting"
+msgstr "버그 보고"
+
+#: src/HexEditorGui.cpp:295
+msgid "Report bugs for smashing them!"
+msgstr "버그를 제보하여 잡아 주세요!"
+
+#: src/HexEditorGui.cpp:299
+msgid "&About"
+msgstr "정보(&A)"
+
+#: src/HexEditorGui.cpp:299
+msgid "F1"
+msgstr ""
+
+#: src/HexEditorGui.cpp:299
+msgid "Show info about this application"
+msgstr "이 프로그램에 대한 정보 표시"
+
+#: src/HexEditorGui.cpp:302
+msgid "&Help"
+msgstr "도움말(&H)"
+
+#: src/HexEditorGui.cpp:460
+msgid "Unsigned"
+msgstr "부호 없음"
+
+#: src/HexEditorGui.cpp:461
+msgid "Sans"
+msgstr "산세리프"
+
+#: src/HexEditorGui.cpp:465
+msgid "Big Endian"
+msgstr "빅 엔디안"
+
+#: src/HexEditorGui.cpp:478
+msgid "Binary"
+msgstr "이진수"
+
+#: src/HexEditorGui.cpp:490
+msgid "00000000"
+msgstr ""
+
+#: src/HexEditorGui.cpp:500
+msgid "Press enter to make changes!"
+msgstr "Enter 키를 눌러 변경을 적용하세요!"
+
+#: src/HexEditorGui.cpp:504
+msgid "Edit"
+msgstr "편집"
+
+#: src/HexEditorGui.cpp:506
+msgid "Allow editing by Data Interpreter Panel"
+msgstr "데이터 해석기 패널을 통한 편집 허용"
+
+#: src/HexEditorGui.cpp:513
+msgid "8 bit"
+msgstr "8비트"
+
+#: src/HexEditorGui.cpp:519 src/HexEditorGui.cpp:530 src/HexEditorGui.cpp:541
+#: src/HexEditorGui.cpp:552 src/HexEditorGui.cpp:563 src/HexEditorGui.cpp:574
+msgid "0"
+msgstr ""
+
+#: src/HexEditorGui.cpp:524
+msgid "16 bit"
+msgstr "16비트"
+
+#: src/HexEditorGui.cpp:535
+msgid "32 bit"
+msgstr "32비트"
+
+#: src/HexEditorGui.cpp:546
+msgid "64 bit"
+msgstr "64비트"
+
+#: src/HexEditorGui.cpp:557
+msgid "Float"
+msgstr "단정밀도 부동소수점"
+
+#: src/HexEditorGui.cpp:568
+msgid "Double"
+msgstr "배정밀도 부동소수점"
+
+#: src/HexEditorGui.cpp:624
+msgid "Clear"
+msgstr "지우기"
+
+#: src/HexEditorGui.cpp:675 src/HexEditorGui.cpp:684
+msgid "INTEL"
+msgstr ""
+
+#: src/HexEditorGui.cpp:675
+msgid "AMD"
+msgstr ""
+
+#: src/HexEditorGui.cpp:680
+msgid "CPU Vendor"
+msgstr "CPU 제조사"
+
+#: src/HexEditorGui.cpp:684
+msgid "AT&T"
+msgstr ""
+
+#: src/HexEditorGui.cpp:688
+msgid "Assembly Type"
+msgstr "어셈블리 유형"
+
+#: src/HexEditorGui.cpp:692
+msgid "16 Bit"
+msgstr "16비트"
+
+#: src/HexEditorGui.cpp:692
+msgid "32 Bit"
+msgstr "32비트"
+
+#: src/HexEditorGui.cpp:692
+msgid "64 Bit"
+msgstr "64비트"
+
+#: src/HexEditorGui.cpp:696
+msgid "Disassembly Bit Mode"
+msgstr "디스어셈블리 비트 모드"
+
+#: src/HexEditorGui.cpp:748 src/HexEditorGui.cpp:749 src/HexEditorGui.cpp:750
+#: src/HexEditorGui.cpp:751 src/HexEditorGui.cpp:752 src/HexEditorGui.cpp:753
+#: src/HexEditorGui.cpp:754 src/HexEditorGui.cpp:755 src/HexEditorGui.cpp:756
+#: src/HexEditorGui.cpp:757 src/HexEditorGui.cpp:863 src/HexEditorGui.cpp:864
+#: src/HexEditorGui.cpp:865 src/HexEditorGui.cpp:866 src/HexEditorGui.cpp:867
+#: src/HexEditorGui.cpp:868 src/HexEditorGui.cpp:869 src/HexEditorGui.cpp:870
+#: src/HexEditorGui.cpp:871 src/HexEditorGui.cpp:872 src/HexEditorGui.cpp:882
+#: src/HexEditorGui.cpp:883 src/HexEditorGui.cpp:884 src/HexEditorGui.cpp:885
+#: src/HexEditorGui.cpp:886 src/HexEditorGui.cpp:887 src/HexEditorGui.cpp:888
+#: src/HexEditorGui.cpp:889 src/HexEditorGui.cpp:890 src/HexEditorGui.cpp:891
+msgid " "
+msgstr ""
+
+#: src/HexEditorGui.cpp:760
+msgid "Decimal"
+msgstr "10진수"
+
+#: src/HexEditorGui.cpp:764 src/HexEditorGui.cpp:905 src/HexEditorGui.cpp:1606
+msgid "Hex"
+msgstr "16진수"
+
+#: src/HexEditorGui.cpp:773
+msgid "Previous Sector"
+msgstr "이전 섹터"
+
+#: src/HexEditorGui.cpp:778
+msgid "Next Sector"
+msgstr "다음 섹터"
+
+#: src/HexEditorGui.cpp:789
+msgid "From beginning"
+msgstr "처음부터"
+
+#: src/HexEditorGui.cpp:789
+msgid "From here"
+msgstr "여기부터"
+
+#: src/HexEditorGui.cpp:789
+msgid "From end"
+msgstr "끝부터"
+
+#: src/HexEditorGui.cpp:791
+msgid "Type of branch"
+msgstr "분기 유형"
+
+#: src/HexEditorGui.cpp:795
+msgid "Go!"
+msgstr "이동!"
+
+#: src/HexEditorGui.cpp:858
+msgid "Search: "
+msgstr "검색: "
+
+#: src/HexEditorGui.cpp:875
+msgid "Replace: "
+msgstr "바꿀 내용: "
+
+#: src/HexEditorGui.cpp:905
+msgid "Text"
+msgstr "텍스트"
+
+#: src/HexEditorGui.cpp:907
+msgid "Search as"
+msgstr "검색 방식"
+
+#: src/HexEditorGui.cpp:914
+msgid "Match Case"
+msgstr "대/소문자 구분"
+
+#: src/HexEditorGui.cpp:917
+msgid "Search backwards"
+msgstr "뒤로 검색"
+
+#: src/HexEditorGui.cpp:920
+msgid "Wrap around"
+msgstr "끝에서 처음으로"
+
+#: src/HexEditorGui.cpp:923
+msgid "As UTF-8"
+msgstr "UTF-8로"
+
+#: src/HexEditorGui.cpp:942
+msgid "Find All"
+msgstr "모두 찾기"
+
+#: src/HexEditorGui.cpp:945
+msgid "Find Some Bytes"
+msgstr "바이트 찾기"
+
+#: src/HexEditorGui.cpp:946
+msgid "This function finds some different values at file. Usefull for finding non-null sections at disks."
+msgstr "파일에서 서로 다른 값을 찾는 기능입니다. 디스크의 비어 있지 않은 구간을 찾는 데 유용합니다."
+
+#: src/HexEditorGui.cpp:960
+msgid "Replace All"
+msgstr "모두 바꾸기"
+
+#: src/HexEditorGui.cpp:965 src/HexEditorGui.cpp:1168
+#: src/HexEditorGui.cpp:1375 src/HexEditorGui.cpp:1549
+#: src/HexEditorGui.cpp:1618 src/HexEditorGui.cpp:1819
+#: src/HexEditorGui.cpp:1915 src/HexEditorGui.cpp:1977
+#: src/HexEditorGui.cpp:2038 src/HexEditorCtrl/wxHexCtrl/TagDialogGui.cpp:53
+msgid "Cancel"
+msgstr "취소"
+
+#: src/HexEditorGui.cpp:1036
+msgid "Download new wxHexEditor"
+msgstr "새 wxHexEditor 다운로드"
+
+#: src/HexEditorGui.cpp:1036
+msgid "http://www.wxhexeditor.org"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1039
+msgid "Do not show this again."
+msgstr "다시 표시하지 않기"
+
+#: src/HexEditorGui.cpp:1074
+msgid "File #1"
+msgstr "파일 #1"
+
+#: src/HexEditorGui.cpp:1078 src/HexEditorGui.cpp:1085
+#: src/HexEditorGui.cpp:1146 src/HexEditorGui.cpp:1240
+#: src/HexEditorGui.cpp:1906 src/HexEditorGui.cpp:1959
+msgid "Select a file"
+msgstr "파일 선택"
+
+#: src/HexEditorGui.cpp:1078 src/HexEditorGui.cpp:1085
+#: src/HexEditorGui.cpp:1240 src/HexEditorGui.cpp:1906
+#: src/HexEditorGui.cpp:1959
+msgid "*"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1081
+msgid "File #2"
+msgstr "파일 #2"
+
+#: src/HexEditorGui.cpp:1092
+msgid "Search For"
+msgstr "찾을 내용"
+
+#: src/HexEditorGui.cpp:1094
+msgid "Different bytes"
+msgstr "다른 바이트"
+
+#: src/HexEditorGui.cpp:1098
+msgid "Same bytes"
+msgstr "같은 바이트"
+
+#: src/HexEditorGui.cpp:1107
+msgid "Stop comparison after"
+msgstr "다음 횟수 후 비교 중지"
+
+#: src/HexEditorGui.cpp:1115
+msgid "hits"
+msgstr "건"
+
+#: src/HexEditorGui.cpp:1125
+msgid "Merge sections if close as"
+msgstr "다음 값 이내면 구간 병합"
+
+#: src/HexEditorGui.cpp:1133
+msgid "bytes"
+msgstr "바이트"
+
+#: src/HexEditorGui.cpp:1143
+msgid "Save Results to File"
+msgstr "결과를 파일로 저장"
+
+#: src/HexEditorGui.cpp:1146
+msgid "*.txt"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1157
+msgid "Connect files for scrolling"
+msgstr "파일을 연결하여 함께 스크롤"
+
+#: src/HexEditorGui.cpp:1158
+msgid "With this option enabled, compared files will always show same address location."
+msgstr "이 옵션을 사용하면 비교 파일이 항상 같은 주소 위치를 표시합니다."
+
+#: src/HexEditorGui.cpp:1171
+msgid "Compare"
+msgstr "비교"
+
+#: src/HexEditorGui.cpp:1228
+msgid "File To Hash:"
+msgstr "해시할 파일:"
+
+#: src/HexEditorGui.cpp:1235
+msgid "Current File"
+msgstr "현재 파일"
+
+#: src/HexEditorGui.cpp:1253
+msgid "MD"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1255
+msgid "MD2 (slow!)"
+msgstr "MD2 (느림!)"
+
+#: src/HexEditorGui.cpp:1258
+msgid "MD4"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1261
+msgid "MD5"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1268
+msgid "SHA"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1270
+msgid "SHA1"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1273
+msgid "SHA224"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1276
+msgid "SHA256"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1279
+msgid "SHA384"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1282
+msgid "SHA512"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1289
+msgid "RipeMD"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1291
+msgid "RipeMD128"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1294
+msgid "RipeMD160"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1297
+msgid "RipeMD256"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1300
+msgid "RipeMD320"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1307
+msgid "HAVAL"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1309
+msgid "HAVAL128"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1312
+msgid "HAVAL160"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1315
+msgid "HAVAL192"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1318
+msgid "HAVAL224"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1321
+msgid "HAVAL256"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1328
+msgid "TIGER"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1330
+msgid "TIGER128"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1333
+msgid "TIGER160"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1336
+msgid "TIGER192"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1343
+msgid "Others"
+msgstr "기타"
+
+#: src/HexEditorGui.cpp:1345
+msgid "ADLER32"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1348
+msgid "CRC32"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1351
+msgid "CRC32B"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1354
+msgid "WHIRLPOOL"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1357
+msgid "GOST"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1360
+msgid "SNEFRU128"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1363
+msgid "SNEFRU256"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1378
+msgid "Calculate"
+msgstr "계산"
+
+#: src/HexEditorGui.cpp:1478
+msgid "Copy As :"
+msgstr "다른 형식으로 복사:"
+
+#: src/HexEditorGui.cpp:1482
+msgid "Full Text"
+msgstr "전체 텍스트"
+
+#: src/HexEditorGui.cpp:1482
+msgid "Special Hex"
+msgstr "특수 16진수"
+
+#: src/HexEditorGui.cpp:1482
+msgid "Internet"
+msgstr "인터넷"
+
+#: src/HexEditorGui.cpp:1482
+msgid "C/C++ Source"
+msgstr "C/C++ 소스"
+
+#: src/HexEditorGui.cpp:1482
+msgid "Assembler Source"
+msgstr "어셈블러 소스"
+
+#: src/HexEditorGui.cpp:1488
+msgid "Option:"
+msgstr "옵션:"
+
+#: src/HexEditorGui.cpp:1508
+msgid "As BigEndian"
+msgstr "빅 엔디안으로"
+
+#: src/HexEditorGui.cpp:1514
+msgid "Bytes Per Line"
+msgstr "줄당 바이트 수"
+
+#: src/HexEditorGui.cpp:1516
+msgid "16"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1528
+msgid "Include Offset Part"
+msgstr "오프셋 부분 포함"
+
+#: src/HexEditorGui.cpp:1532
+msgid "Include Hex Part"
+msgstr "16진수 부분 포함"
+
+#: src/HexEditorGui.cpp:1536
+msgid "Include Text Part"
+msgstr "텍스트 부분 포함"
+
+#: src/HexEditorGui.cpp:1591
+msgid "For switching XORView Thru mode, all Undo&Redo buffer will reset and non-saved changes will discarded.\nAlso you can't use methods that changes file size (like delete and inject) with XORView Thru mode enabled."
+msgstr "XORView Thru 모드로 전환하면 실행 취소/다시 실행 버퍼가 초기화되고 저장되지 않은 변경 사항은 버려집니다.\n또한 XORView Thru 모드에서는 파일 크기를 변경하는 작업(삭제, 삽입 등)을 사용할 수 없습니다."
+
+#: src/HexEditorGui.cpp:1598
+msgid "Please enter XOR key as "
+msgstr "XOR 키를 다음과 같이 입력하세요: "
+
+#: src/HexEditorGui.cpp:1602
+msgid "ASCII"
+msgstr ""
+
+#: src/HexEditorGui.cpp:1621 src/HexEditorGui.cpp:2088
+msgid "OK"
+msgstr "확인"
+
+#: src/HexEditorGui.cpp:1659
+msgid "Colours"
+msgstr "색상"
+
+#: src/HexEditorGui.cpp:1666
+msgid "Hex Colors:"
+msgstr "16진수 색상:"
+
+#: src/HexEditorGui.cpp:1671
+msgid "Foreground Colour"
+msgstr "전경색"
+
+#: src/HexEditorGui.cpp:1676
+msgid "Background Colour"
+msgstr "배경색"
+
+#: src/HexEditorGui.cpp:1681
+msgid "Zebra Colour"
+msgstr "줄무늬 색상"
+
+#: src/HexEditorGui.cpp:1685
+msgid "Selection Colours:"
+msgstr "선택 영역 색상:"
+
+#: src/HexEditorGui.cpp:1690
+msgid "Selection Foreground Colour"
+msgstr "선택 영역 전경색"
+
+#: src/HexEditorGui.cpp:1695
+msgid "Selection Colour"
+msgstr "선택 영역 색상"
+
+#: src/HexEditorGui.cpp:1699
+msgid "Reset"
+msgstr "초기화"
+
+#: src/HexEditorGui.cpp:1700
+msgid "Reset Colour Values to Default"
+msgstr "색상 값을 기본값으로 초기화"
+
+#: src/HexEditorGui.cpp:1713
+msgid "Language:"
+msgstr "언어:"
+
+#: src/HexEditorGui.cpp:1728
+msgid "Character Encoding Family:"
+msgstr "문자 인코딩 계열:"
+
+#: src/HexEditorGui.cpp:1743
+msgid "Character Encoding:"
+msgstr "문자 인코딩:"
+
+#: src/HexEditorGui.cpp:1752 src/HexPanels.cpp:221
+#: src/HexEditorGui.cpp:2004 src/HexEditorGui.cpp:2010
+msgid "Glyph Font:"
+msgstr "글리프 글꼴:"
+
+#: src/HexEditorGui.cpp:2010
+msgid "Font used to draw the text (right) panel. Pick an installed font that has the glyphs you need, e.g. SimSun-ExtB for rare CJK ideographs. Non fixed-width fonts may break column alignment."
+msgstr "오른쪽 텍스트 패널을 그리는 데 사용되는 글꼴입니다. 필요한 글리프가 있는 설치된 글꼴을 선택하세요. 예: 희귀 한자는 SimSun-ExtB. 고정 폭이 아닌 글꼴은 열 정렬이 깨질 수 있습니다."
+
+msgid "Size:"
+msgstr "크기:"
+
+#: src/HexEditorGui.cpp:1763
+msgid "Custom Hex Formating"
+msgstr "사용자 지정 16진수 형식"
+
+#: src/HexEditorGui.cpp:1771
+msgid "xx "
+msgstr ""
+
+#: src/HexEditorGui.cpp:1772
+msgid "xxxx "
+msgstr ""
+
+#: src/HexEditorGui.cpp:1773
+msgid "xx xx xx xx xx xx xx xx  "
+msgstr ""
+
+#: src/HexEditorGui.cpp:1774
+msgid "xxxx xxxx xxxx xxxx  "
+msgstr ""
+
+#: src/HexEditorGui.cpp:1776
+msgid "Recursive custom hex format pattern"
+msgstr "사용자 지정 16진수 패턴 재귀 적용"
+
+#: src/HexEditorGui.cpp:1780
+msgid "Enable"
+msgstr "사용"
+
+#: src/HexEditorGui.cpp:1789
+msgid "Bytes Per Line Limit"
+msgstr "줄당 바이트 수 제한"
+
+#: src/HexEditorGui.cpp:1806
+msgid "Auto show tag panel if tags detected"
+msgstr "태그가 감지되면 태그 패널 자동 표시"
+
+#: src/HexEditorGui.cpp:1810
+msgid "Make program portable "
+msgstr "프로그램을 포터블로 만들기 "
+
+#: src/HexEditorGui.cpp:1893 src/HexEditorGui.cpp:1955
+msgid "Source :"
+msgstr "원본:"
+
+#: src/HexEditorGui.cpp:1902 src/HexEditorGui.cpp:1962
+#: src/HexEditorGui.cpp:2017
+msgid "Destination :"
+msgstr "대상:"
+
+#: src/HexEditorGui.cpp:2029
+msgid "0x00"
+msgstr ""
+
+#: src/HexEditorGui.cpp:2029
+msgid "0xFF"
+msgstr ""
+
+#: src/HexEditorGui.cpp:2029
+msgid "0xRANDOM"
+msgstr ""
+
+#: src/HexEditorGui.cpp:2031
+msgid "Erase With "
+msgstr "다음 값으로 지우기 "
+
+#: src/HexPanels.cpp:219
+msgid "Name:"
+msgstr "이름:"
+
+#: src/HexPanels.cpp:220
+msgid "Path:"
+msgstr "경로:"
+
+#: src/HexPanels.cpp:222
+msgid "Access:"
+msgstr "접근:"
+
+#: src/HexPanels.cpp:223
+msgid "Device:"
+msgstr "장치:"
+
+#: src/HexPanels.cpp:225 src/HexPanels.cpp:230
+msgid "BLOCK"
+msgstr "블록"
+
+#: src/HexPanels.cpp:225 src/HexPanels.cpp:227
+msgid "FILE"
+msgstr "파일"
+
+#: src/HexPanels.cpp:228
+msgid "DIRECTORY"
+msgstr "디렉터리"
+
+#: src/HexPanels.cpp:229
+msgid "CHARACTER"
+msgstr "문자"
+
+#: src/HexPanels.cpp:231
+msgid "FIFO"
+msgstr "FIFO"
+
+#: src/HexPanels.cpp:232
+msgid "LINK"
+msgstr "링크"
+
+#: src/HexPanels.cpp:233
+msgid "SOCKET"
+msgstr "소켓"
+
+#: src/HexPanels.cpp:244
+msgid "Sector Size: "
+msgstr "섹터 크기: "
+
+#: src/HexPanels.cpp:245
+msgid "Sector Count: "
+msgstr "섹터 수: "
+
+#: src/HexPanels.cpp:249
+msgid "XORKey:"
+msgstr "XOR 키:"
+
+#: src/HexEditorCtrl/HexEditorCtrlGui.cpp:39
+msgid "Address"
+msgstr "주소"
+
+#: src/HexEditorCtrl/HexEditorCtrlGui.cpp:45
+msgid "Byte View"
+msgstr "바이트 보기"
+
+#: src/HexEditorCtrl/wxHexCtrl/TagDialogGui.cpp:33
+msgid "Font Color"
+msgstr "글꼴 색상"
+
+#: src/HexEditorCtrl/wxHexCtrl/TagDialogGui.cpp:37
+msgid "Note Color"
+msgstr "메모 색상"
+
+#: src/HexEditorCtrl/wxHexCtrl/TagDialogGui.cpp:56
+msgid "Remove"
+msgstr "제거"
+
+#: src/HexEditorCtrl/wxHexCtrl/TagDialogGui.h:53
+msgid "Tag Dialog"
+msgstr "태그 대화상자"
+
+#: menu translation supplement
+msgid "Import Template"
+msgstr "템플릿 가져오기"
+
+#: menu translation supplement
+msgid "Hex2Color Mode"
+msgstr "Hex2Color 모드"
+
+#: menu translation supplement
+msgid "Open Memory SPD"
+msgstr "메모리 SPD 열기"
+
+#: menu translation supplement
+msgid "Colorize HEX values with representing colors."
+msgstr "16진수 값을 해당 색상으로 표시합니다."
+
+#: menu translation supplement
+msgid "Allow to edit Memory SPD values"
+msgstr "메모리 SPD 값을 편집할 수 있습니다"
+
+#: menu translation supplement
+
+#: i18n supplement
+msgid "Find and Replace"
+msgstr "찾기 및 바꾸기"
+
+#: i18n supplement
+msgid "Cut selected block and copies to clipboard"
+msgstr "선택한 블록을 잘라내어 클립보드에 복사"
+
+#: i18n supplement
+msgid "Delete selected block"
+msgstr "선택한 블록 삭제"
+
+#: i18n supplement
+msgid "Insert block"
+msgstr "블록 삽입"
+
+#: i18n supplement
+msgid "Hide"
+msgstr "숨기기"
+
+#: i18n supplement
+msgid "Convert TAGs"
+msgstr "태그 변환"
+
+#: i18n supplement
+msgid "Showing Page: %llu"
+msgstr "페이지 표시: %llu"
+
+#: i18n supplement
+msgid "Showing Page: %I64u"
+msgstr "페이지 표시: %I64u"
+

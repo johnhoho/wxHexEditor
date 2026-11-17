@@ -8,18 +8,7 @@
 # godfrey <godfrey.public@gmail.com>, 2013-2014
 # zyphio <zyphio@gmail.com>, 2013-2014
 msgid ""
-msgstr ""
-"Project-Id-Version: wxHexEditor\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-21 02:13+0300\n"
-"PO-Revision-Date: 2017-12-21 03:04+0000\n"
-"Last-Translator: Erdem U. Altinyurt <spamjunkeater@gmail.com>\n"
-"Language-Team: Chinese (China) (http://www.transifex.com/eua/wxhexeditor/language/zh_CN/)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Language: zh_CN\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+msgstr "Project-Id-Version: wxHexEditor\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2017-12-21 02:13+0300\nPO-Revision-Date: 2017-12-21 03:04+0000\nLast-Translator: Erdem U. Altinyurt <spamjunkeater@gmail.com>\nLanguage-Team: Chinese \nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nLanguage: zh-Hans \nPlural-Forms: nplurals=1; plural=0;\n"
 
 #: src/HexDialogs.h:70 src/HexEditorGui.h:300 src/HexEditorFrame.cpp:299
 #: src/HexEditorGui.cpp:134 src/HexEditorGui.cpp:938
@@ -84,11 +73,11 @@ msgstr "操作已取消！"
 
 #: src/HexEditor.h:217 src/HexEditor.h:237 src/HexEditor.cpp:1562
 msgid "Copy To Clipboard Error"
-msgstr "复制到剪贴版时出错"
+msgstr "复制到剪贴板时出错"
 
 #: src/FAL.cpp:175
 msgid "Device is not mounted"
-msgstr ""
+msgstr "设备未挂载"
 
 #: src/FAL.cpp:175 src/FAL.cpp:221 src/FAL.cpp:240 src/FAL.cpp:252
 #: src/FAL.cpp:272 src/FAL.cpp:286 src/FAL.cpp:310 src/FAL.cpp:321
@@ -106,9 +95,7 @@ msgid "File is not readable by permissions."
 msgstr "文件不是可读的权限。"
 
 #: src/FAL.cpp:221
-msgid ""
-"Please change file permissons or run this program with Windows UAC "
-"privileges."
+msgid "Please change file permissons or run this program with Windows UAC privileges."
 msgstr "请修改本软件的文件执行权限或者以Windows管理员身份运行此程序。"
 
 #: src/FAL.cpp:240 src/FAL.cpp:310
@@ -120,18 +107,16 @@ msgid "File does not exists at path:"
 msgstr "文件不存在于这个路径中："
 
 #: src/FAL.cpp:259
-msgid ""
-"Please change file permissons or run this program with root privileges."
+msgid "Please change file permissons or run this program with root privileges."
 msgstr "请更改文件权限或以root权限运行该程序。"
 
 #: src/FAL.cpp:260
-msgid ""
-"You can also try to own the file temporarily (requires root's password.)"
-msgstr "你可以尝试临时拥有该文件（需要root密码）"
+msgid "You can also try to own the file temporarily (requires root's password.)"
+msgstr "也可以尝试临时获取该文件所有权（需要 root 密码）"
 
 #: src/FAL.cpp:261
 msgid "Do you want to own the file?"
-msgstr "你取得自己的文件吗？"
+msgstr "是否取得该文件的所有权？"
 
 #: src/FAL.cpp:261 src/HexEditor.cpp:1556
 msgid "Warning"
@@ -143,7 +128,7 @@ msgstr "未知错误关于\"stat -c %U"
 
 #: src/FAL.cpp:286
 msgid "For using this function, please install \"gnomesu\" or \"gksu\" tools first."
-msgstr "要使用此功能，请先安装\"gnomesu\"或者\"gksu\""
+msgstr "要使用此功能，请先安装“gnomesu”或“gksu”工具。"
 
 #: src/FAL.cpp:321
 msgid "Please change file permissons or run this program with root privileges"
@@ -154,10 +139,8 @@ msgid "File cannot open."
 msgstr "文件无法打开。"
 
 #: src/FAL.cpp:430
-msgid ""
-"File load error!.\n"
-"File closed but not opened while access change. For avoid corruption close the program"
-msgstr "文件加载错误！。\nFile closed but not opened while access change. For avoid corruption close the program"
+msgid "File load error!.\nFile closed but not opened while access change. For avoid corruption close the program"
+msgstr "文件加载错误！\n访问权限变更期间文件已关闭且未能重新打开。为避免损坏，请关闭程序"
 
 #: src/FAL.cpp:438
 msgid "File cannot open in this mode : "
@@ -169,11 +152,11 @@ msgstr "访问无效"
 
 #: src/FAL.cpp:467 src/FAL.cpp:477 src/FAL.cpp:487
 msgid "Not Enought RAM"
-msgstr "无足够的内存"
+msgstr "内存不足"
 
 #: src/FAL.cpp:578
 msgid "Error on Write operation to Process RAM"
-msgstr "Error on Write operation to Process RAM"
+msgstr "写入进程内存时出错"
 
 #: src/FAL.cpp:578
 msgid "FATAL ERROR"
@@ -239,16 +222,14 @@ msgstr "寻找匹配..."
 #: src/HexDialogs.cpp:1159
 #, c-format
 msgid "Found %d matches."
-msgstr "搜索 %d 匹配。"
+msgstr "找到 %d 个匹配项。"
 
 #: src/HexDialogs.cpp:1159
 msgid "Find All Done!"
-msgstr "完成所有搜索！"
+msgstr "全部搜索完成！"
 
 #: src/HexDialogs.cpp:1653 src/HexDialogs.cpp:1678
-msgid ""
-"Search and Replace sizes are not equal!\n"
-"Replacing with different size are not supported yet."
+msgid "Search and Replace sizes are not equal!\nReplacing with different size are not supported yet."
 msgstr "查找和替换大小不一致\n目前并不支持大小不一致的替换"
 
 #: src/HexDialogs.cpp:1653 src/HexDialogs.cpp:1678 src/HexDialogs.cpp:2009
@@ -364,7 +345,7 @@ msgstr "wxHexEditor 对比中"
 
 #: src/HexDialogs.cpp:2402
 msgid "Sorry, this program supports up to 500K differences."
-msgstr "抱歉，这个程序支持高达500K差异。"
+msgstr "抱歉，本程序最多支持 50 万个差异。"
 
 #: src/HexDialogs.cpp:2402
 msgid "Remaining differences not shown."
@@ -412,15 +393,15 @@ msgstr "把结果复制到剪贴板。"
 
 #: src/HexDialogs.cpp:2691
 msgid "Checksum Results"
-msgstr "校验总和的结果"
+msgstr "校验结果"
 
 #: src/HexDialogs.cpp:2712 src/HexEditor.cpp:173
 msgid "Please wait while calculating checksum."
-msgstr "请稍等，效验总和计算中。"
+msgstr "正在计算校验值，请稍候。"
 
 #: src/HexDialogs.cpp:2714 src/HexEditor.cpp:175
 msgid "Calculating Checksum"
-msgstr "校验总和计算中。"
+msgstr "正在计算校验值"
 
 #: src/HexDialogs.cpp:2775 src/HexEditor.cpp:195
 msgid "Hash Speed : "
@@ -479,9 +460,7 @@ msgid "ERROR!: Disk space is smaller than the image file."
 msgstr "错误！磁盘空间小于镜像文件。"
 
 #: src/HexDialogs.cpp:3290
-msgid ""
-"WARNING!: Disk space is bigger than the image file. \n"
-"Remaining space will remain untouched."
+msgid "WARNING!: Disk space is bigger than the image file. \nRemaining space will remain untouched."
 msgstr "警告！磁盘空间大于镜像文件。\n剩余空间将保持不变。"
 
 #: src/HexDialogs.cpp:3294
@@ -542,12 +521,10 @@ msgstr "文件已校验。"
 
 #: src/HexEditor.cpp:223
 msgid "Critical Error. File pointer is not empty!"
-msgstr "关键错误。文件指针是不是空的！"
+msgstr "严重错误。文件指针不为空！"
 
 #: src/HexEditor.cpp:335
-msgid ""
-"Switching to XORView Thru mode will reset Undo&Redo buffer. Unsaved changes will be discarded.\n"
-" Note also that you can't use methods that change file size (like delete and inject) while XORView Thru mode is active."
+msgid "Switching to XORView Thru mode will reset Undo&Redo buffer. Unsaved changes will be discarded.\n Note also that you can't use methods that change file size (like delete and inject) while XORView Thru mode is active."
 msgstr "切换到 XORView Thru 模式将会清空\"撤销\"和\"重做\"缓冲区，所有未保存的更改都将会丢失。\n并且在XORView Thru 模式开启时，你不能使用改变文件大小的方法(例如删除和注入)。"
 
 #: src/HexEditor.cpp:335
@@ -563,10 +540,8 @@ msgid "File Save"
 msgstr "文件保存"
 
 #: src/HexEditor.cpp:359
-msgid ""
-"File has some insertion/deletions. You cannot save this file-self (yet). "
-"Please use SaveAs."
-msgstr "文件有过插入或删除。您不能保存这个文件自身(yet)。请使用另存为。"
+msgid "File has some insertion/deletions. You cannot save this file-self (yet). Please use SaveAs."
+msgstr "文件包含插入/删除操作。目前无法直接保存此文件，请使用“另存为”。"
 
 #: src/HexEditor.cpp:359
 msgid "File Save Error."
@@ -578,7 +553,7 @@ msgstr "你想要保存这个文件吗？"
 
 #: src/HexEditor.cpp:369
 msgid "File cannot saved. Operation Cancelled"
-msgstr "文件无法保存。操作已取消"
+msgstr "无法保存文件。操作已取消"
 
 #: src/HexEditor.cpp:369
 msgid "File Save Error"
@@ -590,15 +565,12 @@ msgstr "文件未发生变化。不需要保存。\n"
 
 #: src/HexEditor.cpp:393
 #, c-format
-msgid ""
-"There are not enough free disk space.\n"
-"Required: %s\n"
-"Available: %s"
+msgid "There are not enough free disk space.\nRequired: %s\nAvailable: %s"
 msgstr "磁盘空间不足。\n需要:%s\n可用:%s"
 
 #: src/HexEditor.cpp:395
 msgid "Not Enought Space"
-msgstr "空间不足。"
+msgstr "空间不足"
 
 #: src/HexEditor.cpp:404
 msgid "File save in progress"
@@ -625,9 +597,7 @@ msgid "File Has Changed!"
 msgstr "文件已改变！"
 
 #: src/HexEditor.cpp:461
-msgid ""
-"TAG file cannot be saved to default location.\n"
-"Do you want to Export TAGs file?"
+msgid "TAG file cannot be saved to default location.\nDo you want to Export TAGs file?"
 msgstr "TAG 文件无法保存到默认目录下。\n你要导出TAGs文件吗？"
 
 #: src/HexEditor.cpp:461
@@ -636,7 +606,7 @@ msgstr "TAGs无法保存！"
 
 #: src/HexEditor.cpp:463 src/HexEditorFrame.cpp:624
 msgid "Choose a file for export TAGs"
-msgstr "选择一个文件以导入TAGs"
+msgstr "选择一个文件以导出TAGs"
 
 #: src/HexEditor.cpp:473
 msgid "TAGs cannot be exported to file : "
@@ -648,7 +618,7 @@ msgstr "输入用于填充的HEX值"
 
 #: src/HexEditor.cpp:576
 msgid "Fill Dialog"
-msgstr "文件对话框"
+msgstr "填充对话框"
 
 #: src/HexEditor.cpp:577
 msgid "Fill"
@@ -676,7 +646,7 @@ msgstr "选择的区块：不可用"
 
 #: src/HexEditor.cpp:1070 src/HexEditor.cpp:1410
 msgid "Block Size: N/A"
-msgstr "数据块大小： N/A"
+msgstr "块大小：N/A"
 
 #: src/HexEditor.cpp:1119 src/HexEditorFrame.cpp:306 src/HexEditorGui.cpp:92
 #: src/HexEditorGui.cpp:1552
@@ -717,7 +687,7 @@ msgstr "设定选区起始位置"
 
 #: src/HexEditor.cpp:1140
 msgid "Set Selection Block End"
-msgstr "设定选区起始位置"
+msgstr "设定选区结束位置"
 
 #: src/HexEditor.cpp:1142
 msgid "Quick Tag"
@@ -733,7 +703,7 @@ msgstr "新标签"
 
 #: src/HexEditor.cpp:1144
 msgid "Tag Edit"
-msgstr "标签编织"
+msgstr "标签编辑"
 
 #: src/HexEditor.cpp:1406
 msgid "Cursor Offset: "
@@ -754,10 +724,8 @@ msgstr "块大小：%"
 
 #: src/HexEditor.cpp:1465
 #, c-format
-msgid ""
-"Notice!: This command will increase the file size and will generate too much overhead on file save.\n"
-"How many bytes do you want to inject to location to offset location %lld?"
-msgstr "注意！：这个命令会增加文件的大小，并会产生过多的开销用于文件保存。⏎\n你要注入多少字节从此处至偏移位置 %lld ？"
+msgid "Notice!: This command will increase the file size and will generate too much overhead on file save.\nHow many bytes do you want to inject to location to offset location %lld?"
+msgstr "注意！：这个命令会增加文件的大小，并会产生过多的开销用于文件保存。\n你要注入多少字节从此处至偏移位置 %lld ？"
 
 #: src/HexEditor.cpp:1466
 msgid "Bytes"
@@ -768,24 +736,15 @@ msgid "Injection!"
 msgstr "注入！"
 
 #: src/HexEditor.cpp:1551
-msgid ""
-"WARNING:\n"
-"The text you are copying includes a null character\n"
-"(00 in the hex pane) and will be truncated!\n"
-"\n"
-"If copying to another file in wxHexEditor you\n"
-"should copy from the Hex pane, not the text pane"
-msgstr "警告：⏎\n您所复制的文字包含一个空字符⏎\n(有 00 在十六进制方框中)将被截去！⏎\n⏎\n如果复制到另一个在 wxHexEditor 的文件⏎\n你应该从十六进制方框中复制，而不是文本方框"
+msgid "WARNING:\nThe text you are copying includes a null character\n(00 in the hex pane) and will be truncated!\n\nIf copying to another file in wxHexEditor you\nshould copy from the Hex pane, not the text pane"
+msgstr "警告：\n您所复制的文字包含一个空字符\n(有 00 在十六进制方框中)将被截去！\n\n如果复制到另一个在 wxHexEditor 的文件\n你应该从十六进制方框中复制，而不是文本方框"
 
 #: src/HexEditor.cpp:1562
 msgid "You have no RAM to copy this data."
-msgstr "你没有内存去复制这数据。"
+msgstr "没有足够的内存复制这些数据。"
 
 #: src/HexEditor.cpp:1567
-msgid ""
-"You have tried to copy more than 10 MB of data.\n"
-"Copying above 10 MB to clipboard is not allowed.\n"
-"Only internal copy buffer used!"
+msgid "You have tried to copy more than 10 MB of data.\nCopying above 10 MB to clipboard is not allowed.\nOnly internal copy buffer used!"
 msgstr "你试图复制超过10MB的数据。\n复制到剪贴板的数据不允许超过10MB。\n仅能用程序内部“复制缓冲区”！"
 
 #: src/HexEditor.cpp:1599
@@ -883,7 +842,7 @@ msgstr "删除被选块"
 
 #: src/HexEditorFrame.cpp:311
 msgid "Insert Block"
-msgstr "替换块"
+msgstr "插入块"
 
 #: src/HexEditorFrame.cpp:323 src/HexEditorFrame.cpp:324
 #: src/HexEditorGui.cpp:156
@@ -923,7 +882,7 @@ msgstr "已发现MD5文件。你需要MD5验证吗？"
 #: src/HexEditorFrame.cpp:477 src/HexEditorFrame.cpp:480
 #: src/HexEditorFrame.cpp:483
 msgid "Checksum File Detected"
-msgstr "校验和文件已检测"
+msgstr "检测到校验文件"
 
 #: src/HexEditorFrame.cpp:480
 msgid "SHA1 File detected. Do you request SHA1 verification?"
@@ -939,7 +898,7 @@ msgstr "请用十进制给出文件大小。"
 
 #: src/HexEditorFrame.cpp:519
 msgid "Enter File Size:"
-msgstr "输入文件体积："
+msgstr "输入文件大小："
 
 #: src/HexEditorFrame.cpp:526
 #, c-format
@@ -984,11 +943,11 @@ msgstr "输入 PID："
 
 #: src/HexEditorFrame.cpp:692 src/HexEditorGui.cpp:234
 msgid "Open Process RAM"
-msgstr "打开处理内存"
+msgstr "打开进程内存"
 
 #: src/HexEditorFrame.cpp:721
 msgid "Please restart program for changes."
-msgstr "请为变化重启程序。"
+msgstr "请重新启动程序以应用更改。"
 
 #: src/HexEditorFrame.cpp:742
 msgid "This mode will write changes every change to file DIRECTLY."
@@ -1008,7 +967,7 @@ msgstr "你需要管理员权限以查看可用设备"
 
 #: src/HexEditorFrame.cpp:1210
 msgid "Cannot open dropped file: "
-msgstr "无法打开接入点文件的："
+msgstr "无法打开拖放的文件："
 
 #: src/HexEditorFrame.cpp:1229 src/HexEditorGui.cpp:1032
 #, c-format
@@ -1049,7 +1008,7 @@ msgstr "无最近访问的文件"
 
 #: src/HexEditorGui.cpp:46
 msgid "&Save"
-msgstr "&S 保存"
+msgstr "&S保存"
 
 #: src/HexEditorGui.cpp:46
 msgid "CTRL+S"
@@ -1061,7 +1020,7 @@ msgstr "保存修改"
 
 #: src/HexEditorGui.cpp:51
 msgid "Save &As"
-msgstr "另存为 &A"
+msgstr "&A另存为"
 
 #: src/HexEditorGui.cpp:51
 msgid "SHIFT+CTRL+S"
@@ -1085,15 +1044,15 @@ msgstr "关闭当前文件"
 
 #: src/HexEditorGui.cpp:63
 msgid "Import TAGs"
-msgstr "导入TAGs"
+msgstr "&I导入标记"
 
 #: src/HexEditorGui.cpp:67
 msgid "Export TAGs"
-msgstr "导出TAGs"
+msgstr "&E导出标记"
 
 #: src/HexEditorGui.cpp:73
 msgid "&Quit"
-msgstr "&Q 退出"
+msgstr "&Q退出"
 
 #: src/HexEditorGui.cpp:73
 msgid "CTRL+Q"
@@ -1105,11 +1064,11 @@ msgstr "退出应用"
 
 #: src/HexEditorGui.cpp:76
 msgid "&File"
-msgstr "&F 文件"
+msgstr "&F文件"
 
 #: src/HexEditorGui.cpp:80
 msgid "&Undo"
-msgstr "&U 撤销"
+msgstr "&U撤销"
 
 #: src/HexEditorGui.cpp:80
 msgid "CTRL+Z"
@@ -1121,7 +1080,7 @@ msgstr "撤消最后的操作"
 
 #: src/HexEditorGui.cpp:85
 msgid "&Redo"
-msgstr "&R 重做"
+msgstr "&R重做"
 
 #: src/HexEditorGui.cpp:85
 msgid "CTRL+Y"
@@ -1173,7 +1132,7 @@ msgstr "CTRL+V"
 
 #: src/HexEditorGui.cpp:112
 msgid "Paste clipboard to cursor location"
-msgstr "粘贴剪贴版到光标所处位置"
+msgstr "将剪贴板内容粘贴到光标位置"
 
 #: src/HexEditorGui.cpp:117
 msgid "Fill selection blocks"
@@ -1205,15 +1164,15 @@ msgstr "分支给定的位置"
 
 #: src/HexEditorGui.cpp:148
 msgid "&Edit"
-msgstr "&编辑"
+msgstr "&E编辑"
 
 #: src/HexEditorGui.cpp:152
 msgid "Data Interpreter"
-msgstr "数据注释器"
+msgstr "数据解释器"
 
 #: src/HexEditorGui.cpp:164
 msgid "TAG Panel"
-msgstr "TAG 面板"
+msgstr "标记面板"
 
 #: src/HexEditorGui.cpp:172
 msgid "Search Panel"
@@ -1241,11 +1200,11 @@ msgstr "文本控制"
 
 #: src/HexEditorGui.cpp:202
 msgid "&View"
-msgstr "&V 查看"
+msgstr "&V查看"
 
 #: src/HexEditorGui.cpp:214
 msgid "XORView Thru"
-msgstr "XORView Thru"
+msgstr "XOR 透视查看"
 
 #: src/HexEditorGui.cpp:214
 msgid "View your XOR encrypted file without decrypting!"
@@ -1253,7 +1212,7 @@ msgstr "不解密查看你的异或（XOR）加密文件"
 
 #: src/HexEditorGui.cpp:217
 msgid "Tools"
-msgstr "工具"
+msgstr "&T工具"
 
 #: src/HexEditorGui.cpp:221
 msgid "Open RAM Device"
@@ -1285,7 +1244,7 @@ msgstr "擦除"
 
 #: src/HexEditorGui.cpp:256
 msgid "Devices"
-msgstr "设备"
+msgstr "&D设备"
 
 #: src/HexEditorGui.cpp:260
 msgid "File Mode"
@@ -1305,7 +1264,7 @@ msgstr "直接写入"
 
 #: src/HexEditorGui.cpp:283 src/HexEditorGui.cpp:912
 msgid "Options"
-msgstr "选项"
+msgstr "&O选项"
 
 #: src/HexEditorGui.cpp:287
 msgid "Donate"
@@ -1317,11 +1276,11 @@ msgstr "给作者捐赠一些钱作为回报！"
 
 #: src/HexEditorGui.cpp:291
 msgid "Wiki"
-msgstr ""
+msgstr "维基"
 
 #: src/HexEditorGui.cpp:291
 msgid "Documentation page of wxHexEditor"
-msgstr ""
+msgstr "wxHexEditor 文档页面"
 
 #: src/HexEditorGui.cpp:295
 msgid "Bug Reporting"
@@ -1333,7 +1292,7 @@ msgstr "上报错误用来清除它们！"
 
 #: src/HexEditorGui.cpp:299
 msgid "&About"
-msgstr "& 关于"
+msgstr "&A关于"
 
 #: src/HexEditorGui.cpp:299
 msgid "F1"
@@ -1353,7 +1312,7 @@ msgstr "未签名"
 
 #: src/HexEditorGui.cpp:461
 msgid "Sans"
-msgstr "没有"
+msgstr "无衬线"
 
 #: src/HexEditorGui.cpp:465
 msgid "Big Endian"
@@ -1369,7 +1328,7 @@ msgstr "00000000"
 
 #: src/HexEditorGui.cpp:500
 msgid "Press enter to make changes!"
-msgstr "按下回车以应用改变"
+msgstr "按回车键应用更改！"
 
 #: src/HexEditorGui.cpp:504
 msgid "Edit"
@@ -1377,7 +1336,7 @@ msgstr "编辑"
 
 #: src/HexEditorGui.cpp:506
 msgid "Allow editing by Data Interpreter Panel"
-msgstr "允许编辑数据解释面板"
+msgstr "允许通过数据解释器面板编辑"
 
 #: src/HexEditorGui.cpp:513
 msgid "8 bit"
@@ -1446,7 +1405,7 @@ msgstr "64位"
 
 #: src/HexEditorGui.cpp:696
 msgid "Disassembly Bit Mode"
-msgstr "分解位模式"
+msgstr "反汇编位宽模式"
 
 #: src/HexEditorGui.cpp:748 src/HexEditorGui.cpp:749 src/HexEditorGui.cpp:750
 #: src/HexEditorGui.cpp:751 src/HexEditorGui.cpp:752 src/HexEditorGui.cpp:753
@@ -1487,7 +1446,7 @@ msgstr "从这里"
 
 #: src/HexEditorGui.cpp:789
 msgid "From end"
-msgstr "从结束"
+msgstr "从末尾"
 
 #: src/HexEditorGui.cpp:791
 msgid "Type of branch"
@@ -1495,7 +1454,7 @@ msgstr "分支类型"
 
 #: src/HexEditorGui.cpp:795
 msgid "Go!"
-msgstr "开始！"
+msgstr "跳转！"
 
 #: src/HexEditorGui.cpp:858
 msgid "Search: "
@@ -1511,7 +1470,7 @@ msgstr "文本"
 
 #: src/HexEditorGui.cpp:907
 msgid "Search as"
-msgstr "另存为"
+msgstr "搜索方式"
 
 #: src/HexEditorGui.cpp:914
 msgid "Match Case"
@@ -1523,7 +1482,7 @@ msgstr "向后搜索"
 
 #: src/HexEditorGui.cpp:920
 msgid "Wrap around"
-msgstr "换行附近"
+msgstr "循环搜索"
 
 #: src/HexEditorGui.cpp:923
 msgid "As UTF-8"
@@ -1538,9 +1497,7 @@ msgid "Find Some Bytes"
 msgstr "查找若干字节"
 
 #: src/HexEditorGui.cpp:946
-msgid ""
-"This function finds some different values at file. Usefull for finding non-"
-"null sections at disks."
+msgid "This function finds some different values at file. Usefull for finding non-null sections at disks."
 msgstr "此功能在文件中发现了一些不同的值。适用来查找在磁盘上的非空扇区。"
 
 #: src/HexEditorGui.cpp:960
@@ -1565,7 +1522,7 @@ msgstr "http://www.wxhexeditor.org"
 
 #: src/HexEditorGui.cpp:1039
 msgid "Do not show this again."
-msgstr "不要再显示这个。"
+msgstr "不再显示此消息。"
 
 #: src/HexEditorGui.cpp:1074
 msgid "File #1"
@@ -1575,7 +1532,7 @@ msgstr "文件#1"
 #: src/HexEditorGui.cpp:1146 src/HexEditorGui.cpp:1240
 #: src/HexEditorGui.cpp:1906 src/HexEditorGui.cpp:1959
 msgid "Select a file"
-msgstr "搜索一个文件"
+msgstr "选择一个文件"
 
 #: src/HexEditorGui.cpp:1078 src/HexEditorGui.cpp:1085
 #: src/HexEditorGui.cpp:1240 src/HexEditorGui.cpp:1906
@@ -1589,15 +1546,15 @@ msgstr "文件#2"
 
 #: src/HexEditorGui.cpp:1092
 msgid "Search For"
-msgstr "搜索为"
+msgstr "搜索内容"
 
 #: src/HexEditorGui.cpp:1094
 msgid "Different bytes"
-msgstr "不同位"
+msgstr "不同字节"
 
 #: src/HexEditorGui.cpp:1098
 msgid "Same bytes"
-msgstr "若干字节"
+msgstr "相同字节"
 
 #: src/HexEditorGui.cpp:1107
 msgid "Stop comparison after"
@@ -1609,7 +1566,7 @@ msgstr "命中"
 
 #: src/HexEditorGui.cpp:1125
 msgid "Merge sections if close as"
-msgstr "合并扇区，如果关闭为"
+msgstr "间距小于此值时合并区段"
 
 #: src/HexEditorGui.cpp:1133
 msgid "bytes"
@@ -1628,9 +1585,7 @@ msgid "Connect files for scrolling"
 msgstr "连接文件以滚动"
 
 #: src/HexEditorGui.cpp:1158
-msgid ""
-"With this option enabled, compared files will always show same address "
-"location."
+msgid "With this option enabled, compared files will always show same address location."
 msgstr "该选项启用后，对比的文件将始终显示相同的位置。"
 
 #: src/HexEditorGui.cpp:1171
@@ -1811,7 +1766,7 @@ msgstr "选项："
 
 #: src/HexEditorGui.cpp:1508
 msgid "As BigEndian"
-msgstr "As BigEndian"
+msgstr "按大端序"
 
 #: src/HexEditorGui.cpp:1514
 msgid "Bytes Per Line"
@@ -1834,14 +1789,12 @@ msgid "Include Text Part"
 msgstr "包含文本部分"
 
 #: src/HexEditorGui.cpp:1591
-msgid ""
-"For switching XORView Thru mode, all Undo&Redo buffer will reset and non-saved changes will discarded.\n"
-"Also you can't use methods that changes file size (like delete and inject) with XORView Thru mode enabled."
-msgstr "为了切换至 XORView Thru 模式，所有撤消和重做的缓冲区将被复位，并且没有保存的更改将被抛弃。⏎\n并且在XORView Thru 模式开启时，你不能使用改变文件大小(如删除和注入)的方法。"
+msgid "For switching XORView Thru mode, all Undo&Redo buffer will reset and non-saved changes will discarded.\nAlso you can't use methods that changes file size (like delete and inject) with XORView Thru mode enabled."
+msgstr "为了切换至 XORView Thru 模式，所有撤消和重做的缓冲区将被复位，并且没有保存的更改将被抛弃。\n并且在XORView Thru 模式开启时，你不能使用改变文件大小(如删除和注入)的方法。"
 
 #: src/HexEditorGui.cpp:1598
 msgid "Please enter XOR key as "
-msgstr "请输入 XOR 密钥做为"
+msgstr "请输入 XOR 密钥作为 "
 
 #: src/HexEditorGui.cpp:1602
 msgid "ASCII"
@@ -1849,7 +1802,7 @@ msgstr "ASCII"
 
 #: src/HexEditorGui.cpp:1621 src/HexEditorGui.cpp:2088
 msgid "OK"
-msgstr "确认"
+msgstr "确定"
 
 #: src/HexEditorGui.cpp:1659
 msgid "Colours"
@@ -1904,6 +1857,14 @@ msgid "Character Encoding:"
 msgstr "字符编码："
 
 #: src/HexEditorGui.cpp:1752 src/HexPanels.cpp:221
+#: src/HexEditorGui.cpp:2004 src/HexEditorGui.cpp:2010
+msgid "Glyph Font:"
+msgstr "显示字体："
+
+#: src/HexEditorGui.cpp:2010
+msgid "Font used to draw the text (right) panel. Pick an installed font that has the glyphs you need, e.g. SimSun-ExtB for rare CJK ideographs. Non fixed-width fonts may break column alignment."
+msgstr "用于绘制文字（右侧）面板的字体。请选择包含所需字形的已安装字体，例如生僻汉字可用 SimSun-ExtB。非等宽字体可能破坏列对齐。"
+
 msgid "Size:"
 msgstr "大小："
 
@@ -1970,7 +1931,7 @@ msgstr "0xRANDOM"
 
 #: src/HexEditorGui.cpp:2031
 msgid "Erase With "
-msgstr "擦除为"
+msgstr "擦除填充值："
 
 #: src/HexPanels.cpp:219
 msgid "Name:"
@@ -1982,7 +1943,7 @@ msgstr "路径："
 
 #: src/HexPanels.cpp:222
 msgid "Access:"
-msgstr "Access:"
+msgstr "访问："
 
 #: src/HexPanels.cpp:223
 msgid "Device:"
@@ -2042,7 +2003,7 @@ msgstr "字体颜色"
 
 #: src/HexEditorCtrl/wxHexCtrl/TagDialogGui.cpp:37
 msgid "Note Color"
-msgstr "笔记颜色"
+msgstr "备注颜色"
 
 #: src/HexEditorCtrl/wxHexCtrl/TagDialogGui.cpp:56
 msgid "Remove"
@@ -2051,3 +2012,58 @@ msgstr "移除"
 #: src/HexEditorCtrl/wxHexCtrl/TagDialogGui.h:53
 msgid "Tag Dialog"
 msgstr "标签对话框"
+
+#: menu translation supplement
+msgid "Import Template"
+msgstr "&T导入模板"
+
+#: menu translation supplement
+msgid "Hex2Color Mode"
+msgstr "Hex2Color 模式"
+
+#: menu translation supplement
+msgid "Open Memory SPD"
+msgstr "打开内存 SPD"
+
+#: menu translation supplement
+msgid "Colorize HEX values with representing colors."
+msgstr "用对应颜色为十六进制值着色。"
+
+#: menu translation supplement
+msgid "Allow to edit Memory SPD values"
+msgstr "允许编辑内存 SPD 数值"
+
+#: menu translation supplement
+
+#: i18n supplement
+msgid "Find and Replace"
+msgstr "查找并替换"
+
+#: i18n supplement
+msgid "Cut selected block and copies to clipboard"
+msgstr "剪切所选块并复制到剪贴板"
+
+#: i18n supplement
+msgid "Delete selected block"
+msgstr "删除所选块"
+
+#: i18n supplement
+msgid "Insert block"
+msgstr "插入块"
+
+#: i18n supplement
+msgid "Hide"
+msgstr "隐藏"
+
+#: i18n supplement
+msgid "Convert TAGs"
+msgstr "转换标记"
+
+#: i18n supplement
+msgid "Showing Page: %llu"
+msgstr "显示页：%llu"
+
+#: i18n supplement
+msgid "Showing Page: %I64u"
+msgstr "显示页：%I64u"
+

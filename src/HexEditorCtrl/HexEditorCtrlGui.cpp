@@ -42,7 +42,7 @@ HexEditorCtrlGui::HexEditorCtrlGui( wxWindow* parent, wxWindowID id, const wxPoi
 	
 	fgSizerMain->Add( m_static_address, 1, wxALIGN_CENTER_HORIZONTAL|wxLEFT, 2 );
 	
-	m_static_byteview = new wxStaticText( this, ID_DEFAULT, _("Byte View"), wxDefaultPosition, wxDefaultSize, wxALIGN_CENTRE );
+	m_static_byteview = new wxStaticText( this, ID_DEFAULT, _("Byte View"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_static_byteview->Wrap( -1 );
 	m_static_byteview->SetFont( wxFont( 10, 70, 90, 90, false, wxT("sans") ) );
 	

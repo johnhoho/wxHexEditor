@@ -1,6 +1,15 @@
-# CMake build folder
-build
-bin
+# CMake / 构建输出目录
+build/
+build-mingw/
+build-wsl/
+bin/
 
-# Visual Studio Code
-.vscode
+# IDE / 编辑器
+.vscode/
+*.swp
+*.log
+
+# 翻译编译产物（.po 为源文件，.mo 由 tools 脚本生成）
+*.mo
+wsl_build_result.txt
+README_MODIFICATIONS.md

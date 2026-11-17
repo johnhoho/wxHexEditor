@@ -34,21 +34,12 @@
 #define WXHEXEDITORAPP_H
 
 #ifndef _VERSION_
-	#define _VERSION_ "0.25"
-	#define _VERSION_S_ _VERSION_ " Beta Development"
+	#define _VERSION_ "0.26"
+	// 版本号后不再附加 "Beta Development" 与平台字样，标题/关于框只显示版本号
+	#define _VERSION_S_ _VERSION_
 #endif // _VERSION_
 
-#ifdef __WXMSW__
-	#define _VERSION_STR_ _VERSION_S_ " for Windows"
-	#elif defined(__WXOSX__)
-	#define _VERSION_STR_ _VERSION_S_ " for Mac"
-	#elif defined(__WXGTK__) && defined(__linux__)
-	#define _VERSION_STR_ _VERSION_S_ " for Linux"
-	#elif defined(__WXGTK__) && defined(BSD)
-	#define _VERSION_STR_ _VERSION_S_ " for BSD"
-#else
-	#define _VERSION_STR_ _VERSION_S_
-#endif
+#define _VERSION_STR_ _VERSION_S_
 
 #include <wx/app.h>
 #include "HexEditorFrame.h"

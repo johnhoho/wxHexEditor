@@ -25,6 +25,11 @@
 #include "wxHexCtrl.h"
 #include <wx/encconv.h>
 #include <wx/fontmap.h>
+#include <wx/fontenum.h>
+#ifdef __WXMSW__
+#include <wx/msw/dc.h>
+#include <wx/msw/font.h>
+#endif
 
 BEGIN_EVENT_TABLE(wxHexCtrl,wxScrolledWindow )
 	EVT_CHAR( wxHexCtrl::OnChar )
@@ -358,6 +363,9 @@ wxString wxHexCtrl::GetFormat( void ) {
 void wxHexCtrl::SetDefaultStyle( wxTextAttr& new_attr ) {
 	HexDefaultAttr = new_attr;
 
+	m_PaintFont = HexDefaultAttr.GetFont();
+	InitFallbackFonts();
+
 	wxClientDC dc(this);
 	dc.SetFont( HexDefaultAttr.GetFont() );
 	SetFont( HexDefaultAttr.GetFont() );
@@ -371,6 +379,91 @@ void wxHexCtrl::SetDefaultStyle( wxTextAttr& new_attr ) {
 	if ( caret )
 		caret->SetSize(m_CharSize.x, m_CharSize.y);
 	RePaint();
+	}
+
+//--- Glyph fallback -------------------------------------------------------
+//Builds the list of fonts tried when the painting font misses a glyph.
+void wxHexCtrl::InitFallbackFonts( void ) {
+	m_FallbackFonts.clear();
+	m_GlyphFontCache.clear();
+#ifdef __WXMSW__
+	//Ordered so that CJK ideographs resolve to a real CJK font, supplementary
+	//plane ideographs to the *-ExtB faces, and symbols/emoji to Segoe UI.
+	const wxChar* candidates[] = {
+		wxT("SimSun"), wxT("Microsoft YaHei"), wxT("Microsoft JhengHei"),
+		wxT("NSimSun"), wxT("SimSun-ExtB"), wxT("MingLiU-ExtB"), wxT("PMingLiU-ExtB"),
+		wxT("MS Gothic"), wxT("MS PGothic"), wxT("Malgun Gothic"),
+		wxT("Segoe UI Symbol"), wxT("Segoe UI Emoji"), wxT("Arial Unicode MS")
+		};
+	for(unsigned i=0; i<WXSIZEOF(candidates); i++) {
+		if( !wxFontEnumerator::IsValidFacename( candidates[i] ) )
+			continue;
+		if( candidates[i] == m_PaintFont.GetFaceName() )
+			continue;
+		m_FallbackFonts.push_back( wxFont(m_PaintFont.GetPointSize(),
+		                                  wxFONTFAMILY_DEFAULT, wxFONTSTYLE_NORMAL,
+		                                  wxFONTWEIGHT_NORMAL, false, candidates[i]) );
+		}
+#endif
+	}
+
+///Tells which font must be selected on 'dc' to render 'cp'.
+///-1 = base font (already selected), >=0 = m_FallbackFonts index, -2 = none.
+int wxHexCtrl::FontIndexForCodepoint( uint32_t cp, wxDC* dc ) {
+	auto it = m_GlyphFontCache.find(cp);
+	if( it != m_GlyphFontCache.end() )
+		return it->second;
+
+	int result = -1;	//assume the base font owns the glyph
+#ifdef __WXMSW__
+	HDC hdc = (HDC)dc->GetHDC();
+	if( hdc ) {
+		//Build the UTF-16 text for the codepoint (surrogate pair above BMP).
+		wchar_t buf[3];
+		int len;
+		if( cp >= 0x10000 ) {
+			unsigned v = cp - 0x10000;
+			buf[0] = wchar_t(0xD800 + (v >> 10));
+			buf[1] = wchar_t(0xDC00 + (v & 0x3FF));
+			len = 2;
+			}
+		else {
+			buf[0] = wchar_t(cp);
+			len = 1;
+			}
+		buf[len] = 0;
+		WORD gi[2] = {0xFFFF, 0xFFFF};
+		bool found;
+
+		HFONT old = (HFONT)SelectObject(hdc, (HFONT)m_PaintFont.GetHFONT());
+		GetGlyphIndicesW(hdc, buf, len, gi, GGI_MARK_NONEXISTING_GLYPHS);
+		SelectObject(hdc, old);
+		found = true;
+		for(int k=0; k<len; k++)
+			if( gi[k] == 0xFFFF )
+				found = false;
+
+		if( !found ) {
+			result = -2;
+			for(unsigned f=0; f<m_FallbackFonts.size(); f++) {
+				old = (HFONT)SelectObject(hdc, (HFONT)m_FallbackFonts[f].GetHFONT());
+				gi[0] = gi[1] = 0xFFFF;
+				GetGlyphIndicesW(hdc, buf, len, gi, GGI_MARK_NONEXISTING_GLYPHS);
+				SelectObject(hdc, old);
+				found = true;
+				for(int k=0; k<len; k++)
+					if( gi[k] == 0xFFFF )
+						found = false;
+				if( found ) {
+					result = (int)f;
+					break;
+					}
+				}
+			}
+		}
+#endif
+	m_GlyphFontCache[cp] = result;
+	return result;
 	}
 
 void wxHexCtrl::SetSelectionStyle( wxTextAttr& new_attr ) {
@@ -515,9 +608,41 @@ inline wxDC* wxHexCtrl::UpdateDC(wxDC *xdc ) {
 				}
 
 			// For encodings that have variable font with, we need to write characters one by one.
-			if(DrawCharByChar)
-				for( unsigned q = 0 ; q < line.Len() ; q++ )
-					dcTemp->DrawText( line[q], m_Margin.x + q*m_CharSize.x, m_Margin.y + y * m_CharSize.y );
+			if(DrawCharByChar) {
+				///Glyph fallback: when the base font misses a codepoint, draw it
+				///with the first fallback font that owns the glyph. Surrogate
+				///pairs (supplementary-plane characters stored as two UTF-16
+				///units) are drawn together into one cell.
+				int curFont = -1;	//-1 = base font
+				for( unsigned q = 0 ; q < line.Len() ; q++ ) {
+					///Skip filler spaces: with wxSOLID background mode an opaque space
+					///would erase the right half of the double-width glyph before it.
+					///Row background is already provided by Clear() and zebra stripes.
+					if( line[q] == wxT(' ') )
+						continue;
+					uint32_t cp = (uint32_t)line[q].GetValue();
+					int glen = 1;
+					if( cp >= 0xD800 && cp <= 0xDBFF && q+1 < line.Len() ) {
+						uint32_t lo = line[q+1].GetValue();
+						if( lo >= 0xDC00 && lo <= 0xDFFF ) {
+							cp = 0x10000 + ((cp - 0xD800) << 10) + (lo - 0xDC00);
+							glen = 2;
+							}
+						}
+					int fi = FontIndexForCodepoint(cp, dcTemp);
+					int useFont = fi >= 0 ? fi : -1;
+					if( useFont != curFont ) {
+						if( useFont < 0 )
+							dcTemp->SetFont( m_PaintFont );
+						else
+							dcTemp->SetFont( m_FallbackFonts[useFont] );
+						curFont = useFont;
+						}
+					dcTemp->DrawText( line.Mid(q, glen), m_Margin.x + q*m_CharSize.x, m_Margin.y + y * m_CharSize.y );
+					if( glen == 2 )
+						q++;
+					}
+				}
 			else
 				dcTemp->DrawText( line, m_Margin.x, m_Margin.y + y * m_CharSize.y );
 			}
@@ -807,6 +932,16 @@ void wxHexCtrl::TagPainter( wxDC* DC, TagElement& TG ) {
 		wxString line;
 		_temp_.x = ( _temp_.y == _start_.y ) ? _start_.x : 0;	//calculating local line start
 		int z = ( _temp_.y == _end_.y ) ? _end_.x : m_Window.x;	// and end point
+
+		///Draw the highlight background as a rectangle instead of relying on the
+		///opaque background of every DrawText(): an opaque filler space would erase
+		///the right half of the preceding double-width (CJK) glyph.
+		DC->SetPen( *wxTRANSPARENT_PEN );
+		DC->SetBrush( wxBrush( TG.SoftColour( TG.NoteClrData.GetColour()) ));
+		DC->DrawRectangle( m_Margin.x + _temp_.x*m_CharSize.x, m_Margin.y + _temp_.y*m_CharSize.y,
+		                   (z - _temp_.x)*m_CharSize.x, m_CharSize.y );
+		DC->SetBackgroundMode( wxTRANSPARENT );
+
 		for ( int x = _temp_.x; x < z; x++ ) {					//Prepare line to write process
 			if( IsDenied(x) ) {
 				if(x+1 < z) {
@@ -836,21 +971,36 @@ void wxHexCtrl::TagPainter( wxDC* DC, TagElement& TG ) {
 
 		//Draw one character at a time to keep char with stable.
 		if(DrawCharByChar) {
-			//DC->SetBrush( wxBrush(TG.NoteClrData.GetColour()));
-			//DC->DrawRectangle( m_Margin.x + _temp_.x*m_CharSize.x , m_Margin.y + _temp_.y * m_CharSize.y, line.Len()*m_CharSize.x, m_CharSize.y);
-
-//			if(gc){
-//				gc->SetPen( *wxRED_PEN );
-//				gc->SetBrush( wxBrush(TG.NoteClrData.GetColour()));
-//				wxGraphicsPath path = gc->CreatePath();
-//				path.AddRectangle(m_Margin.x + _temp_.x*m_CharSize.x , m_Margin.y + _temp_.y * m_CharSize.y, line.Len()*m_CharSize.x, m_CharSize.y);
-//				gc->StrokePath(path);
-//				gc->DrawRectangle( m_Margin.x + _temp_.x*m_CharSize.x , m_Margin.y + _temp_.y * m_CharSize.y, line.Len()*m_CharSize.x, m_CharSize.y);
-//				}
-
-
-			for( unsigned q = 0 ; q < line.Len() ; q++ )
-				DC->DrawText( line[q], m_Margin.x + (_temp_.x+q)*m_CharSize.x, m_Margin.y + _temp_.y * m_CharSize.y );
+			///Glyph fallback, see UpdateDC(): swap fonts per codepoint when the
+			///base font has no glyph; draw surrogate pairs as one cell.
+			int curFont = -1;	//-1 = base font
+			for( unsigned q = 0 ; q < line.Len() ; q++ ) {
+				///Skip filler spaces (background comes from the rectangle above);
+				///an opaque space would erase the right half of a double-width glyph.
+				if( line[q] == wxT(' ') )
+					continue;
+				uint32_t cp = (uint32_t)line[q].GetValue();
+				int glen = 1;
+				if( cp >= 0xD800 && cp <= 0xDBFF && q+1 < line.Len() ) {
+					uint32_t lo = line[q+1].GetValue();
+					if( lo >= 0xDC00 && lo <= 0xDFFF ) {
+						cp = 0x10000 + ((cp - 0xD800) << 10) + (lo - 0xDC00);
+						glen = 2;
+						}
+					}
+				int fi = FontIndexForCodepoint(cp, DC);
+				int useFont = fi >= 0 ? fi : -1;
+				if( useFont != curFont ) {
+					if( useFont < 0 )
+						DC->SetFont( m_PaintFont );
+					else
+						DC->SetFont( m_FallbackFonts[useFont] );
+					curFont = useFont;
+					}
+				DC->DrawText( line.Mid(q, glen), m_Margin.x + (_temp_.x+q)*m_CharSize.x, m_Margin.y + _temp_.y * m_CharSize.y );
+				if( glen == 2 )
+					q++;
+				}
 			}
 		else
 			DC->DrawText( line, m_Margin.x + _temp_.x * m_CharSize.x,	//Write prepared line
@@ -1587,7 +1737,7 @@ inline wxString wxHexTextCtrl::FilterMBBuffer( const char *str, int Len, int fon
 				   (ch1>=0xF8 && ch1<=0xFE && ch2>=0xA1 && ch2<=0xFE) || //user-defined
 				   (ch1>=0xA1 && ch1<=0xA7 && ch2>=0x40 && ch2<=0xA0 && ch2!=0x7F) //user-defined
 				) {
-					z=wxString( str+i, wxCSConv(wxFONTENCODING_CP949), 2);
+					z=wxString( str+i, wxCSConv(wxFONTENCODING_CP936), 2);
 					if(z.Len()>0) {
 						ret+=z + wxT(" ");
 						i++;
@@ -1880,6 +2030,23 @@ wxString wxHexTextCtrl::PrepareCodepageTable(wxString codepage) {
 			if(i>=0x20 && i<0x7F)		newCP+=wxChar(i);//ASCII region
 			}
 		}
+#ifdef _MSC_VER
+	//Encodings that only need FontEnc set (rendered by FilterMBBuffer), no codepage table required
+	if( codepage.Find(wxT("UTF8 ")) != wxNOT_FOUND )		FontEnc=wxFONTENCODING_UTF8;
+	else if( codepage.Find(wxT("UTF16LE")) != wxNOT_FOUND )		FontEnc=wxFONTENCODING_UTF16LE;
+	else if( codepage.Find(wxT("UTF16BE")) != wxNOT_FOUND )		FontEnc=wxFONTENCODING_UTF16BE;
+	else if( codepage.Find(wxT("UTF16 ")) != wxNOT_FOUND )		FontEnc=wxFONTENCODING_UTF16;
+	else if( codepage.Find(wxT("UTF32LE")) != wxNOT_FOUND )		FontEnc=wxFONTENCODING_UTF32LE;
+	else if( codepage.Find(wxT("UTF32BE")) != wxNOT_FOUND )		FontEnc=wxFONTENCODING_UTF32BE;
+	else if( codepage.Find(wxT("UTF32 ")) != wxNOT_FOUND )		FontEnc=wxFONTENCODING_UTF32;
+	else if( codepage.Find(wxT("Unicode")) != wxNOT_FOUND )		FontEnc=wxFONTENCODING_UNICODE;
+	else if( codepage.Find(wxT("GBK")) != wxNOT_FOUND )			FontEnc=wxFONTENCODING_CP936;
+	else if( codepage.Find(wxT("Big5")) != wxNOT_FOUND )		FontEnc=wxFONTENCODING_BIG5;
+	else if( codepage.Find(wxT("Shift JIS")) != wxNOT_FOUND )	FontEnc=wxFONTENCODING_SHIFT_JIS;
+	else if( codepage.Find(wxT("CP949")) != wxNOT_FOUND )		FontEnc=wxFONTENCODING_CP949;
+	else if( codepage.Find(wxT("EUC-KR")) != wxNOT_FOUND )		FontEnc=wxFONTENCODING_CP949;
+	else if( codepage.Find(wxT("EUC-JP")) != wxNOT_FOUND )		FontEnc=wxFONTENCODING_EUC_JP;
+#endif
 #ifndef _MSC_VER
 	else if(codepage.Find(wxT("ANSEL")) != wxNOT_FOUND) {
 		for (unsigned i=0; i<0xA1 ; i++) {
@@ -2740,6 +2907,9 @@ void wxHexTextCtrl::SetBinValue( char* buffer, int len, bool paint ) {
 void wxHexTextCtrl::SetDefaultStyle( wxTextAttr& new_attr ) {
 	HexDefaultAttr = new_attr;
 
+	m_PaintFont = HexDefaultAttr.GetFont();
+	InitFallbackFonts();
+
 	wxClientDC dc(this);
 	dc.SetFont( HexDefaultAttr.GetFont() );
 	SetFont( HexDefaultAttr.GetFont() );
@@ -2751,6 +2921,20 @@ void wxHexTextCtrl::SetDefaultStyle( wxTextAttr& new_attr ) {
 	      FontEnc == wxFONTENCODING_UTF32BE
 	  ) {
 		m_CharSize.x += 5;
+		DrawCharByChar=true;
+		}
+	else if( FontEnc == wxFONTENCODING_UTF8 ||
+	      FontEnc == wxFONTENCODING_GB2312 ||
+	      FontEnc == wxFONTENCODING_CP936 ||	//GBK
+	      FontEnc == wxFONTENCODING_BIG5 ||
+	      FontEnc == wxFONTENCODING_CP949 ||	//EUC-KR
+	      FontEnc == wxFONTENCODING_EUC_JP ||
+	      FontEnc == wxFONTENCODING_SHIFT_JIS
+	  ) {
+		///Multi-byte CJK glyphs are double-width, so a whole-line DrawText()
+		///drifts away from the byte-cell grid. Drawing one character per cell
+		///keeps glyphs, header digits and selection rectangles aligned.
+		///Glyph overflow only covers the invisible filler spaces.
 		DrawCharByChar=true;
 		}
 	else
@@ -2791,7 +2975,11 @@ void wxHexTextCtrl::ChangeSize() {
 	unsigned gip = GetInsertionPoint();
 	wxSize size = GetClientSize();
 
-	m_Window.x = (size.x - 2*m_Margin.x) / m_CharSize.x;
+	///PaddingX: column-end padding reserved for CJK glyph overflow. Excluding it
+	///keeps m_Window.x equal to the real bytes-per-line; otherwise the text
+	///control would consume one extra character per line and drift against the
+	///hex control row by row.
+	m_Window.x = (size.x - 2*m_Margin.x - PaddingX) / m_CharSize.x;
 	m_Window.y = (size.y - 2*m_Margin.x) / m_CharSize.y;
 	if ( m_Window.x < 1 )
 		m_Window.x = 1;

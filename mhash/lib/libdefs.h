@@ -13,7 +13,12 @@
 #include <mutils/mutils.h>
 
 #ifdef WIN32
-# define WIN32DLL_DEFINE __declspec( dllexport)
+# if defined(_MSC_VER)
+   /* MSVC static-library build: plain declaration, no dllexport */
+#  define WIN32DLL_DEFINE
+# else
+#  define WIN32DLL_DEFINE __declspec( dllexport)
+# endif
 #else
 # define WIN32DLL_DEFINE
 #endif

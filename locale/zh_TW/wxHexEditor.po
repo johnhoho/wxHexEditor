@@ -1,0 +1,2068 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# chaol <1403941265@qq.com>, 2017
+# chaol <1403941265@qq.com>, 2017
+# godfrey <godfrey.public@gmail.com>, 2013-2014
+# zyphio <zyphio@gmail.com>, 2013-2014
+msgid ""
+msgstr "Project-Id-Version: wxHexEditor\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2017-12-21 02:13+0300\nPO-Revision-Date: 2017-12-21 03:04+0000\nLast-Translator: Erdem U. Altinyurt <spamjunkeater@gmail.com>\nLanguage-Team: Chinese \nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nLanguage: zh-Hant \nPlural-Forms: nplurals=1; plural=0;\n"
+
+#: src/HexDialogs.h:70 src/HexEditorGui.h:300 src/HexEditorFrame.cpp:299
+#: src/HexEditorGui.cpp:134 src/HexEditorGui.cpp:938
+msgid "Find"
+msgstr "尋找"
+
+#: src/HexDialogs.h:106
+msgid "Find & Replace"
+msgstr "尋找和取代"
+
+#: src/HexEditorGui.h:122
+msgid "wxHexEditor Alpha Development version"
+msgstr "wxHexEditor Alpha 開發版"
+
+#: src/HexEditorGui.h:263 src/HexEditorFrame.cpp:301 src/HexEditorGui.cpp:144
+msgid "Go to Offset"
+msgstr "跳轉至偏移量"
+
+#: src/HexEditorGui.h:324
+msgid "New wxHexEditor Version!"
+msgstr "新的wxHexEditor版本！"
+
+#: src/HexEditorGui.h:363 src/HexEditorGui.cpp:210
+msgid "Compare Files"
+msgstr "比較檔案"
+
+#: src/HexEditorGui.h:416 src/HexEditorGui.cpp:206
+msgid "Calculate Checksum"
+msgstr "計算檢驗值"
+
+#: src/HexEditorGui.h:447
+msgid "Copy Selected Block As"
+msgstr "將所選區塊複製為"
+
+#: src/HexEditorGui.h:474
+msgid "XORView Thru Warning!"
+msgstr "XORView Thru 警告！"
+
+#: src/HexEditorGui.h:523 src/HexEditorGui.cpp:280
+msgid "Preferences"
+msgstr "偏好設定"
+
+#: src/HexEditorGui.h:549
+msgid "Disk/Partition Backup Tool"
+msgstr "磁碟/分割區備份工具"
+
+#: src/HexEditorGui.h:575
+msgid "Disk/Partition Restore Tool"
+msgstr "磁碟/分割區還原工具"
+
+#: src/HexEditorGui.h:600
+msgid "Disk/Partition Erase Tool"
+msgstr "磁碟/分割區清除工具"
+
+#: src/HexEditor.h:217 src/HexEditor.h:237
+msgid "Clipboard could not be opened."
+msgstr "剪貼簿無法開啟。"
+
+#: src/HexEditor.h:217 src/HexEditor.h:237 src/HexEditor.cpp:1562
+msgid "Operation cancelled!"
+msgstr "操作已取消！"
+
+#: src/HexEditor.h:217 src/HexEditor.h:237 src/HexEditor.cpp:1562
+msgid "Copy To Clipboard Error"
+msgstr "複製到剪貼簿時出錯"
+
+#: src/FAL.cpp:175
+msgid "Device is not mounted"
+msgstr "裝置未掛載"
+
+#: src/FAL.cpp:175 src/FAL.cpp:221 src/FAL.cpp:240 src/FAL.cpp:252
+#: src/FAL.cpp:272 src/FAL.cpp:286 src/FAL.cpp:310 src/FAL.cpp:321
+#: src/FAL.cpp:337 src/FAL.cpp:430 src/FAL.cpp:438 src/HexDialogs.cpp:707
+#: src/HexDialogs.cpp:2213 src/HexDialogs.cpp:2217 src/HexDialogs.cpp:2666
+#: src/HexEditor.cpp:245 src/HexEditor.cpp:433 src/HexEditor.cpp:473
+#: src/HexEditor.cpp:616 src/HexEditor.cpp:647 src/HexEditorFrame.cpp:616
+#: src/HexEditorFrame.cpp:632 src/HexEditorFrame.cpp:636
+#: src/HexEditorFrame.cpp:1210
+msgid "Error"
+msgstr "出錯"
+
+#: src/FAL.cpp:221 src/FAL.cpp:258 src/FAL.cpp:321
+msgid "File is not readable by permissions."
+msgstr "檔案不是可讀的權限。"
+
+#: src/FAL.cpp:221
+msgid "Please change file permissons or run this program with Windows UAC privileges."
+msgstr "請修改本軟件的檔案執行權限或者以Windows管理員身份運行此程式。"
+
+#: src/FAL.cpp:240 src/FAL.cpp:310
+msgid "Process cannot open."
+msgstr "處理程式無法開啟。"
+
+#: src/FAL.cpp:252
+msgid "File does not exists at path:"
+msgstr "檔案不存在於這个路徑中："
+
+#: src/FAL.cpp:259
+msgid "Please change file permissons or run this program with root privileges."
+msgstr "請更改檔案權限或以root權限運行該程式。"
+
+#: src/FAL.cpp:260
+msgid "You can also try to own the file temporarily (requires root's password.)"
+msgstr "也可以嘗試暫時取得檔案所有權（需要 root 密碼）"
+
+#: src/FAL.cpp:261
+msgid "Do you want to own the file?"
+msgstr "是否要取得此檔案的所有權？"
+
+#: src/FAL.cpp:261 src/HexEditor.cpp:1556
+msgid "Warning"
+msgstr "警告"
+
+#: src/FAL.cpp:272
+msgid "Unknown error on \"stat -c %U"
+msgstr "未知錯誤關於\"stat -c %U"
+
+#: src/FAL.cpp:286
+msgid "For using this function, please install \"gnomesu\" or \"gksu\" tools first."
+msgstr "要使用此功能，請先安裝“gnomesu”或“gksu”工具。"
+
+#: src/FAL.cpp:321
+msgid "Please change file permissons or run this program with root privileges"
+msgstr "請更改檔案權限或以root權限運行該程式"
+
+#: src/FAL.cpp:337 src/HexEditor.cpp:245 src/HexEditorFrame.cpp:546
+msgid "File cannot open."
+msgstr "檔案無法開啟。"
+
+#: src/FAL.cpp:430
+msgid "File load error!.\nFile closed but not opened while access change. For avoid corruption close the program"
+msgstr "檔案加載錯誤！\n存取權限變更期間檔案已關閉且未能重新開啟。為避免損壞，請關閉程式"
+
+#: src/FAL.cpp:438
+msgid "File cannot open in this mode : "
+msgstr "檔案無法在此模式下開啟："
+
+#: src/FAL.cpp:453
+msgid "Access Invalid"
+msgstr "存取無效"
+
+#: src/FAL.cpp:467 src/FAL.cpp:477 src/FAL.cpp:487
+msgid "Not Enought RAM"
+msgstr "記憶體不足"
+
+#: src/FAL.cpp:578
+msgid "Error on Write operation to Process RAM"
+msgstr "寫入處理程序記憶體時發生錯誤"
+
+#: src/FAL.cpp:578
+msgid "FATAL ERROR"
+msgstr "致命錯誤"
+
+#: src/HexDialogs.cpp:76
+msgid "Value is not hexadecimal!"
+msgstr "非十六進位值！"
+
+#: src/HexDialogs.cpp:76 src/HexDialogs.cpp:82
+msgid "Format Error!"
+msgstr "格式錯誤！"
+
+#: src/HexDialogs.cpp:82
+msgid "Value must be even digit!"
+msgstr "值必須是偶數位！"
+
+#: src/HexDialogs.cpp:163 src/HexEditorGui.cpp:735 src/HexEditorGui.cpp:741
+#: src/HexEditorCtrl/HexEditorCtrl.cpp:44
+#: src/HexEditorCtrl/HexEditorCtrlGui.cpp:33
+msgid "Offset"
+msgstr "偏移量"
+
+#: src/HexDialogs.cpp:169 src/HexEditorGui.cpp:741
+msgid "Sector"
+msgstr "磁區"
+
+#: src/HexDialogs.cpp:465
+msgid "Finding Some Bytes..."
+msgstr "尋找一些位元組..."
+
+#: src/HexDialogs.cpp:467 src/HexDialogs.cpp:717
+msgid "wxHexEditor Searching"
+msgstr "wxHexEditor搜尋中"
+
+#: src/HexDialogs.cpp:502 src/HexDialogs.cpp:933 src/HexDialogs.cpp:1084
+msgid "Search Speed : "
+msgstr "搜尋速度："
+
+#: src/HexDialogs.cpp:502 src/HexDialogs.cpp:933 src/HexDialogs.cpp:1084
+#: src/HexDialogs.cpp:2412 src/HexDialogs.cpp:2775 src/HexDialogs.cpp:3228
+#: src/HexDialogs.cpp:3318 src/HexDialogs.cpp:3379 src/HexEditor.cpp:195
+#: src/HexEditor.cpp:427
+msgid "MB/s"
+msgstr "MB/s"
+
+#: src/HexDialogs.cpp:544 src/HexDialogs.cpp:1144
+msgid "Search"
+msgstr "搜尋"
+
+#: src/HexDialogs.cpp:561 src/HexDialogs.cpp:1152
+msgid "Search value not found"
+msgstr "未能找到搜尋值"
+
+#: src/HexDialogs.cpp:561 src/HexDialogs.cpp:1152
+msgid "Nothing found!"
+msgstr "沒有找到！"
+
+#: src/HexDialogs.cpp:715
+msgid "Finding matches..."
+msgstr "尋找匹配..."
+
+#: src/HexDialogs.cpp:1159
+#, c-format
+msgid "Found %d matches."
+msgstr "找到 %d 个匹配項。"
+
+#: src/HexDialogs.cpp:1159
+msgid "Find All Done!"
+msgstr "全部搜尋完成！"
+
+#: src/HexDialogs.cpp:1653 src/HexDialogs.cpp:1678
+msgid "Search and Replace sizes are not equal!\nReplacing with different size are not supported yet."
+msgstr "尋找和取代大小不一致\n目前並不支援大小不一致的取代"
+
+#: src/HexDialogs.cpp:1653 src/HexDialogs.cpp:1678 src/HexDialogs.cpp:2009
+#: src/HexEditor.cpp:164
+msgid "Error!"
+msgstr "錯誤！"
+
+#: src/HexDialogs.cpp:1661 src/HexDialogs.cpp:1699 src/HexEditorFrame.cpp:300
+#: src/HexEditorGui.cpp:139 src/HexEditorGui.cpp:955
+msgid "Replace"
+msgstr "取代"
+
+#: src/HexDialogs.cpp:1720
+#, c-format
+msgid "%d records changed."
+msgstr "%d 記錄已改變。"
+
+#: src/HexDialogs.cpp:1720 src/HexEditor.cpp:1570 src/HexEditorFrame.cpp:721
+msgid "Info"
+msgstr "資訊"
+
+#: src/HexDialogs.cpp:1768
+msgid "Not Available"
+msgstr "無法使用"
+
+#: src/HexDialogs.cpp:1774
+msgid "Raw Hex"
+msgstr "原始十六進位"
+
+#: src/HexDialogs.cpp:1775
+msgid "With Space"
+msgstr "含空格"
+
+#: src/HexDialogs.cpp:1776
+msgid "Quad Hex"
+msgstr "四段十六進位"
+
+#: src/HexDialogs.cpp:1777
+msgid "with 0x"
+msgstr "含 0x"
+
+#: src/HexDialogs.cpp:1778
+msgid "with 0x and Comma"
+msgstr "含 0x 與逗號"
+
+#: src/HexDialogs.cpp:1785
+msgid "HTML format"
+msgstr "HTML 格式"
+
+#: src/HexDialogs.cpp:1786
+msgid "HTML with TAGs"
+msgstr "含標籤的 HTML"
+
+#: src/HexDialogs.cpp:1787
+msgid "phpBB forum style"
+msgstr "phpBB 論壇樣式"
+
+#: src/HexDialogs.cpp:1788
+msgid "WiKi format"
+msgstr "Wiki 格式"
+
+#: src/HexDialogs.cpp:1789
+msgid "WiKi with TAGs"
+msgstr "含標籤的 Wiki"
+
+#: src/HexDialogs.cpp:1795
+msgid "8bit - Byte "
+msgstr "8 位元 - 位元組 "
+
+#: src/HexDialogs.cpp:1796
+msgid "16bit - Words"
+msgstr "16 位元 - 字組"
+
+#: src/HexDialogs.cpp:1797
+msgid "32bit - Dwords"
+msgstr "32 位元 - 雙字組"
+
+#: src/HexDialogs.cpp:1798
+msgid "64bit - Qwords"
+msgstr "64 位元 - 四字組"
+
+#: src/HexDialogs.cpp:2009
+msgid "Selected block bigger than limit."
+msgstr "選定的區塊大過限制"
+
+#: src/HexDialogs.cpp:2213
+msgid "File #1 is not readable."
+msgstr "檔案 #1 是不可讀的。"
+
+#: src/HexDialogs.cpp:2217
+msgid "File #2 is not readable."
+msgstr "檔案 #2 是不可讀的。"
+
+#: src/HexDialogs.cpp:2233
+msgid "Error, File #1 cannot open."
+msgstr "錯誤，檔案 #1 不能開啟。"
+
+#: src/HexDialogs.cpp:2237
+msgid "Error, File #2 cannot open."
+msgstr "錯誤，檔案 #2 不能開啟。"
+
+#: src/HexDialogs.cpp:2243
+msgid "Error, Save File cannot open."
+msgstr "錯誤，儲存檔案不能開啟。"
+
+#: src/HexDialogs.cpp:2246
+msgid "Comparing files..."
+msgstr "比較檔案..."
+
+#: src/HexDialogs.cpp:2248
+msgid "wxHexEditor Comparing"
+msgstr "wxHexEditor 對比中"
+
+#: src/HexDialogs.cpp:2402
+msgid "Sorry, this program supports up to 500K differences."
+msgstr "抱歉，本程式最多支援 50 万个差異。"
+
+#: src/HexDialogs.cpp:2402
+msgid "Remaining differences not shown."
+msgstr "剩余的區別沒有顯示。"
+
+#: src/HexDialogs.cpp:2402
+msgid "Error on Comparison"
+msgstr "比較中出錯"
+
+#: src/HexDialogs.cpp:2412
+msgid "Comparison Speed : "
+msgstr "對比速度："
+
+#: src/HexDialogs.cpp:2434
+msgid "File #1 : "
+msgstr "檔案 #1 : "
+
+#: src/HexDialogs.cpp:2434
+msgid "File #2 : "
+msgstr "檔案 #2 : "
+
+#: src/HexDialogs.cpp:2477 src/HexDialogs.cpp:2481
+msgid "This part doesn't exist at compared file"
+msgstr "這部分不存在於比較的檔案中"
+
+#: src/HexDialogs.cpp:2524
+msgid "Error, Save File is not selected."
+msgstr "錯誤：未選擇儲存檔案。"
+
+#: src/HexDialogs.cpp:2666
+msgid "Cannot calculate checksum of an empty file."
+msgstr "無法計算空檔案的檢驗值。"
+
+#: src/HexDialogs.cpp:2672
+msgid "File: "
+msgstr "檔案："
+
+#: src/HexDialogs.cpp:2673
+msgid "Notice: Checksum includes non-saved changes."
+msgstr "注意：檢驗包括了未儲存的更改。"
+
+#: src/HexDialogs.cpp:2691
+msgid "Results copied to the clipboard."
+msgstr "把結果複製到剪貼簿。"
+
+#: src/HexDialogs.cpp:2691
+msgid "Checksum Results"
+msgstr "檢驗結果"
+
+#: src/HexDialogs.cpp:2712 src/HexEditor.cpp:173
+msgid "Please wait while calculating checksum."
+msgstr "正在計算檢驗值，請稍候。"
+
+#: src/HexDialogs.cpp:2714 src/HexEditor.cpp:175
+msgid "Calculating Checksum"
+msgstr "正在計算檢驗值"
+
+#: src/HexDialogs.cpp:2775 src/HexEditor.cpp:195
+msgid "Hash Speed : "
+msgstr "雜湊運算速度："
+
+#: src/HexDialogs.cpp:3161
+msgid "Are you sure about resetting colours?"
+msgstr "你確定要重置顏色嗎？"
+
+#: src/HexDialogs.cpp:3161
+msgid "Resetting Hex Colours"
+msgstr "十六進位值顏色重置中"
+
+#: src/HexDialogs.cpp:3200
+msgid "Please wait while backing up disk/partition image."
+msgstr "磁碟/分割區映像備份中，請等待。"
+
+#: src/HexDialogs.cpp:3202
+msgid "Disk/Partition Backup"
+msgstr "磁碟/分割區備份"
+
+#: src/HexDialogs.cpp:3220
+msgid "Error on writing to backup image."
+msgstr "備份映像寫入時出錯。"
+
+#: src/HexDialogs.cpp:3220 src/HexDialogs.cpp:3285
+msgid "ERROR!"
+msgstr "錯誤！"
+
+#: src/HexDialogs.cpp:3228
+msgid "Backup Speed : "
+msgstr "備份速度："
+
+#: src/HexDialogs.cpp:3257
+msgid "Backup operation completed."
+msgstr "備份操作已完成。"
+
+#: src/HexDialogs.cpp:3257 src/HexDialogs.cpp:3326 src/HexDialogs.cpp:3386
+msgid "Operation Complete"
+msgstr "操作完成"
+
+#: src/HexDialogs.cpp:3281 src/HexDialogs.cpp:3341
+msgid "WARNING! THIS OPERATION WILL DESTROY EVERY INFORMATION AT :\n"
+msgstr "警告！此項操作將会破壞此處的所有資訊：\n"
+
+#: src/HexDialogs.cpp:3281 src/HexDialogs.cpp:3341
+msgid "ARE YOU SURE?"
+msgstr "你確定嗎？"
+
+#: src/HexDialogs.cpp:3281 src/HexDialogs.cpp:3290 src/HexDialogs.cpp:3341
+msgid "WARNING!"
+msgstr "警告！"
+
+#: src/HexDialogs.cpp:3285
+msgid "ERROR!: Disk space is smaller than the image file."
+msgstr "錯誤！磁碟空間小於映像檔案。"
+
+#: src/HexDialogs.cpp:3290
+msgid "WARNING!: Disk space is bigger than the image file. \nRemaining space will remain untouched."
+msgstr "警告！磁碟空間大於映像檔案。\n剩余空間將保持不變。"
+
+#: src/HexDialogs.cpp:3294
+msgid "Please wait while restoring disk/partition."
+msgstr "磁碟/分割區還原中，請等待。"
+
+#: src/HexDialogs.cpp:3296
+msgid "Disk/Partition Restore"
+msgstr "磁碟/分割區還原"
+
+#: src/HexDialogs.cpp:3318
+msgid "Restore Speed : "
+msgstr "還原速度："
+
+#: src/HexDialogs.cpp:3326
+msgid "Restore operation completed."
+msgstr "還原操作已完成。"
+
+#: src/HexDialogs.cpp:3344
+msgid "Please wait while erasing disk/partition image."
+msgstr "磁碟/分割區映像擦除中，請稍候。"
+
+#: src/HexDialogs.cpp:3346
+msgid "Disk/Partition Erase"
+msgstr "磁碟/分割區清除"
+
+#: src/HexDialogs.cpp:3379
+msgid "Erase Speed : "
+msgstr "清除速度："
+
+#: src/HexDialogs.cpp:3386
+msgid "Erase operation completed."
+msgstr "清除作業已完成。"
+
+#: src/HexEditor.cpp:164
+msgid "Cannot read hash file!"
+msgstr "無法讀取雜湊檔案！"
+
+#: src/HexEditor.cpp:208
+msgid "File Corrupt!"
+msgstr "檔案損壞！"
+
+#: src/HexEditor.cpp:208
+msgid "File Hash:"
+msgstr "檔案雜湊："
+
+#: src/HexEditor.cpp:211
+msgid "Hash File:"
+msgstr "雜湊檔案："
+
+#: src/HexEditor.cpp:212 src/HexEditor.cpp:216
+msgid "Hash Result"
+msgstr "雜湊結果"
+
+#: src/HexEditor.cpp:216
+msgid "File Verified."
+msgstr "檔案已檢驗。"
+
+#: src/HexEditor.cpp:223
+msgid "Critical Error. File pointer is not empty!"
+msgstr "严重錯誤。檔案指針不為空！"
+
+#: src/HexEditor.cpp:335
+msgid "Switching to XORView Thru mode will reset Undo&Redo buffer. Unsaved changes will be discarded.\n Note also that you can't use methods that change file size (like delete and inject) while XORView Thru mode is active."
+msgstr "切換到 XORView Thru 模式將会清空\"復原\"和\"重做\"緩衝區，所有未儲存的更改都將会丟失。\n並且在XORView Thru 模式開啟時，你不能使用改變檔案大小的方法(例如刪除和注入)。"
+
+#: src/HexEditor.cpp:335
+msgid "XORView Thru Warning"
+msgstr "XORView Thru 警告"
+
+#: src/HexEditor.cpp:355
+msgid "File in Read Only mode. Cannot save file."
+msgstr "檔案為只讀模式。無法儲存。"
+
+#: src/HexEditor.cpp:355 src/HexEditor.cpp:364 src/HexEditor.cpp:380
+msgid "File Save"
+msgstr "檔案儲存"
+
+#: src/HexEditor.cpp:359
+msgid "File has some insertion/deletions. You cannot save this file-self (yet). Please use SaveAs."
+msgstr "檔案包含插入/刪除操作。目前無法直接儲存此檔案，請使用“另存新檔”。"
+
+#: src/HexEditor.cpp:359
+msgid "File Save Error."
+msgstr "檔案儲存錯誤。"
+
+#: src/HexEditor.cpp:364
+msgid "Do you want to save this file?"
+msgstr "你想要儲存這个檔案嗎？"
+
+#: src/HexEditor.cpp:369
+msgid "File cannot saved. Operation Cancelled"
+msgstr "無法儲存檔案。操作已取消"
+
+#: src/HexEditor.cpp:369
+msgid "File Save Error"
+msgstr "檔案儲存錯誤"
+
+#: src/HexEditor.cpp:380
+msgid "File is not changed. Nothing to save.\n"
+msgstr "檔案未發生變化。不需要儲存。\n"
+
+#: src/HexEditor.cpp:393
+#, c-format
+msgid "There are not enough free disk space.\nRequired: %s\nAvailable: %s"
+msgstr "磁碟可用空間不足。\n需要：%s\n可用：%s"
+
+#: src/HexEditor.cpp:395
+msgid "Not Enought Space"
+msgstr "空間不足"
+
+#: src/HexEditor.cpp:404
+msgid "File save in progress"
+msgstr "正在儲存檔案"
+
+#: src/HexEditor.cpp:406
+msgid "Saving file"
+msgstr "檔案儲存中"
+
+#: src/HexEditor.cpp:427
+msgid "Write Speed : "
+msgstr "寫入速度："
+
+#: src/HexEditor.cpp:433
+msgid "File cannot save as "
+msgstr "檔案無法另存新檔"
+
+#: src/HexEditor.cpp:446
+msgid "Do you want to save file?\n"
+msgstr "你想要儲存這个檔案嗎？\n"
+
+#: src/HexEditor.cpp:446
+msgid "File Has Changed!"
+msgstr "檔案已改變！"
+
+#: src/HexEditor.cpp:461
+msgid "TAG file cannot be saved to default location.\nDo you want to Export TAGs file?"
+msgstr "無法將標籤檔案儲存到預設位置。\n要匯出標籤檔案嗎？"
+
+#: src/HexEditor.cpp:461
+msgid "TAGs Cannot Be Saved!!"
+msgstr "無法儲存標籤！！"
+
+#: src/HexEditor.cpp:463 src/HexEditorFrame.cpp:624
+msgid "Choose a file for export TAGs"
+msgstr "選擇要匯出標籤的檔案"
+
+#: src/HexEditor.cpp:473
+msgid "TAGs cannot be exported to file : "
+msgstr "無法將標籤匯出至檔案："
+
+#: src/HexEditor.cpp:576
+msgid "Enter hex value(s) for fill"
+msgstr "輸入要填滿的十六進位值"
+
+#: src/HexEditor.cpp:576
+msgid "Fill Dialog"
+msgstr "填滿對話框"
+
+#: src/HexEditor.cpp:577
+msgid "Fill"
+msgstr "填滿"
+
+#: src/HexEditor.cpp:595
+msgid "Choose a file for saving dump"
+msgstr "選選一个檔案用於傾印"
+
+#: src/HexEditor.cpp:616
+msgid "Dump cannot saved as "
+msgstr "無法傾印儲存為 "
+
+#: src/HexEditor.cpp:628 src/HexEditor.cpp:1405
+msgid "Showing Page: %"
+msgstr "顯示頁：%"
+
+#: src/HexEditor.cpp:647
+msgid "File cannot read!"
+msgstr "檔案無法讀取！"
+
+#: src/HexEditor.cpp:1069 src/HexEditor.cpp:1409
+msgid "Selected Block: N/A"
+msgstr "選選的區塊：不可用"
+
+#: src/HexEditor.cpp:1070 src/HexEditor.cpp:1410
+msgid "Block Size: N/A"
+msgstr "區塊大小：N/A"
+
+#: src/HexEditor.cpp:1119 src/HexEditorFrame.cpp:306 src/HexEditorGui.cpp:92
+#: src/HexEditorGui.cpp:1552
+msgid "Copy"
+msgstr "複製"
+
+#: src/HexEditor.cpp:1120
+msgid "CopyAs"
+msgstr "複製為"
+
+#: src/HexEditor.cpp:1121 src/HexEditorFrame.cpp:307 src/HexEditorGui.cpp:112
+msgid "Paste"
+msgstr "貼上"
+
+#: src/HexEditor.cpp:1124 src/HexEditorGui.cpp:107
+msgid "Cut"
+msgstr "剪下"
+
+#: src/HexEditor.cpp:1125 src/HexEditorGui.cpp:122 src/HexPanels.cpp:338
+msgid "Delete"
+msgstr "刪除"
+
+#: src/HexEditor.cpp:1126 src/HexEditorFrame.cpp:311 src/HexEditorGui.cpp:127
+msgid "Insert"
+msgstr "插入"
+
+#: src/HexEditor.cpp:1135 src/HexEditorGui.cpp:102
+msgid "Save As Dump"
+msgstr "儲存為傾印"
+
+#: src/HexEditor.cpp:1136 src/HexEditorGui.cpp:117
+msgid "Fill Selection"
+msgstr "填滿所選範圍"
+
+#: src/HexEditor.cpp:1138
+msgid "Set Selection Block Start"
+msgstr "設定選區起始位置"
+
+#: src/HexEditor.cpp:1140
+msgid "Set Selection Block End"
+msgstr "設定選區結束位置"
+
+#: src/HexEditor.cpp:1142
+msgid "Quick Tag"
+msgstr "快速標籤"
+
+#: src/HexEditor.cpp:1142
+msgid "Creates empty tag with Random Color."
+msgstr "建立隨機顏色的空標籤。"
+
+#: src/HexEditor.cpp:1143
+msgid "New Tag"
+msgstr "新標籤"
+
+#: src/HexEditor.cpp:1144
+msgid "Tag Edit"
+msgstr "編輯標籤"
+
+#: src/HexEditor.cpp:1406
+msgid "Cursor Offset: "
+msgstr "游標偏移量："
+
+#: src/HexEditor.cpp:1407
+#, c-format
+msgid "Cursor Value: %u"
+msgstr "游標值：%u"
+
+#: src/HexEditor.cpp:1413
+msgid "Selected Block: %"
+msgstr "被選區：%"
+
+#: src/HexEditor.cpp:1414
+msgid "Block Size: %"
+msgstr "區塊大小：%"
+
+#: src/HexEditor.cpp:1465
+#, c-format
+msgid "Notice!: This command will increase the file size and will generate too much overhead on file save.\nHow many bytes do you want to inject to location to offset location %lld?"
+msgstr "注意！：這个命令会增加檔案的大小，並会產生過多的開銷用於檔案儲存。\n你要注入多少位元組從此處至偏移位置 %lld ？"
+
+#: src/HexEditor.cpp:1466
+msgid "Bytes"
+msgstr "位元組"
+
+#: src/HexEditor.cpp:1466
+msgid "Injection!"
+msgstr "注入！"
+
+#: src/HexEditor.cpp:1551
+msgid "WARNING:\nThe text you are copying includes a null character\n(00 in the hex pane) and will be truncated!\n\nIf copying to another file in wxHexEditor you\nshould copy from the Hex pane, not the text pane"
+msgstr "警告：\n您所複製的文字包含一个空字元\n(有 00 在十六進位方框中)將被截去！\n\n如果複製到另一个在 wxHexEditor 的檔案\n你應該從十六進位方框中複製，而不是文字方框"
+
+#: src/HexEditor.cpp:1562
+msgid "You have no RAM to copy this data."
+msgstr "沒有足夠的記憶體複製這些資料。"
+
+#: src/HexEditor.cpp:1567
+msgid "You have tried to copy more than 10 MB of data.\nCopying above 10 MB to clipboard is not allowed.\nOnly internal copy buffer used!"
+msgstr "你試圖複製超過10MB的資料。\n複製到剪貼簿的資料不允許超過10MB。\n僅能用程式內部“複製緩衝區”！"
+
+#: src/HexEditor.cpp:1599
+msgid "No data available at clipboad!"
+msgstr "剪貼簿沒有可用的資料！"
+
+#: src/HexEditor.cpp:1601
+msgid "Note: Used internal binary copy buffer at paste operation."
+msgstr "注意：貼上操作使用了程式內部二進位複製緩衝區。"
+
+#: src/HexEditorFrame.cpp:197
+msgid "License Agreement"
+msgstr "許可協議"
+
+#: src/HexEditorFrame.cpp:293
+msgid "New File"
+msgstr "新檔案"
+
+#: src/HexEditorFrame.cpp:293
+msgid "New file"
+msgstr "新檔案"
+
+#: src/HexEditorFrame.cpp:294
+msgid "Open File"
+msgstr "開啟檔案"
+
+#: src/HexEditorFrame.cpp:294
+msgid "Open"
+msgstr "開啟"
+
+#: src/HexEditorFrame.cpp:295
+msgid "Save File"
+msgstr "儲存檔案"
+
+#: src/HexEditorFrame.cpp:295 src/HexEditorGui.cpp:1822
+#: src/HexEditorCtrl/wxHexCtrl/TagDialogGui.cpp:59
+msgid "Save"
+msgstr "儲存"
+
+#: src/HexEditorFrame.cpp:296
+msgid "SaveAs File"
+msgstr "另存新檔檔案"
+
+#: src/HexEditorFrame.cpp:296
+msgid "Save as"
+msgstr "另存新檔"
+
+#: src/HexEditorFrame.cpp:297
+msgid "Close File"
+msgstr "關閉檔案"
+
+#: src/HexEditorFrame.cpp:297
+msgid "Close"
+msgstr "關閉"
+
+#: src/HexEditorFrame.cpp:300
+msgid "Find and replace"
+msgstr "尋找和取代"
+
+#: src/HexEditorFrame.cpp:301
+msgid "GoTo"
+msgstr "跳至"
+
+#: src/HexEditorFrame.cpp:303
+msgid "Undo"
+msgstr "復原"
+
+#: src/HexEditorFrame.cpp:304
+msgid "Redo"
+msgstr "重做"
+
+#: src/HexEditorFrame.cpp:306
+msgid "Copy Block"
+msgstr "複製區塊"
+
+#: src/HexEditorFrame.cpp:307
+msgid "Paste Block"
+msgstr "貼上區塊"
+
+#: src/HexEditorFrame.cpp:309
+msgid "Cut Block"
+msgstr "剪下區塊"
+
+#: src/HexEditorFrame.cpp:309
+msgid "Cuts selected block and copies to clipboard"
+msgstr "剪下被選區塊並複製至剪貼簿"
+
+#: src/HexEditorFrame.cpp:310
+msgid "Delete Block"
+msgstr "刪除區塊"
+
+#: src/HexEditorFrame.cpp:310
+msgid "Deletes selected block"
+msgstr "刪除被選區塊"
+
+#: src/HexEditorFrame.cpp:311
+msgid "Insert Block"
+msgstr "插入區塊"
+
+#: src/HexEditorFrame.cpp:323 src/HexEditorFrame.cpp:324
+#: src/HexEditorGui.cpp:156
+msgid "Toolbar"
+msgstr "工具條"
+
+#: src/HexEditorFrame.cpp:330 src/HexEditorFrame.cpp:331
+msgid "TagPanel"
+msgstr "標籤面板"
+
+#: src/HexEditorFrame.cpp:341 src/HexEditorFrame.cpp:342
+#: src/HexEditorGui.cpp:168
+msgid "Disassembler Panel"
+msgstr "反匯編程式面板"
+
+#: src/HexEditorFrame.cpp:353 src/HexEditorFrame.cpp:354
+msgid "Search Results"
+msgstr "搜尋結果"
+
+#: src/HexEditorFrame.cpp:365 src/HexEditorFrame.cpp:366
+msgid "Comparison Results"
+msgstr "比較結果"
+
+#: src/HexEditorFrame.cpp:376 src/HexEditorFrame.cpp:377
+msgid "DataInterpreter"
+msgstr "資料解譯器"
+
+#: src/HexEditorFrame.cpp:387 src/HexEditorFrame.cpp:388
+#: src/HexEditorGui.cpp:160
+msgid "InfoPanel"
+msgstr "資訊面板"
+
+#: src/HexEditorFrame.cpp:477
+msgid "MD5 File detected. Do you request MD5 verification?"
+msgstr "已發現MD5檔案。你需要MD5驗證嗎？"
+
+#: src/HexEditorFrame.cpp:477 src/HexEditorFrame.cpp:480
+#: src/HexEditorFrame.cpp:483
+msgid "Checksum File Detected"
+msgstr "檢測到檢驗檔案"
+
+#: src/HexEditorFrame.cpp:480
+msgid "SHA1 File detected. Do you request SHA1 verification?"
+msgstr "檢測到SHA1檔案。需要進行SHA1驗證嗎？"
+
+#: src/HexEditorFrame.cpp:483
+msgid "SHA256 File detected. Do you request SHA256 verification?"
+msgstr "檢測到SHA256檔案。需要進行SHA256驗證嗎？"
+
+#: src/HexEditorFrame.cpp:518
+msgid "Please indicate file size in decimal."
+msgstr "請用十進位給出檔案大小。"
+
+#: src/HexEditorFrame.cpp:519
+msgid "Enter File Size:"
+msgstr "輸入檔案大小："
+
+#: src/HexEditorFrame.cpp:526
+#, c-format
+msgid "Wrong input: %d please retry..."
+msgstr "錯誤輸入：%d 請重試..."
+
+#: src/HexEditorFrame.cpp:530 src/HexEditorFrame.cpp:588
+msgid "Choose a file for save as"
+msgstr "選選一个檔案另存新檔"
+
+#: src/HexEditorFrame.cpp:542
+msgid "File cannot create!"
+msgstr "檔案無法建立！"
+
+#: src/HexEditorFrame.cpp:558
+msgid "Choose a file for editing"
+msgstr "選選一个檔案來編輯"
+
+#: src/HexEditorFrame.cpp:608
+msgid "Choose a file for import TAGs"
+msgstr "選擇要匯入標籤的檔案"
+
+#: src/HexEditorFrame.cpp:616
+msgid "TAGS cannot be imported from "
+msgstr "無法從以下位置匯入標籤："
+
+#: src/HexEditorFrame.cpp:632
+msgid "TAGs cannot be exported to "
+msgstr "無法將標籤匯出至："
+
+#: src/HexEditorFrame.cpp:636
+msgid "There is no TAGs to Export in current active file!"
+msgstr "目前作用中的檔案沒有可匯出的標籤！"
+
+#: src/HexEditorFrame.cpp:692
+msgid "Please enter process identification number."
+msgstr "請輸入處理程式PID"
+
+#: src/HexEditorFrame.cpp:692
+msgid "Enter PID:"
+msgstr "輸入 PID："
+
+#: src/HexEditorFrame.cpp:692 src/HexEditorGui.cpp:234
+msgid "Open Process RAM"
+msgstr "開啟處理程序記憶體"
+
+#: src/HexEditorFrame.cpp:721
+msgid "Please restart program for changes."
+msgstr "請重新啟動程式以應用更改。"
+
+#: src/HexEditorFrame.cpp:742
+msgid "This mode will write changes every change to file DIRECTLY."
+msgstr "此模式將会直接把所有改變寫入檔案。"
+
+#: src/HexEditorFrame.cpp:742
+msgid "Warning!"
+msgstr "警告！"
+
+#: src/HexEditorFrame.cpp:826
+msgid "wxHexEditor is a hex editor for HUGE files and devices."
+msgstr "wxHexEditor是針對大檔案和裝置的十六進位編輯器。"
+
+#: src/HexEditorFrame.cpp:935
+msgid "You needed administration privileges to see available devices"
+msgstr "你需要管理員權限以檢視可用裝置"
+
+#: src/HexEditorFrame.cpp:1210
+msgid "Cannot open dropped file: "
+msgstr "無法開啟拖放的檔案："
+
+#: src/HexEditorFrame.cpp:1229 src/HexEditorGui.cpp:1032
+#, c-format
+msgid "New wxHexEditor version %s is available!"
+msgstr "新的wxHexEditor版本 %s 可用！"
+
+#: src/HexEditorGui.cpp:29
+msgid "&New"
+msgstr "&N新的"
+
+#: src/HexEditorGui.cpp:29
+msgid "CTRL+N"
+msgstr "CTRL+N"
+
+#: src/HexEditorGui.cpp:29
+msgid "Creates a new file"
+msgstr "建立一个新檔案"
+
+#: src/HexEditorGui.cpp:33
+msgid "&Open"
+msgstr "&O開啟"
+
+#: src/HexEditorGui.cpp:33
+msgid "CTRL+O"
+msgstr "CTRL+O"
+
+#: src/HexEditorGui.cpp:33
+msgid "Open a file"
+msgstr "開啟一个檔案"
+
+#: src/HexEditorGui.cpp:37
+msgid "Open &Recent"
+msgstr "開啟最近的檔案"
+
+#: src/HexEditorGui.cpp:39
+msgid "No Recent File"
+msgstr "無最近存取的檔案"
+
+#: src/HexEditorGui.cpp:46
+msgid "&Save"
+msgstr "&S儲存"
+
+#: src/HexEditorGui.cpp:46
+msgid "CTRL+S"
+msgstr "CTRL+S"
+
+#: src/HexEditorGui.cpp:46
+msgid "Save modifications"
+msgstr "儲存修改"
+
+#: src/HexEditorGui.cpp:51
+msgid "Save &As"
+msgstr "&A另存新檔"
+
+#: src/HexEditorGui.cpp:51
+msgid "SHIFT+CTRL+S"
+msgstr "SHIFT+CTRL+S"
+
+#: src/HexEditorGui.cpp:51
+msgid "Save current file as..."
+msgstr "儲存當前檔案為..."
+
+#: src/HexEditorGui.cpp:56
+msgid "&Close"
+msgstr "&C關閉"
+
+#: src/HexEditorGui.cpp:56
+msgid "CTRL+W"
+msgstr "CTRL+W"
+
+#: src/HexEditorGui.cpp:56
+msgid "Close current file"
+msgstr "關閉當前檔案"
+
+#: src/HexEditorGui.cpp:63
+msgid "Import TAGs"
+msgstr "&I匯入標籤"
+
+#: src/HexEditorGui.cpp:67
+msgid "Export TAGs"
+msgstr "&E匯出標籤"
+
+#: src/HexEditorGui.cpp:73
+msgid "&Quit"
+msgstr "&Q結束"
+
+#: src/HexEditorGui.cpp:73
+msgid "CTRL+Q"
+msgstr "CTRL+Q"
+
+#: src/HexEditorGui.cpp:73
+msgid "Quit the application"
+msgstr "結束程式"
+
+#: src/HexEditorGui.cpp:76
+msgid "&File"
+msgstr "&F檔案"
+
+#: src/HexEditorGui.cpp:80
+msgid "&Undo"
+msgstr "&U復原"
+
+#: src/HexEditorGui.cpp:80
+msgid "CTRL+Z"
+msgstr "CTRL+Z"
+
+#: src/HexEditorGui.cpp:80
+msgid "Undo last operation"
+msgstr "復原最後的操作"
+
+#: src/HexEditorGui.cpp:85
+msgid "&Redo"
+msgstr "&R重做"
+
+#: src/HexEditorGui.cpp:85
+msgid "CTRL+Y"
+msgstr "CTRL+Y"
+
+#: src/HexEditorGui.cpp:85
+msgid "Reverts last undo"
+msgstr "恢復最後的復原"
+
+#: src/HexEditorGui.cpp:92
+msgid "CTRL+C"
+msgstr "CTRL+C"
+
+#: src/HexEditorGui.cpp:92
+msgid "Copies selection"
+msgstr "複製選中部分"
+
+#: src/HexEditorGui.cpp:97
+msgid "Copy As"
+msgstr "複製為"
+
+#: src/HexEditorGui.cpp:97
+msgid "CTRL+SHIFT+C"
+msgstr "CTRL+SHIFT+C"
+
+#: src/HexEditorGui.cpp:97
+msgid "Copies selection in special format"
+msgstr "按特殊格式複製所選區域"
+
+#: src/HexEditorGui.cpp:102
+msgid "CTRL+ALT+S"
+msgstr "CTRL+ALT+S"
+
+#: src/HexEditorGui.cpp:102
+msgid "Save selections as a file"
+msgstr "儲存選選為一个檔案"
+
+#: src/HexEditorGui.cpp:107
+msgid "CTRL+X"
+msgstr "CTRL+X"
+
+#: src/HexEditorGui.cpp:107
+msgid "Cuts a selection"
+msgstr "剪下選中部分"
+
+#: src/HexEditorGui.cpp:112
+msgid "CTRL+V"
+msgstr "CTRL+V"
+
+#: src/HexEditorGui.cpp:112
+msgid "Paste clipboard to cursor location"
+msgstr "將剪貼簿內容貼上到游標位置"
+
+#: src/HexEditorGui.cpp:117
+msgid "Fill selection blocks"
+msgstr "填滿所選區塊"
+
+#: src/HexEditorGui.cpp:122
+msgid "Deletes selection"
+msgstr "刪除選中部分"
+
+#: src/HexEditorGui.cpp:127
+msgid "Inserts new bytes to cursor location"
+msgstr "插入新的位元組到游標所在區域"
+
+#: src/HexEditorGui.cpp:134
+msgid "CTRL+F"
+msgstr "CTRL+F"
+
+#: src/HexEditorGui.cpp:139
+msgid "CTRL+R"
+msgstr "CTRL+R"
+
+#: src/HexEditorGui.cpp:144
+msgid "CTRL+G"
+msgstr "CTRL+G"
+
+#: src/HexEditorGui.cpp:144
+msgid "Branches the given location"
+msgstr "分支給定的位置"
+
+#: src/HexEditorGui.cpp:148
+msgid "&Edit"
+msgstr "&E編輯"
+
+#: src/HexEditorGui.cpp:152
+msgid "Data Interpreter"
+msgstr "資料解譯器"
+
+#: src/HexEditorGui.cpp:164
+msgid "TAG Panel"
+msgstr "標籤面板"
+
+#: src/HexEditorGui.cpp:172
+msgid "Search Panel"
+msgstr "搜尋面板"
+
+#: src/HexEditorGui.cpp:176
+msgid "Comparison Panel"
+msgstr "比較面板"
+
+#: src/HexEditorGui.cpp:182
+msgid "Zebra Striping"
+msgstr "斑馬紋"
+
+#: src/HexEditorGui.cpp:188
+msgid "Offset Control"
+msgstr "偏移量控制"
+
+#: src/HexEditorGui.cpp:193
+msgid "Hex Control"
+msgstr "十六進位控制"
+
+#: src/HexEditorGui.cpp:198
+msgid "Text Control"
+msgstr "文字控制"
+
+#: src/HexEditorGui.cpp:202
+msgid "&View"
+msgstr "&V檢視"
+
+#: src/HexEditorGui.cpp:214
+msgid "XORView Thru"
+msgstr "XORView Thru"
+
+#: src/HexEditorGui.cpp:214
+msgid "View your XOR encrypted file without decrypting!"
+msgstr "不解密檢視你的異或（XOR）加密檔案"
+
+#: src/HexEditorGui.cpp:217
+msgid "Tools"
+msgstr "&T工具"
+
+#: src/HexEditorGui.cpp:221
+msgid "Open RAM Device"
+msgstr "開啟 RAM 裝置"
+
+#: src/HexEditorGui.cpp:226
+msgid "Open Disk Device"
+msgstr "開啟磁碟裝置"
+
+#: src/HexEditorGui.cpp:228
+msgid "N/A on this OS (yet)"
+msgstr "此作業系統尚不支援"
+
+#: src/HexEditorGui.cpp:241
+msgid "Device Image Tools"
+msgstr "裝置映像檔工具"
+
+#: src/HexEditorGui.cpp:243 src/HexEditorGui.cpp:1918
+msgid "Backup"
+msgstr "備份"
+
+#: src/HexEditorGui.cpp:247 src/HexEditorGui.cpp:1980
+msgid "Restore"
+msgstr "還原"
+
+#: src/HexEditorGui.cpp:251 src/HexEditorGui.cpp:2041
+msgid "Erase"
+msgstr "清除"
+
+#: src/HexEditorGui.cpp:256
+msgid "Devices"
+msgstr "&D裝置"
+
+#: src/HexEditorGui.cpp:260
+msgid "File Mode"
+msgstr "檔案模式"
+
+#: src/HexEditorGui.cpp:262
+msgid "Read Only"
+msgstr "只讀"
+
+#: src/HexEditorGui.cpp:268
+msgid "Writeable"
+msgstr "可寫入"
+
+#: src/HexEditorGui.cpp:273
+msgid "Direct Write"
+msgstr "直接寫入"
+
+#: src/HexEditorGui.cpp:283 src/HexEditorGui.cpp:912
+msgid "Options"
+msgstr "&O選項"
+
+#: src/HexEditorGui.cpp:287
+msgid "Donate"
+msgstr "捐助"
+
+#: src/HexEditorGui.cpp:287
+msgid "Donate some money to author as a return!"
+msgstr "給作者捐贈一些錢作為回報！"
+
+#: src/HexEditorGui.cpp:291
+msgid "Wiki"
+msgstr "維基"
+
+#: src/HexEditorGui.cpp:291
+msgid "Documentation page of wxHexEditor"
+msgstr "wxHexEditor 說明文件頁面"
+
+#: src/HexEditorGui.cpp:295
+msgid "Bug Reporting"
+msgstr "問題報告"
+
+#: src/HexEditorGui.cpp:295
+msgid "Report bugs for smashing them!"
+msgstr "上報錯誤用來清除它們！"
+
+#: src/HexEditorGui.cpp:299
+msgid "&About"
+msgstr "&A關於"
+
+#: src/HexEditorGui.cpp:299
+msgid "F1"
+msgstr "F1"
+
+#: src/HexEditorGui.cpp:299
+msgid "Show info about this application"
+msgstr "顯示這个應用的有關資訊"
+
+#: src/HexEditorGui.cpp:302
+msgid "&Help"
+msgstr "&H幫助"
+
+#: src/HexEditorGui.cpp:460
+msgid "Unsigned"
+msgstr "無號"
+
+#: src/HexEditorGui.cpp:461
+msgid "Sans"
+msgstr "無襯線"
+
+#: src/HexEditorGui.cpp:465
+msgid "Big Endian"
+msgstr "大端序"
+
+#: src/HexEditorGui.cpp:478
+msgid "Binary"
+msgstr "二進位"
+
+#: src/HexEditorGui.cpp:490
+msgid "00000000"
+msgstr "00000000"
+
+#: src/HexEditorGui.cpp:500
+msgid "Press enter to make changes!"
+msgstr "按回車鍵應用更改！"
+
+#: src/HexEditorGui.cpp:504
+msgid "Edit"
+msgstr "編輯"
+
+#: src/HexEditorGui.cpp:506
+msgid "Allow editing by Data Interpreter Panel"
+msgstr "允許透過資料解譯器面板編輯"
+
+#: src/HexEditorGui.cpp:513
+msgid "8 bit"
+msgstr "8 位元"
+
+#: src/HexEditorGui.cpp:519 src/HexEditorGui.cpp:530 src/HexEditorGui.cpp:541
+#: src/HexEditorGui.cpp:552 src/HexEditorGui.cpp:563 src/HexEditorGui.cpp:574
+msgid "0"
+msgstr "0"
+
+#: src/HexEditorGui.cpp:524
+msgid "16 bit"
+msgstr "16 位元"
+
+#: src/HexEditorGui.cpp:535
+msgid "32 bit"
+msgstr "32 位元"
+
+#: src/HexEditorGui.cpp:546
+msgid "64 bit"
+msgstr "64 位元"
+
+#: src/HexEditorGui.cpp:557
+msgid "Float"
+msgstr "單精度浮點"
+
+#: src/HexEditorGui.cpp:568
+msgid "Double"
+msgstr "雙精度浮點"
+
+#: src/HexEditorGui.cpp:624
+msgid "Clear"
+msgstr "清空"
+
+#: src/HexEditorGui.cpp:675 src/HexEditorGui.cpp:684
+msgid "INTEL"
+msgstr "INTEL"
+
+#: src/HexEditorGui.cpp:675
+msgid "AMD"
+msgstr "AMD"
+
+#: src/HexEditorGui.cpp:680
+msgid "CPU Vendor"
+msgstr "CPU制造商"
+
+#: src/HexEditorGui.cpp:684
+msgid "AT&T"
+msgstr "AT&T"
+
+#: src/HexEditorGui.cpp:688
+msgid "Assembly Type"
+msgstr "匯編類型"
+
+#: src/HexEditorGui.cpp:692
+msgid "16 Bit"
+msgstr "16 位元"
+
+#: src/HexEditorGui.cpp:692
+msgid "32 Bit"
+msgstr "32 位元"
+
+#: src/HexEditorGui.cpp:692
+msgid "64 Bit"
+msgstr "64 位元"
+
+#: src/HexEditorGui.cpp:696
+msgid "Disassembly Bit Mode"
+msgstr "反匯編位寬模式"
+
+#: src/HexEditorGui.cpp:748 src/HexEditorGui.cpp:749 src/HexEditorGui.cpp:750
+#: src/HexEditorGui.cpp:751 src/HexEditorGui.cpp:752 src/HexEditorGui.cpp:753
+#: src/HexEditorGui.cpp:754 src/HexEditorGui.cpp:755 src/HexEditorGui.cpp:756
+#: src/HexEditorGui.cpp:757 src/HexEditorGui.cpp:863 src/HexEditorGui.cpp:864
+#: src/HexEditorGui.cpp:865 src/HexEditorGui.cpp:866 src/HexEditorGui.cpp:867
+#: src/HexEditorGui.cpp:868 src/HexEditorGui.cpp:869 src/HexEditorGui.cpp:870
+#: src/HexEditorGui.cpp:871 src/HexEditorGui.cpp:872 src/HexEditorGui.cpp:882
+#: src/HexEditorGui.cpp:883 src/HexEditorGui.cpp:884 src/HexEditorGui.cpp:885
+#: src/HexEditorGui.cpp:886 src/HexEditorGui.cpp:887 src/HexEditorGui.cpp:888
+#: src/HexEditorGui.cpp:889 src/HexEditorGui.cpp:890 src/HexEditorGui.cpp:891
+msgid " "
+msgstr " "
+
+#: src/HexEditorGui.cpp:760
+msgid "Decimal"
+msgstr "十進位"
+
+#: src/HexEditorGui.cpp:764 src/HexEditorGui.cpp:905 src/HexEditorGui.cpp:1606
+msgid "Hex"
+msgstr "十六進位"
+
+#: src/HexEditorGui.cpp:773
+msgid "Previous Sector"
+msgstr "上一磁區"
+
+#: src/HexEditorGui.cpp:778
+msgid "Next Sector"
+msgstr "下一磁區"
+
+#: src/HexEditorGui.cpp:789
+msgid "From beginning"
+msgstr "從開始處"
+
+#: src/HexEditorGui.cpp:789
+msgid "From here"
+msgstr "從這里"
+
+#: src/HexEditorGui.cpp:789
+msgid "From end"
+msgstr "從末尾"
+
+#: src/HexEditorGui.cpp:791
+msgid "Type of branch"
+msgstr "分支類型"
+
+#: src/HexEditorGui.cpp:795
+msgid "Go!"
+msgstr "跳轉！"
+
+#: src/HexEditorGui.cpp:858
+msgid "Search: "
+msgstr "搜尋："
+
+#: src/HexEditorGui.cpp:875
+msgid "Replace: "
+msgstr "取代："
+
+#: src/HexEditorGui.cpp:905
+msgid "Text"
+msgstr "文字"
+
+#: src/HexEditorGui.cpp:907
+msgid "Search as"
+msgstr "搜尋方式"
+
+#: src/HexEditorGui.cpp:914
+msgid "Match Case"
+msgstr "匹配大小寫"
+
+#: src/HexEditorGui.cpp:917
+msgid "Search backwards"
+msgstr "向後搜尋"
+
+#: src/HexEditorGui.cpp:920
+msgid "Wrap around"
+msgstr "循環搜尋"
+
+#: src/HexEditorGui.cpp:923
+msgid "As UTF-8"
+msgstr "以 UTF-8 編碼"
+
+#: src/HexEditorGui.cpp:942
+msgid "Find All"
+msgstr "搜尋全部"
+
+#: src/HexEditorGui.cpp:945
+msgid "Find Some Bytes"
+msgstr "尋找若干位元組"
+
+#: src/HexEditorGui.cpp:946
+msgid "This function finds some different values at file. Usefull for finding non-null sections at disks."
+msgstr "此功能在檔案中發現了一些不同的值。適用來尋找在磁碟上的非空磁區。"
+
+#: src/HexEditorGui.cpp:960
+msgid "Replace All"
+msgstr "取代全部"
+
+#: src/HexEditorGui.cpp:965 src/HexEditorGui.cpp:1168
+#: src/HexEditorGui.cpp:1375 src/HexEditorGui.cpp:1549
+#: src/HexEditorGui.cpp:1618 src/HexEditorGui.cpp:1819
+#: src/HexEditorGui.cpp:1915 src/HexEditorGui.cpp:1977
+#: src/HexEditorGui.cpp:2038 src/HexEditorCtrl/wxHexCtrl/TagDialogGui.cpp:53
+msgid "Cancel"
+msgstr "取消"
+
+#: src/HexEditorGui.cpp:1036
+msgid "Download new wxHexEditor"
+msgstr "下載新版wxHexEditor"
+
+#: src/HexEditorGui.cpp:1036
+msgid "http://www.wxhexeditor.org"
+msgstr "http://www.wxhexeditor.org"
+
+#: src/HexEditorGui.cpp:1039
+msgid "Do not show this again."
+msgstr "不再顯示此訊息。"
+
+#: src/HexEditorGui.cpp:1074
+msgid "File #1"
+msgstr "檔案#1"
+
+#: src/HexEditorGui.cpp:1078 src/HexEditorGui.cpp:1085
+#: src/HexEditorGui.cpp:1146 src/HexEditorGui.cpp:1240
+#: src/HexEditorGui.cpp:1906 src/HexEditorGui.cpp:1959
+msgid "Select a file"
+msgstr "選選一个檔案"
+
+#: src/HexEditorGui.cpp:1078 src/HexEditorGui.cpp:1085
+#: src/HexEditorGui.cpp:1240 src/HexEditorGui.cpp:1906
+#: src/HexEditorGui.cpp:1959
+msgid "*"
+msgstr "*"
+
+#: src/HexEditorGui.cpp:1081
+msgid "File #2"
+msgstr "檔案#2"
+
+#: src/HexEditorGui.cpp:1092
+msgid "Search For"
+msgstr "搜尋內容"
+
+#: src/HexEditorGui.cpp:1094
+msgid "Different bytes"
+msgstr "不同位元組"
+
+#: src/HexEditorGui.cpp:1098
+msgid "Same bytes"
+msgstr "相同位元組"
+
+#: src/HexEditorGui.cpp:1107
+msgid "Stop comparison after"
+msgstr "停止比較之後"
+
+#: src/HexEditorGui.cpp:1115
+msgid "hits"
+msgstr "筆"
+
+#: src/HexEditorGui.cpp:1125
+msgid "Merge sections if close as"
+msgstr "相距小於此值時合併區段"
+
+#: src/HexEditorGui.cpp:1133
+msgid "bytes"
+msgstr "位元組"
+
+#: src/HexEditorGui.cpp:1143
+msgid "Save Results to File"
+msgstr "儲存結果至檔案"
+
+#: src/HexEditorGui.cpp:1146
+msgid "*.txt"
+msgstr "*.txt"
+
+#: src/HexEditorGui.cpp:1157
+msgid "Connect files for scrolling"
+msgstr "連結檔案以同步捲動"
+
+#: src/HexEditorGui.cpp:1158
+msgid "With this option enabled, compared files will always show same address location."
+msgstr "該選項啟用後，對比的檔案將始終顯示相同的位置。"
+
+#: src/HexEditorGui.cpp:1171
+msgid "Compare"
+msgstr "比較"
+
+#: src/HexEditorGui.cpp:1228
+msgid "File To Hash:"
+msgstr "需計算雜湊值的檔案："
+
+#: src/HexEditorGui.cpp:1235
+msgid "Current File"
+msgstr "當前檔案"
+
+#: src/HexEditorGui.cpp:1253
+msgid "MD"
+msgstr "MD"
+
+#: src/HexEditorGui.cpp:1255
+msgid "MD2 (slow!)"
+msgstr "MD2（慢！）"
+
+#: src/HexEditorGui.cpp:1258
+msgid "MD4"
+msgstr "MD4"
+
+#: src/HexEditorGui.cpp:1261
+msgid "MD5"
+msgstr "MD5"
+
+#: src/HexEditorGui.cpp:1268
+msgid "SHA"
+msgstr "SHA"
+
+#: src/HexEditorGui.cpp:1270
+msgid "SHA1"
+msgstr "SHA1"
+
+#: src/HexEditorGui.cpp:1273
+msgid "SHA224"
+msgstr "SHA224"
+
+#: src/HexEditorGui.cpp:1276
+msgid "SHA256"
+msgstr "SHA256"
+
+#: src/HexEditorGui.cpp:1279
+msgid "SHA384"
+msgstr "SHA384"
+
+#: src/HexEditorGui.cpp:1282
+msgid "SHA512"
+msgstr "SHA512"
+
+#: src/HexEditorGui.cpp:1289
+msgid "RipeMD"
+msgstr "RipeMD"
+
+#: src/HexEditorGui.cpp:1291
+msgid "RipeMD128"
+msgstr "RipeMD128"
+
+#: src/HexEditorGui.cpp:1294
+msgid "RipeMD160"
+msgstr "RipeMD160"
+
+#: src/HexEditorGui.cpp:1297
+msgid "RipeMD256"
+msgstr "RipeMD256"
+
+#: src/HexEditorGui.cpp:1300
+msgid "RipeMD320"
+msgstr "RipeMD320"
+
+#: src/HexEditorGui.cpp:1307
+msgid "HAVAL"
+msgstr "HAVAL"
+
+#: src/HexEditorGui.cpp:1309
+msgid "HAVAL128"
+msgstr "HAVAL128"
+
+#: src/HexEditorGui.cpp:1312
+msgid "HAVAL160"
+msgstr "HAVAL160"
+
+#: src/HexEditorGui.cpp:1315
+msgid "HAVAL192"
+msgstr "HAVAL192"
+
+#: src/HexEditorGui.cpp:1318
+msgid "HAVAL224"
+msgstr "HAVAL224"
+
+#: src/HexEditorGui.cpp:1321
+msgid "HAVAL256"
+msgstr "HAVAL256"
+
+#: src/HexEditorGui.cpp:1328
+msgid "TIGER"
+msgstr "TIGER"
+
+#: src/HexEditorGui.cpp:1330
+msgid "TIGER128"
+msgstr "TIGER128"
+
+#: src/HexEditorGui.cpp:1333
+msgid "TIGER160"
+msgstr "TIGER160"
+
+#: src/HexEditorGui.cpp:1336
+msgid "TIGER192"
+msgstr "TIGER192"
+
+#: src/HexEditorGui.cpp:1343
+msgid "Others"
+msgstr "其他"
+
+#: src/HexEditorGui.cpp:1345
+msgid "ADLER32"
+msgstr "ADLER32"
+
+#: src/HexEditorGui.cpp:1348
+msgid "CRC32"
+msgstr "CRC32"
+
+#: src/HexEditorGui.cpp:1351
+msgid "CRC32B"
+msgstr "CRC32B"
+
+#: src/HexEditorGui.cpp:1354
+msgid "WHIRLPOOL"
+msgstr "漩渦算法"
+
+#: src/HexEditorGui.cpp:1357
+msgid "GOST"
+msgstr "GOST"
+
+#: src/HexEditorGui.cpp:1360
+msgid "SNEFRU128"
+msgstr "SNEFRU128"
+
+#: src/HexEditorGui.cpp:1363
+msgid "SNEFRU256"
+msgstr "SNEFRU256"
+
+#: src/HexEditorGui.cpp:1378
+msgid "Calculate"
+msgstr "計算"
+
+#: src/HexEditorGui.cpp:1478
+msgid "Copy As :"
+msgstr "複製為："
+
+#: src/HexEditorGui.cpp:1482
+msgid "Full Text"
+msgstr "全部文字"
+
+#: src/HexEditorGui.cpp:1482
+msgid "Special Hex"
+msgstr "特殊十六進位"
+
+#: src/HexEditorGui.cpp:1482
+msgid "Internet"
+msgstr "網際網路"
+
+#: src/HexEditorGui.cpp:1482
+msgid "C/C++ Source"
+msgstr "C/C++ 源碼"
+
+#: src/HexEditorGui.cpp:1482
+msgid "Assembler Source"
+msgstr "匯編程式源"
+
+#: src/HexEditorGui.cpp:1488
+msgid "Option:"
+msgstr "選項："
+
+#: src/HexEditorGui.cpp:1508
+msgid "As BigEndian"
+msgstr "以大端序"
+
+#: src/HexEditorGui.cpp:1514
+msgid "Bytes Per Line"
+msgstr "每行位元組數"
+
+#: src/HexEditorGui.cpp:1516
+msgid "16"
+msgstr "16"
+
+#: src/HexEditorGui.cpp:1528
+msgid "Include Offset Part"
+msgstr "包含位移部分"
+
+#: src/HexEditorGui.cpp:1532
+msgid "Include Hex Part"
+msgstr "包含HEX部分"
+
+#: src/HexEditorGui.cpp:1536
+msgid "Include Text Part"
+msgstr "包含文字部分"
+
+#: src/HexEditorGui.cpp:1591
+msgid "For switching XORView Thru mode, all Undo&Redo buffer will reset and non-saved changes will discarded.\nAlso you can't use methods that changes file size (like delete and inject) with XORView Thru mode enabled."
+msgstr "為了切換至 XORView Thru 模式，所有復原和重做的緩衝區將被復位，並且沒有儲存的更改將被抛棄。\n並且在XORView Thru 模式開啟時，你不能使用改變檔案大小(如刪除和注入)的方法。"
+
+#: src/HexEditorGui.cpp:1598
+msgid "Please enter XOR key as "
+msgstr "請輸入 XOR 金鑰作為 "
+
+#: src/HexEditorGui.cpp:1602
+msgid "ASCII"
+msgstr "ASCII"
+
+#: src/HexEditorGui.cpp:1621 src/HexEditorGui.cpp:2088
+msgid "OK"
+msgstr "確定"
+
+#: src/HexEditorGui.cpp:1659
+msgid "Colours"
+msgstr "顏色"
+
+#: src/HexEditorGui.cpp:1666
+msgid "Hex Colors:"
+msgstr "十六進位顏色："
+
+#: src/HexEditorGui.cpp:1671
+msgid "Foreground Colour"
+msgstr "前景顏色"
+
+#: src/HexEditorGui.cpp:1676
+msgid "Background Colour"
+msgstr "背景顏色"
+
+#: src/HexEditorGui.cpp:1681
+msgid "Zebra Colour"
+msgstr "斑馬顏色"
+
+#: src/HexEditorGui.cpp:1685
+msgid "Selection Colours:"
+msgstr "選中的顏色："
+
+#: src/HexEditorGui.cpp:1690
+msgid "Selection Foreground Colour"
+msgstr "選中的前景顏色"
+
+#: src/HexEditorGui.cpp:1695
+msgid "Selection Colour"
+msgstr "選中的顏色"
+
+#: src/HexEditorGui.cpp:1699
+msgid "Reset"
+msgstr "重置"
+
+#: src/HexEditorGui.cpp:1700
+msgid "Reset Colour Values to Default"
+msgstr "重設顏色值為預設"
+
+#: src/HexEditorGui.cpp:1713
+msgid "Language:"
+msgstr "語言："
+
+#: src/HexEditorGui.cpp:1728
+msgid "Character Encoding Family:"
+msgstr "字元編碼族："
+
+#: src/HexEditorGui.cpp:1743
+msgid "Character Encoding:"
+msgstr "字元編碼："
+
+#: src/HexEditorGui.cpp:1752 src/HexPanels.cpp:221
+#: src/HexEditorGui.cpp:2004 src/HexEditorGui.cpp:2010
+msgid "Glyph Font:"
+msgstr "顯示字型："
+
+#: src/HexEditorGui.cpp:2010
+msgid "Font used to draw the text (right) panel. Pick an installed font that has the glyphs you need, e.g. SimSun-ExtB for rare CJK ideographs. Non fixed-width fonts may break column alignment."
+msgstr "用於繪製文字（右側）面板的字型。請選擇已安裝且包含所需字形的字型，例如罕用漢字可用 SimSun-ExtB。非等寬字型可能破壞欄位對齊。"
+
+msgid "Size:"
+msgstr "大小："
+
+#: src/HexEditorGui.cpp:1763
+msgid "Custom Hex Formating"
+msgstr "自定義十六進位格式"
+
+#: src/HexEditorGui.cpp:1771
+msgid "xx "
+msgstr "xx "
+
+#: src/HexEditorGui.cpp:1772
+msgid "xxxx "
+msgstr "xxxx "
+
+#: src/HexEditorGui.cpp:1773
+msgid "xx xx xx xx xx xx xx xx  "
+msgstr "xx xx xx xx xx xx xx xx  "
+
+#: src/HexEditorGui.cpp:1774
+msgid "xxxx xxxx xxxx xxxx  "
+msgstr "xxxx xxxx xxxx xxxx  "
+
+#: src/HexEditorGui.cpp:1776
+msgid "Recursive custom hex format pattern"
+msgstr "遞歸定制十六進位格式模式"
+
+#: src/HexEditorGui.cpp:1780
+msgid "Enable"
+msgstr "啟用"
+
+#: src/HexEditorGui.cpp:1789
+msgid "Bytes Per Line Limit"
+msgstr "每行位元組數限制"
+
+#: src/HexEditorGui.cpp:1806
+msgid "Auto show tag panel if tags detected"
+msgstr "如果發現標籤則自動顯示標籤"
+
+#: src/HexEditorGui.cpp:1810
+msgid "Make program portable "
+msgstr "將程式設為可攜式 "
+
+#: src/HexEditorGui.cpp:1893 src/HexEditorGui.cpp:1955
+msgid "Source :"
+msgstr "來源："
+
+#: src/HexEditorGui.cpp:1902 src/HexEditorGui.cpp:1962
+#: src/HexEditorGui.cpp:2017
+msgid "Destination :"
+msgstr "目標："
+
+#: src/HexEditorGui.cpp:2029
+msgid "0x00"
+msgstr "0x00"
+
+#: src/HexEditorGui.cpp:2029
+msgid "0xFF"
+msgstr "0xFF"
+
+#: src/HexEditorGui.cpp:2029
+msgid "0xRANDOM"
+msgstr "0xRANDOM"
+
+#: src/HexEditorGui.cpp:2031
+msgid "Erase With "
+msgstr "清除填滿值："
+
+#: src/HexPanels.cpp:219
+msgid "Name:"
+msgstr "名稱："
+
+#: src/HexPanels.cpp:220
+msgid "Path:"
+msgstr "路徑："
+
+#: src/HexPanels.cpp:222
+msgid "Access:"
+msgstr "存取："
+
+#: src/HexPanels.cpp:223
+msgid "Device:"
+msgstr "裝置："
+
+#: src/HexPanels.cpp:225 src/HexPanels.cpp:230
+msgid "BLOCK"
+msgstr "區塊"
+
+#: src/HexPanels.cpp:225 src/HexPanels.cpp:227
+msgid "FILE"
+msgstr "檔案"
+
+#: src/HexPanels.cpp:228
+msgid "DIRECTORY"
+msgstr "目錄"
+
+#: src/HexPanels.cpp:229
+msgid "CHARACTER"
+msgstr "字元"
+
+#: src/HexPanels.cpp:231
+msgid "FIFO"
+msgstr "先進先出"
+
+#: src/HexPanels.cpp:232
+msgid "LINK"
+msgstr "連結"
+
+#: src/HexPanels.cpp:233
+msgid "SOCKET"
+msgstr "通訊端"
+
+#: src/HexPanels.cpp:244
+msgid "Sector Size: "
+msgstr "磁區大小："
+
+#: src/HexPanels.cpp:245
+msgid "Sector Count: "
+msgstr "磁區計數："
+
+#: src/HexPanels.cpp:249
+msgid "XORKey:"
+msgstr "XOR 金鑰："
+
+#: src/HexEditorCtrl/HexEditorCtrlGui.cpp:39
+msgid "Address"
+msgstr "地址"
+
+#: src/HexEditorCtrl/HexEditorCtrlGui.cpp:45
+msgid "Byte View"
+msgstr "位元組顯示"
+
+#: src/HexEditorCtrl/wxHexCtrl/TagDialogGui.cpp:33
+msgid "Font Color"
+msgstr "字型顏色"
+
+#: src/HexEditorCtrl/wxHexCtrl/TagDialogGui.cpp:37
+msgid "Note Color"
+msgstr "備註顏色"
+
+#: src/HexEditorCtrl/wxHexCtrl/TagDialogGui.cpp:56
+msgid "Remove"
+msgstr "移除"
+
+#: src/HexEditorCtrl/wxHexCtrl/TagDialogGui.h:53
+msgid "Tag Dialog"
+msgstr "標籤對話框"
+
+#: menu translation supplement
+msgid "Import Template"
+msgstr "&T匯入範本"
+
+#: menu translation supplement
+msgid "Hex2Color Mode"
+msgstr "Hex2Color 模式"
+
+#: menu translation supplement
+msgid "Open Memory SPD"
+msgstr "開啟記憶體 SPD"
+
+#: menu translation supplement
+msgid "Colorize HEX values with representing colors."
+msgstr "以對應顏色為十六進位值著色。"
+
+#: menu translation supplement
+msgid "Allow to edit Memory SPD values"
+msgstr "允許編輯記憶體 SPD 數值"
+
+
+#: i18n supplement
+msgid "Find and Replace"
+msgstr "尋找並取代"
+
+#: i18n supplement
+msgid "Cut selected block and copies to clipboard"
+msgstr "剪下所選區塊並複製到剪貼簿"
+
+#: i18n supplement
+msgid "Delete selected block"
+msgstr "刪除所選區塊"
+
+#: i18n supplement
+msgid "Insert block"
+msgstr "插入區塊"
+
+#: i18n supplement
+msgid "Hide"
+msgstr "隱藏"
+
+#: i18n supplement
+msgid "Convert TAGs"
+msgstr "轉換標籤"
+
+#: i18n supplement
+msgid "Showing Page: %llu"
+msgstr "顯示頁：%llu"
+
+#: i18n supplement
+msgid "Showing Page: %I64u"
+msgstr "顯示頁：%I64u"
+

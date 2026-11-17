@@ -7,18 +7,7 @@
 # Guntram Blohm <gbl@bso2001.com>, 2013
 # Lukas <bibo@wordy-rappinghood.net>, 2013
 msgid ""
-msgstr ""
-"Project-Id-Version: wxHexEditor\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-21 02:13+0300\n"
-"PO-Revision-Date: 2017-12-21 03:04+0000\n"
-"Last-Translator: Erdem U. Altinyurt <spamjunkeater@gmail.com>\n"
-"Language-Team: German (http://www.transifex.com/eua/wxhexeditor/language/de/)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Language: de\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+msgstr "Project-Id-Version: wxHexEditor\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2017-12-21 02:13+0300\nPO-Revision-Date: 2017-12-21 03:04+0000\nLast-Translator: Erdem U. Altinyurt <spamjunkeater@gmail.com>\nLanguage-Team: German \nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nLanguage: de \nPlural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: src/HexDialogs.h:70 src/HexEditorGui.h:300 src/HexEditorFrame.cpp:299
 #: src/HexEditorGui.cpp:134 src/HexEditorGui.cpp:938
@@ -87,7 +76,7 @@ msgstr "Fehler beim Kopieren in Zwischenablage"
 
 #: src/FAL.cpp:175
 msgid "Device is not mounted"
-msgstr ""
+msgstr "Laufwerk ist nicht eingebunden"
 
 #: src/FAL.cpp:175 src/FAL.cpp:221 src/FAL.cpp:240 src/FAL.cpp:252
 #: src/FAL.cpp:272 src/FAL.cpp:286 src/FAL.cpp:310 src/FAL.cpp:321
@@ -105,10 +94,8 @@ msgid "File is not readable by permissions."
 msgstr "Fehlende Datei-Lesezugriffsrechte"
 
 #: src/FAL.cpp:221
-msgid ""
-"Please change file permissons or run this program with Windows UAC "
-"privileges."
-msgstr ""
+msgid "Please change file permissons or run this program with Windows UAC privileges."
+msgstr "Bitte ändern Sie die Dateiberechtigungen oder führen Sie das Programm mit Windows-UAC-Rechten aus."
 
 #: src/FAL.cpp:240 src/FAL.cpp:310
 msgid "Process cannot open."
@@ -119,14 +106,12 @@ msgid "File does not exists at path:"
 msgstr "Datei existiert nicht in Dateipfad "
 
 #: src/FAL.cpp:259
-msgid ""
-"Please change file permissons or run this program with root privileges."
-msgstr ""
+msgid "Please change file permissons or run this program with root privileges."
+msgstr "Bitte ändern Sie die Dateiberechtigungen oder führen Sie das Programm mit Root-Rechten aus."
 
 #: src/FAL.cpp:260
-msgid ""
-"You can also try to own the file temporarily (requires root's password.)"
-msgstr ""
+msgid "You can also try to own the file temporarily (requires root's password.)"
+msgstr "Sie können auch versuchen, die Datei vorübergehend zu übernehmen (erfordert das Root-Passwort)."
 
 #: src/FAL.cpp:261
 msgid "Do you want to own the file?"
@@ -142,7 +127,7 @@ msgstr "Unbekannter Fehler bei Ermittlung der Attribute von %U"
 
 #: src/FAL.cpp:286
 msgid "For using this function, please install \"gnomesu\" or \"gksu\" tools first."
-msgstr ""
+msgstr "Zur Verwendung dieser Funktion bitte zuerst die Werkzeuge \"gnomesu\" oder \"gksu\" installieren."
 
 #: src/FAL.cpp:321
 msgid "Please change file permissons or run this program with root privileges"
@@ -153,9 +138,7 @@ msgid "File cannot open."
 msgstr "Datei kann nicht öffnen."
 
 #: src/FAL.cpp:430
-msgid ""
-"File load error!.\n"
-"File closed but not opened while access change. For avoid corruption close the program"
+msgid "File load error!.\nFile closed but not opened while access change. For avoid corruption close the program"
 msgstr "Fehler beim Laden der Datei!.\nDatei geschlossen aber nicht geöffnet bei Zugriffsrechtewechsel. Bitte das Programm schließen um Korruption zu vermeiden"
 
 #: src/FAL.cpp:438
@@ -202,7 +185,7 @@ msgstr "Sektor"
 
 #: src/HexDialogs.cpp:465
 msgid "Finding Some Bytes..."
-msgstr ""
+msgstr "Suche nach Bytes..."
 
 #: src/HexDialogs.cpp:467 src/HexDialogs.cpp:717
 msgid "wxHexEditor Searching"
@@ -245,9 +228,7 @@ msgid "Find All Done!"
 msgstr "Suche beendet!"
 
 #: src/HexDialogs.cpp:1653 src/HexDialogs.cpp:1678
-msgid ""
-"Search and Replace sizes are not equal!\n"
-"Replacing with different size are not supported yet."
+msgid "Search and Replace sizes are not equal!\nReplacing with different size are not supported yet."
 msgstr "Such- und Ersetzlängen sind nicht gleich.\nSuchen/Ersetzen mit unterschiedlichen Längen noch nicht unterstützt."
 
 #: src/HexDialogs.cpp:1653 src/HexDialogs.cpp:1678 src/HexDialogs.cpp:2009
@@ -359,7 +340,7 @@ msgstr "Vergleiche Dateien ..."
 
 #: src/HexDialogs.cpp:2248
 msgid "wxHexEditor Comparing"
-msgstr ""
+msgstr "wxHexEditor vergleicht"
 
 #: src/HexDialogs.cpp:2402
 msgid "Sorry, this program supports up to 500K differences."
@@ -375,7 +356,7 @@ msgstr "Vergleichsfehler"
 
 #: src/HexDialogs.cpp:2412
 msgid "Comparison Speed : "
-msgstr ""
+msgstr "Vergleichsgeschwindigkeit: "
 
 #: src/HexDialogs.cpp:2434
 msgid "File #1 : "
@@ -395,7 +376,7 @@ msgstr "Fehler, Datei zum Speichern nicht ausgewählt"
 
 #: src/HexDialogs.cpp:2666
 msgid "Cannot calculate checksum of an empty file."
-msgstr ""
+msgstr "Prüfsumme einer leeren Datei kann nicht berechnet werden."
 
 #: src/HexDialogs.cpp:2672
 msgid "File: "
@@ -427,7 +408,7 @@ msgstr "Hash-Geschwindigkeit:"
 
 #: src/HexDialogs.cpp:3161
 msgid "Are you sure about resetting colours?"
-msgstr ""
+msgstr "Möchten Sie die Farben wirklich zurücksetzen?"
 
 #: src/HexDialogs.cpp:3161
 msgid "Resetting Hex Colours"
@@ -478,9 +459,7 @@ msgid "ERROR!: Disk space is smaller than the image file."
 msgstr "FEHLER!: Plattenplatz ist geringer als die Abbilddatei."
 
 #: src/HexDialogs.cpp:3290
-msgid ""
-"WARNING!: Disk space is bigger than the image file. \n"
-"Remaining space will remain untouched."
+msgid "WARNING!: Disk space is bigger than the image file. \nRemaining space will remain untouched."
 msgstr "WARNUNG!: Plattenplatz ist größer als die Abbilddatei. \nRestlicher Platz bleibt unverändert."
 
 #: src/HexDialogs.cpp:3294
@@ -513,7 +492,7 @@ msgstr "Löschgeschwindigkeit:"
 
 #: src/HexDialogs.cpp:3386
 msgid "Erase operation completed."
-msgstr ""
+msgstr "Löschvorgang abgeschlossen."
 
 #: src/HexEditor.cpp:164
 msgid "Cannot read hash file!"
@@ -544,10 +523,8 @@ msgid "Critical Error. File pointer is not empty!"
 msgstr "Kritischer Fehler. Dateizeiger ist nicht leer!"
 
 #: src/HexEditor.cpp:335
-msgid ""
-"Switching to XORView Thru mode will reset Undo&Redo buffer. Unsaved changes will be discarded.\n"
-" Note also that you can't use methods that change file size (like delete and inject) while XORView Thru mode is active."
-msgstr ""
+msgid "Switching to XORView Thru mode will reset Undo&Redo buffer. Unsaved changes will be discarded.\n Note also that you can't use methods that change file size (like delete and inject) while XORView Thru mode is active."
+msgstr "Beim Wechsel in den XORView-Thru-Modus werden der Rückgängig/Wiederholen-Puffer zurückgesetzt und nicht gespeicherte Änderungen verworfen.\nAußerdem können Sie im XORView-Thru-Modus keine Methoden verwenden, die die Dateigröße ändern (wie Löschen und Einfügen)."
 
 #: src/HexEditor.cpp:335
 msgid "XORView Thru Warning"
@@ -562,9 +539,7 @@ msgid "File Save"
 msgstr "Datei speichern"
 
 #: src/HexEditor.cpp:359
-msgid ""
-"File has some insertion/deletions. You cannot save this file-self (yet). "
-"Please use SaveAs."
+msgid "File has some insertion/deletions. You cannot save this file-self (yet). Please use SaveAs."
 msgstr "Datei hat einige Einfügugen/Löschungen. Sie können diese Datei nur unter einem anderen Namen speicher. Bitte verwenden Sie Speichern Unter."
 
 #: src/HexEditor.cpp:359
@@ -589,15 +564,12 @@ msgstr "Datei ist nicht geändert. Nichts zu speichern.\n"
 
 #: src/HexEditor.cpp:393
 #, c-format
-msgid ""
-"There are not enough free disk space.\n"
-"Required: %s\n"
-"Available: %s"
-msgstr ""
+msgid "There are not enough free disk space.\nRequired: %s\nAvailable: %s"
+msgstr "Nicht genügend freier Speicherplatz.\nBenötigt: %s\nVerfügbar: %s"
 
 #: src/HexEditor.cpp:395
 msgid "Not Enought Space"
-msgstr ""
+msgstr "Nicht genügend Speicherplatz"
 
 #: src/HexEditor.cpp:404
 msgid "File save in progress"
@@ -624,14 +596,12 @@ msgid "File Has Changed!"
 msgstr "Datei wurde geändert!"
 
 #: src/HexEditor.cpp:461
-msgid ""
-"TAG file cannot be saved to default location.\n"
-"Do you want to Export TAGs file?"
-msgstr ""
+msgid "TAG file cannot be saved to default location.\nDo you want to Export TAGs file?"
+msgstr "TAG-Datei kann nicht am Standardspeicherort gespeichert werden.\nMöchten Sie die TAG-Datei exportieren?"
 
 #: src/HexEditor.cpp:461
 msgid "TAGs Cannot Be Saved!!"
-msgstr ""
+msgstr "TAGs konnten nicht gespeichert werden!!"
 
 #: src/HexEditor.cpp:463 src/HexEditorFrame.cpp:624
 msgid "Choose a file for export TAGs"
@@ -639,7 +609,7 @@ msgstr "Wählen Sie eine Datei um die Tags zu exportieren"
 
 #: src/HexEditor.cpp:473
 msgid "TAGs cannot be exported to file : "
-msgstr ""
+msgstr "TAGs konnten nicht in Datei exportiert werden: "
 
 #: src/HexEditor.cpp:576
 msgid "Enter hex value(s) for fill"
@@ -753,9 +723,7 @@ msgstr "Blockgröße: %"
 
 #: src/HexEditor.cpp:1465
 #, c-format
-msgid ""
-"Notice!: This command will increase the file size and will generate too much overhead on file save.\n"
-"How many bytes do you want to inject to location to offset location %lld?"
+msgid "Notice!: This command will increase the file size and will generate too much overhead on file save.\nHow many bytes do you want to inject to location to offset location %lld?"
 msgstr "Achtung!: Dieses Kommando wird die Dateigröße verändern und das Speichern deutlich verlangsamen.\nWieviele Bytes wollen Sie an Stelle %lld einsetzen?"
 
 #: src/HexEditor.cpp:1466
@@ -767,13 +735,7 @@ msgid "Injection!"
 msgstr "Einsetzung!"
 
 #: src/HexEditor.cpp:1551
-msgid ""
-"WARNING:\n"
-"The text you are copying includes a null character\n"
-"(00 in the hex pane) and will be truncated!\n"
-"\n"
-"If copying to another file in wxHexEditor you\n"
-"should copy from the Hex pane, not the text pane"
+msgid "WARNING:\nThe text you are copying includes a null character\n(00 in the hex pane) and will be truncated!\n\nIf copying to another file in wxHexEditor you\nshould copy from the Hex pane, not the text pane"
 msgstr "WARNUNG:\nDer Text, den Sie kopieren, enthält ein Nullbyte\n(00 in der Hexanzeige) und wird abgeschnitten!\n\nWenn Sie in eine andere Datei in wxHexEditor kopieren\nsollten Sie aus der Hexanzeige, nicht der Textanzeige kopieren."
 
 #: src/HexEditor.cpp:1562
@@ -781,11 +743,8 @@ msgid "You have no RAM to copy this data."
 msgstr "Sie haben nicht genügen RAM um diese Daten zu kopieren."
 
 #: src/HexEditor.cpp:1567
-msgid ""
-"You have tried to copy more than 10 MB of data.\n"
-"Copying above 10 MB to clipboard is not allowed.\n"
-"Only internal copy buffer used!"
-msgstr ""
+msgid "You have tried to copy more than 10 MB of data.\nCopying above 10 MB to clipboard is not allowed.\nOnly internal copy buffer used!"
+msgstr "Sie haben versucht, mehr als 10 MB Daten zu kopieren.\nDas Kopieren von mehr als 10 MB in die Zwischenablage ist nicht erlaubt.\nEs wird nur der interne Kopierpuffer verwendet!"
 
 #: src/HexEditor.cpp:1599
 msgid "No data available at clipboad!"
@@ -793,7 +752,7 @@ msgstr "Keine Daten in der Zwischenablage."
 
 #: src/HexEditor.cpp:1601
 msgid "Note: Used internal binary copy buffer at paste operation."
-msgstr ""
+msgstr "Hinweis: Beim Einfügen wurde der interne binäre Kopierpuffer verwendet."
 
 #: src/HexEditorFrame.cpp:197
 msgid "License Agreement"
@@ -891,7 +850,7 @@ msgstr "Toolbar"
 
 #: src/HexEditorFrame.cpp:330 src/HexEditorFrame.cpp:331
 msgid "TagPanel"
-msgstr ""
+msgstr "Tag-Panel"
 
 #: src/HexEditorFrame.cpp:341 src/HexEditorFrame.cpp:342
 #: src/HexEditorGui.cpp:168
@@ -963,11 +922,11 @@ msgstr "Datei für den Tagimport aussuchen"
 
 #: src/HexEditorFrame.cpp:616
 msgid "TAGS cannot be imported from "
-msgstr ""
+msgstr "TAGs konnten nicht importiert werden von "
 
 #: src/HexEditorFrame.cpp:632
 msgid "TAGs cannot be exported to "
-msgstr ""
+msgstr "TAGs konnten nicht exportiert werden nach "
 
 #: src/HexEditorFrame.cpp:636
 msgid "There is no TAGs to Export in current active file!"
@@ -1316,11 +1275,11 @@ msgstr "Eine kleine Spende für den Author als Anerkennung"
 
 #: src/HexEditorGui.cpp:291
 msgid "Wiki"
-msgstr ""
+msgstr "Wiki"
 
 #: src/HexEditorGui.cpp:291
 msgid "Documentation page of wxHexEditor"
-msgstr ""
+msgstr "Dokumentationsseite von wxHexEditor"
 
 #: src/HexEditorGui.cpp:295
 msgid "Bug Reporting"
@@ -1537,9 +1496,7 @@ msgid "Find Some Bytes"
 msgstr "Einige Bytes finden"
 
 #: src/HexEditorGui.cpp:946
-msgid ""
-"This function finds some different values at file. Usefull for finding non-"
-"null sections at disks."
+msgid "This function finds some different values at file. Usefull for finding non-null sections at disks."
 msgstr "Diese Funktion sucht unterschiedliche Werte. Sinnvoll um nicht-Null-Blöcke auf Platten zu suchen."
 
 #: src/HexEditorGui.cpp:960
@@ -1560,7 +1517,7 @@ msgstr "neue Version von wxHexEditor downloaden"
 
 #: src/HexEditorGui.cpp:1036
 msgid "http://www.wxhexeditor.org"
-msgstr ""
+msgstr "http://www.wxhexeditor.org"
 
 #: src/HexEditorGui.cpp:1039
 msgid "Do not show this again."
@@ -1624,13 +1581,11 @@ msgstr "*.txt"
 
 #: src/HexEditorGui.cpp:1157
 msgid "Connect files for scrolling"
-msgstr ""
+msgstr "Dateien zum gemeinsamen Scrollen verbinden"
 
 #: src/HexEditorGui.cpp:1158
-msgid ""
-"With this option enabled, compared files will always show same address "
-"location."
-msgstr ""
+msgid "With this option enabled, compared files will always show same address location."
+msgstr "Bei aktivierter Option zeigen verglichene Dateien immer dieselbe Adressposition an."
 
 #: src/HexEditorGui.cpp:1171
 msgid "Compare"
@@ -1833,9 +1788,7 @@ msgid "Include Text Part"
 msgstr "Text-Teil einbinden"
 
 #: src/HexEditorGui.cpp:1591
-msgid ""
-"For switching XORView Thru mode, all Undo&Redo buffer will reset and non-saved changes will discarded.\n"
-"Also you can't use methods that changes file size (like delete and inject) with XORView Thru mode enabled."
+msgid "For switching XORView Thru mode, all Undo&Redo buffer will reset and non-saved changes will discarded.\nAlso you can't use methods that changes file size (like delete and inject) with XORView Thru mode enabled."
 msgstr "Um den XOR-Durchsichtsmodus zu aktivieren, werden alle Undo/Redo Puffer zurückgesetzt und nicht gespeicherte Änderungen werden ignoriert.\nAußerdem können keine Methoden verwendet werden die die Dateigröße ändern während der XOR-Durchsichtsmodus aktiv ist."
 
 #: src/HexEditorGui.cpp:1598
@@ -1903,6 +1856,14 @@ msgid "Character Encoding:"
 msgstr "Zeichencodierung"
 
 #: src/HexEditorGui.cpp:1752 src/HexPanels.cpp:221
+#: src/HexEditorGui.cpp:2004 src/HexEditorGui.cpp:2010
+msgid "Glyph Font:"
+msgstr "Zeichenfont:"
+
+#: src/HexEditorGui.cpp:2010
+msgid "Font used to draw the text (right) panel. Pick an installed font that has the glyphs you need, e.g. SimSun-ExtB for rare CJK ideographs. Non fixed-width fonts may break column alignment."
+msgstr "Schriftart für das Textfeld (rechts). Wählen Sie eine installierte Schrift mit den benötigten Zeichen, z. B. SimSun-ExtB für seltene chinesische Schriftzeichen. Schriftarten mit variabler Zeichenbreite können die Spaltenausrichtung stören."
+
 msgid "Size:"
 msgstr "Größe:"
 
@@ -1940,11 +1901,11 @@ msgstr "Max. Bytes pro Zeile"
 
 #: src/HexEditorGui.cpp:1806
 msgid "Auto show tag panel if tags detected"
-msgstr ""
+msgstr "Tag-Panel automatisch anzeigen, wenn Tags erkannt werden"
 
 #: src/HexEditorGui.cpp:1810
 msgid "Make program portable "
-msgstr ""
+msgstr "Programm portabel machen "
 
 #: src/HexEditorGui.cpp:1893 src/HexEditorGui.cpp:1955
 msgid "Source :"
@@ -2050,3 +2011,57 @@ msgstr "Löschen"
 #: src/HexEditorCtrl/wxHexCtrl/TagDialogGui.h:53
 msgid "Tag Dialog"
 msgstr "Tag Dialog"
+
+#: menu translation supplement
+msgid "Import Template"
+msgstr "Vorlage importieren"
+
+#: menu translation supplement
+msgid "Hex2Color Mode"
+msgstr "Hex2Color-Modus"
+
+#: menu translation supplement
+msgid "Open Memory SPD"
+msgstr "Speicher-SPD öffnen"
+
+#: menu translation supplement
+msgid "Colorize HEX values with representing colors."
+msgstr "HEX-Werte mit den zugehörigen Farben einfärben."
+
+#: menu translation supplement
+msgid "Allow to edit Memory SPD values"
+msgstr "Ermöglicht das Bearbeiten der Speicher-SPD-Werte"
+
+
+#: i18n supplement
+msgid "Find and Replace"
+msgstr "Suchen und Ersetzen"
+
+#: i18n supplement
+msgid "Cut selected block and copies to clipboard"
+msgstr "Ausgewählten Block ausschneiden und in die Zwischenablage kopieren"
+
+#: i18n supplement
+msgid "Delete selected block"
+msgstr "Ausgewählten Block löschen"
+
+#: i18n supplement
+msgid "Insert block"
+msgstr "Block einfügen"
+
+#: i18n supplement
+msgid "Hide"
+msgstr "Ausblenden"
+
+#: i18n supplement
+msgid "Convert TAGs"
+msgstr "TAGs konvertieren"
+
+#: i18n supplement
+msgid "Showing Page: %llu"
+msgstr "Seite angezeigt: %llu"
+
+#: i18n supplement
+msgid "Showing Page: %I64u"
+msgstr "Seite angezeigt: %I64u"
+

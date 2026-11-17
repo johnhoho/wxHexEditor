@@ -82,8 +82,10 @@
 #endif
 
 /* Define to 1 if you have the <byteswap.h> header file. */
+#if !defined(_MSC_VER)
 #ifndef HAVE_BYTESWAP_H
 #define HAVE_BYTESWAP_H 1
+#endif
 #endif
 
 /* Define to 1 if you have the `bzero' function. */
@@ -97,13 +99,17 @@
 #endif
 
 /* Define to 1 if you have the <dlfcn.h> header file. */
+#if !defined(_MSC_VER)
 #ifndef HAVE_DLFCN_H
 #define HAVE_DLFCN_H 1
 #endif
+#endif
 
 /* Define to 1 if you have the <endian.h> header file. */
+#if !defined(_MSC_VER)
 #ifndef HAVE_ENDIAN_H
 #define HAVE_ENDIAN_H 1
+#endif
 #endif
 
 /* Define to 1 if you have the <errno.h> header file. */
@@ -226,8 +232,11 @@
 #endif
 
 /* Define to 1 if you have the <strings.h> header file. */
+/* MSVC has no <strings.h>; disabled for MSVC builds (MinGW keeps it). */
+#if !defined(_MSC_VER)
 #ifndef HAVE_STRINGS_H
 #define HAVE_STRINGS_H 1
+#endif
 #endif
 
 /* Define to 1 if you have the <string.h> header file. */
@@ -262,8 +271,10 @@
 #endif
 
 /* Define to 1 if you have the <unistd.h> header file. */
+#if !defined(_MSC_VER)
 #ifndef HAVE_UNISTD_H
 #define HAVE_UNISTD_H 1
+#endif
 #endif
 
 /* Define to 1 if you have the `utime' function. */
@@ -272,8 +283,10 @@
 #endif
 
 /* Define to 1 if you have the <utime.h> header file. */
+#if !defined(_MSC_VER)
 #ifndef HAVE_UTIME_H
 #define HAVE_UTIME_H 1
+#endif
 #endif
 
 /* Define to 1 if you have the <values.h> header file. */

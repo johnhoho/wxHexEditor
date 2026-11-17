@@ -32,6 +32,8 @@
 # if HAVE_STRING_H
 #  include <string.h>
 # endif
+/* gcc14 treats implicit declarations as errors; string.h is always available. */
+# include <string.h>
 #endif /* !__UD_STANDALONE__ */
 
 static void ud_inp_init(struct ud *u);
